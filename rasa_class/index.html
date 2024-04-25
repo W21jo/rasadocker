@@ -1,0 +1,578 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Chatbot</title>
+    <style>
+        /* Add your CSS styles here */
+        .chat-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .chat-messages {
+            height: 200px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Rasa Chatbot</h2>
+        <div class="chat-messages" id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+            var chatMessages = document.getElementById("chat-messages");
+            var userMessageElement = document.createElement("div");
+            userMessageElement.textContent = "User: " + userInput;
+            chatMessages.appendChild(userMessageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            fetch("http://localhost:5005/webhooks/rest/webhook", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: userInput
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.length > 0) {
+                    var botResponse = data[0].text;
+                    console.log("Bot response:", botResponse); // Log bot response to console
+                    var botMessageElement = document.createElement("div");
+                    botMessageElement.textContent = "Bot: " + botResponse;
+                    chatMessages.appendChild(botMessageElement);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }
+            })
+            .catch(error => console.error("Error:", error));
+
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Chatbot</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chat-container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .chat-header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .chat-messages {
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .user-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .send-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Rasa Chatbot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" class="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()" class="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Functionality
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+            var chatMessages = document.getElementById("chat-messages");
+
+            // Display user message
+            displayMessage("User", userInput);
+
+            // Send user message to Rasa server
+            fetch("http://localhost:5005/webhooks/rest/webhook", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: userInput
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display Rasa bot response
+                if (data && data.length > 0) {
+                    var botResponse = data[0].text;
+                    displayMessage("Bot", botResponse);
+                }
+            })
+            .catch(error => console.error("Error:", error));
+
+            // Clear user input
+            document.getElementById("user-input").value = "";
+        }
+
+        function displayMessage(sender, message) {
+            var chatMessages = document.getElementById("chat-messages");
+            var messageElement = document.createElement("div");
+            messageElement.textContent = sender + ": " + message;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aum Chatbot</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chat-container {
+            max-width: 800px; /* Adjust as needed */
+            margin: 20px auto;
+            background-color: #ff7f7f; /* Red color scheme */
+            /* border-radius: 10px; */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background-color: #b30000; /* Dark red header */
+            color: #fff;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .chat-input {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .user-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .send-button {
+            background-color: #b30000; /* Dark red button */
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #990000; /* Lighter shade on hover */
+        }
+
+        .chatbot-icon {
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-container">
+            <h1>Aum Chatbot</h1>
+        </div>
+            <span class="chatbot-icon" onclick="toggleChatbot()">🤖</span>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input" id="chat-input" style="display: none;">
+            <input type="text" id="user-input" class="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()" class="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Functionality
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+            var chatMessages = document.getElementById("chat-messages");
+
+            // Display user message
+            displayMessage("User", userInput);
+
+            // Send user message to Rasa server
+            // fetch(" http://localhost:5005/webhooks/rest/webhook", {
+            fetch("http://localhost:5005", {
+
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: userInput
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display Rasa bot response
+                if (data && data.length > 0) {
+                    var botResponse = data[0].text;
+                    displayMessage("Bot", botResponse);
+                }
+            })
+            .catch(error => console.error("Error:", error));
+
+            // Clear user input
+            document.getElementById("user-input").value = "";
+        }
+
+        function displayMessage(sender, message) {
+            var chatMessages = document.getElementById("chat-messages");
+            var messageElement = document.createElement("div");
+            messageElement.textContent = sender + ": " + message;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function toggleChatbot() {
+            var chatInput = document.getElementById("chat-input");
+            chatInput.style.display = chatInput.style.display === "none" ? "flex" : "none";
+        }
+    </script>
+</body>
+</html>
+ 
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aum Chatbot</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 400px; /* Adjust as needed */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background-color: #007bff; /* Blue header */
+            color: #fff;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .chat-header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .chat-messages {
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .chat-input {
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .user-input {
+            width: calc(100% - 70px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .send-button {
+            width: 60px;
+            background-color: #007bff; /* Blue button */
+            color: #fff;
+            border: none;
+            padding: 8px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #0056b3; /* Lighter shade on hover */
+        }
+
+        .chatbot-typing {
+            display: none;
+            align-items: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .typing-dot {
+            animation: typing 1s infinite;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        @keyframes typing {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Aum Chatbot</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chatbot-typing" id="chatbot-typing">
+            <span class="typing-dot">.</span>
+            <span class="typing-dot">.</span>
+            <span class="typing-dot">.</span>
+        </div>
+        <div class="chat-input" id="chat-input">
+            <input type="text" id="user-input" class="user-input" placeholder="Type your message...">
+            <button id="send-button" class="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatMessages = document.getElementById('chat-messages');
+            const chatInput = document.getElementById('chat-input');
+            const sendButton = document.getElementById('send-button');
+            const typingIndicator = document.getElementById('chatbot-typing');
+
+            sendButton.addEventListener('click', sendMessage);
+
+            function sendMessage() {
+                const userInput = document.getElementById('user-input').value;
+                if (!userInput.trim()) return;
+
+                displayMessage('User', userInput);
+                showTypingIndicator();
+
+                fetch('http://localhost:5005/webhooks/rest/webhook', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: userInput
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    hideTypingIndicator();
+                    if (data && data.length > 0) {
+                        const botResponse = data[0].text;
+                        displayMessage('Bot', botResponse);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    hideTypingIndicator();
+                });
+
+                document.getElementById('user-input').value = '';
+            }
+
+            function displayMessage(sender, message) {
+                const messageElement = document.createElement('div');
+                messageElement.textContent = `${sender}: ${message}`;
+                chatMessages.appendChild(messageElement);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            function showTypingIndicator() {
+                typingIndicator.style.display = 'flex';
+            }
+
+            function hideTypingIndicator() {
+                typingIndicator.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aum Chatbot</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="rasa-chat-widget" data-websocket-url="ws://localhost:5005/socket.io/?EIO=4&transport=websocket"></div>
+    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize the Rasa chat widget
+            const widget = new RasaChatWidget({
+                initPayload: '/get_started', // Optional initial payload
+                socketUrl: 'ws://localhost:5005/socket.io/?EIO=4&transport=websocket', // WebSocket URL
+                title: 'Aum Chatbot', // Chatbot title
+                displayUnreadCount: true, // Display unread message count
+                displayAvatar: true, // Display bot avatar
+                subtitle: 'Powered by Rasa', // Chatbot subtitle
+                params: {}, // Additional parameters
+                attachmentUploadEndpoint: '', // Attachment upload endpoint (if required)
+                socketPath: '/socket.io/', // Socket path (if required)
+                socketOptions: {}, // Additional socket options
+                customData: {}, // Custom data (if required)
+                embedded: false, // Embedded mode
+                hideWhenNotConnected: true, // Hide chat widget when not connected
+                connectingText: 'Connecting...', // Text displayed while connecting
+                storage: 'session', // Storage type
+                profileAvatar: 'bot', // Avatar type for profile
+                openOnLoad: true, // Open chat widget on load
+                params: {} // Additional parameters
+            });
+            widget.show();
+        });
+    </script>
+</body>
+</html> -->

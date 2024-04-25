@@ -1,0 +1,3798 @@
+version: "3.1"
+
+nlu:
+
+# - intent: lost_id
+#   examples: |
+#     - I lost my student ID
+#     - My ID is missing
+#     - I can't find my student ID
+
+# - intent: check_student_id
+#   examples: |
+#     - Is my student ID registered?
+#     - Can you check if my ID is in the database?
+#     - Is ID 12345 valid?
+
+
+
+- intent: inform_old_gpa
+  examples: |
+    - I had a mark of [B](gradestext) previously
+    - Previous mark: [A](gradestext)
+    - my mark is [A+](gradestext)
+    - mark [A+](gradestext)
+    - my mark is [A](gradestext)
+    - mark [A](gradestext)
+    - my mark is [A-](gradestext)
+    - mark [A-](gradestext)
+    - my mark is [B+](gradestext)
+    - mark [B+](gradestext)
+    - my mark is [B](gradestext)
+    - mark [B](gradestext)
+    - my mark is [B-](gradestext)
+    - mark [B-](gradestext)
+    - my mark is [C+](gradestext)
+    - mark [C+](gradestext)
+    - my mark is [C](gradestext)
+    - mark [C](gradestext)
+    - my mark is [C-](gradestext)
+    - mark [C-](gradestext)
+    - my mark is [D+](gradestext)
+    - mark [D+](gradestext)
+    - my mark is [D](gradestext)
+    - mark [D](gradestext)
+    - my mark is [D-](gradestext)
+    - mark [D-](gradestext)
+    - my mark is [F](gradestext)
+    - mark [F](gradestext)
+
+
+
+- intent: provide_gpa
+  examples: |
+    - my gpa is [0.1](gpa)
+    - gpa [0.1](gpa)
+    - my gpa is [0.2](gpa)
+    - gpa [0.2](gpa)
+    - my gpa is [0.3](gpa)
+    - gpa [0.3](gpa)
+    - my gpa is [0.4](gpa)
+    - gpa [0.4](gpa)
+    - my gpa is [0.5](gpa)
+    - gpa [0.5](gpa)
+    - my gpa is [0.6](gpa)
+    - gpa [0.6](gpa)
+    - my gpa is [0.7](gpa)
+    - gpa [0.7](gpa)
+    - my gpa is [0.8](gpa)
+    - gpa [0.8](gpa)
+    - my gpa is [0.9](gpa)
+    - gpa [0.9](gpa)
+    - my gpa is [1.0](gpa)
+    - gpa [1.0](gpa)
+    - my gpa is [1.1](gpa)
+    - gpa [1.1](gpa)
+    - my gpa is [1.2](gpa)
+    - gpa [1.2](gpa)
+    - my gpa is [1.3](gpa)
+    - gpa [1.3](gpa)
+    - my gpa is [1.4](gpa)
+    - gpa [1.4](gpa)
+    - my gpa is [1.5](gpa)
+    - gpa [1.5](gpa)
+    - my gpa is [1.6](gpa)
+    - gpa [1.6](gpa)
+    - my gpa is [1.7](gpa)
+    - gpa [1.7](gpa)
+    - my gpa is [1.8](gpa)
+    - gpa [1.8](gpa)
+    - my gpa is [1.9](gpa)
+    - gpa [1.9](gpa)
+    - my gpa is [2.0](gpa)
+    - gpa [2.0](gpa)
+    - my gpa is [2.1](gpa)
+    - gpa [2.1](gpa)
+    - my gpa is [2.2](gpa)
+    - gpa [2.2](gpa)
+    - my gpa is [2.3](gpa)
+    - gpa [2.3](gpa)
+    - my gpa is [2.4](gpa)
+    - gpa [2.4](gpa)
+    - my gpa is [2.5](gpa)
+    - gpa [2.5](gpa)
+    - my gpa is [2.6](gpa)
+    - gpa [2.6](gpa)
+    - my gpa is [2.7](gpa)
+    - gpa [2.7](gpa)
+    - my gpa is [2.8](gpa)
+    - gpa [2.8](gpa)
+    - my gpa is [2.9](gpa)
+    - gpa [2.9](gpa)
+    - my gpa is [3.0](gpa)
+    - gpa [3.0](gpa)
+    - my gpa is [3.1](gpa)
+    - gpa [3.1](gpa)
+    - my gpa is [3.2](gpa)
+    - gpa [3.2](gpa)
+    - my gpa is [3.3](gpa)
+    - gpa [3.3](gpa)
+    - my gpa is [3.4](gpa)
+    - gpa [3.4](gpa)
+    - my gpa is [3.5](gpa)
+    - gpa [3.5](gpa)
+    - my gpa is [3.6](gpa)
+    - gpa [3.6](gpa)
+    - my gpa is [3.7](gpa)
+    - gpa [3.7](gpa)
+    - my gpa is [3.8](gpa)
+    - gpa [3.8](gpa)
+    - my gpa is [3.9](gpa)
+    - gpa [3.9](gpa)
+    - my gpa is [4.0](gpa)
+    - gpa [4.0](gpa)
+
+
+
+
+- intent: provide_points_info
+  examples: |
+    - I scored [1](points) point
+    - credits [1](points)
+    - I got [2](points) points
+    - points: [2](points)
+    - My score is [3](points)
+    - points: [3](points)
+    - I earned [4](points) points
+    - points: [4](points)
+    - I received [5](points) points
+    - points: [5](points)
+    - I achieved [6](points) points
+    - points: [6](points)
+    - I got [7](points) points
+    - points: [7](points)
+    - I scored [8](points) points
+    - points: [8](points)
+    - I got [9](points) points
+    - points: [9](points)
+    - I achieved [10](points) points
+    - points: [10](points)
+
+
+- intent: i_want_calclute
+  examples: |
+   - i want to calcute my gpa 
+   - calcutor 
+   - i want to calculate my GPA
+    - calculate my GPA please
+    - I need to calculate my GPA
+    - Can you help me calculate my GPA?
+    - I want to know my GPA
+    - I'd like to calculate my GPA
+    - Please calculate my GPA for me
+    - Could you assist me in calculating my GPA?
+    - Let's calculate my GPA
+    - Calcultor
+
+- intent: provide_gpa_info
+  examples: |
+    - I got an  in a [3](points) credit course, and my GPA is [3.8](gpa)
+    - Grade received: , Course credit: [4](points), Current GPA: [3.5](gpa)
+    - Got a  in a [2](points) credit course, current GPA is [3.1](gpa)
+    - My , Credits: [3, 4, 3](points), Overall GPA: [3.6](gpa)
+    - Received in a [5](points) credit course, GPA now [3.4](gpa)
+    - I have  in courses with [4, 3, 2](points) credits respectively, GPA: [3.9](gpa)
+    - Grade for a [3](points) credit course is [B-](gradestext), GPA at [3.2](gpa)
+    - Received for a [4](points) credit course, GPA stands at [3.0](gpa)
+    - I have n courses with [4, 3, 2](points) credits respectively, and my GPA is [3.2](gpa)
+- intent: lost_id
+  examples: |
+    - my ID is lost
+    - I lost my student ID
+    - I can't find my ID
+    - I misplaced my student ID
+
+- intent: check_student_id
+  examples: |
+    - my student ID is [12345](student_id)
+    - I have my ID [67890](student_id)
+    - here is my ID [54321](student_id)
+    - my ID number is [98765](student_id)
+- intent: thank_you
+  examples: |
+    - Thank you
+    - Thanks
+    - Thanks a lot
+
+
+
+
+# - intent: say_name
+#   examples: |
+#     - [Prateek](PERSON)
+#     - [Jasmeet](PERSON)
+#     - [John](PERSON)
+#     - [Kratos](PERSON)
+#     - Hi, Candidate's name is [Prateek](PERSON)
+#     - Hi, Candidate's name is [Jasmeet](PERSON)
+#     - Hi, Candidate's name is [John](PERSON)
+#     - Hi, Candidate's name is [Kratos](PERSON)
+#     - Candidate's name is [Prateek](PERSON)
+#     - Candidate's name is [Jasmeet](PERSON)
+#     - Candidate's name is [John](PERSON)
+#     - Candidate's name is [Kratos](PERSON)
+#     - [prateek](PERSON)
+# - intent: say_empcode
+#   examples: |
+#     - [0010KK](emp_code)
+#     - [2132JK](emp_code)
+#     - [3213IA](emp_code)
+#     - [1234SJ](emp_code)
+#     - The Employee Code is [0010KK](emp_code)
+#     - The Employee Code is [2132JK](emp_code)
+#     - The Employee Code is [3213IA](emp_code)
+#     - The Employee Code is [1234SJ](emp_code)
+#     - The Employee ID is [0010KK](emp_code)
+#     - The Employee ID is [2132JK](emp_code)
+#     - The Employee ID is [3213IA](emp_code)
+#     - The Employee ID is [1234SJ](emp_code)
+#     - [0100zz](emp_code)
+# - intent: say_email
+#   examples: |
+#     - [prateeksoni300@gmail.com](email)
+#     - [prateek.soni1@ibm.com](email)
+#     - [jasmeet@outlook.com](email)
+#     - [john@hotmail.com](email)
+#     - Hi, The email is [prateeksoni300@gmail.com](email)
+#     - Hi, The email is [prateek.soni1@ibm.com](email)
+#     - Hi, The email is [jasmeet@outlook.com](email)
+#     - Hi, The email is [john@hotmail.com](email)
+#     - The email is [prateeksoni300@gmail.com](email)
+#     - The email is [prateek.soni1@ibm.com](email)
+#     - The email is [jasmeet@outlook.com](email)
+#     - The email is [john@hotmail.com](email)
+#     - You can contact them at [prateeksoni300@gmail.com](email)
+#     - You can contact them at [prateek.soni1@ibm.com](email)
+#     - You can contact them at [jasmeet@outlook.com](email)
+#     - You can contact them at [john@hotmail.com](email)
+#     - [prateek@gmail.com](email)
+#     - [prateek@gmail.com](email)
+#     - the email is [prateek@gmail.com](email)
+# - intent: select_all
+#   examples: |
+#     - Show me list of all candidates
+#     - Give me a list of all candidates
+#     - Display all candidates
+#     - Display all entries
+#     - Show me all the candidates
+#     - Show everyone
+#     - show details
+#     - show records
+# - intent: add_candidate
+#   examples: |
+#     - I want to insert a candidate
+#     - I want to add a candidate
+#     - Please insert a candidate
+#     - Please add a candidate
+#     - I want to load a candidate
+#     - Please load a candidate in database
+#     - add candidate
+# - intent: delete_candidate
+#   examples: |
+#     - Delete [Prateek](PERSON) from records
+#     - Drop [Jasmeet](PERSON)
+#     - Remove [Paras](PERSON)
+#     - remove [jasmeet](PERSON) from records
+#     - remove [prateek](PERSON) from records
+
+
+- intent: get_course_info
+  examples: |
+    - Tell me about the [CE](course_name) course.
+    - What is covered in the [Math](course_name) course?
+    - Give me details about [History](course_name).
+    - Can you provide information on the [course_name] course?
+
+
+- regex: course_name
+  examples: |
+    - CE
+    - Mathematics
+    - History
+    - [course_name]
+
+- intent: get_course_code
+  examples: |
+    - What is covered in the course with code [CE 201](course_code)?
+    - Tell me about [CE 207](course_code) course.
+    - Provide information on the [course code CE 202](course_code).
+    - Details about [CE 270](course_code) please.
+    - Can you tell me more about [course CE 255](course_code)?
+    - What is covered in the course with code [EE 201](course_code)?
+    - Tell me about [EE 207](course_code) course.
+    - Provide information on the [course code CE 202](course_code).
+    - Details about [CE 270](course_code) please.
+    - What topics are covered in [CE 301](course_code)?
+    - Tell me about the [course CE 264](course_code).
+    - Provide an overview of [EE 438](course_code).
+    - Explain the content of [IE 431](course_code).
+    - Can you give details about [ME 463](course_code)?
+    - What prerequisites are required for [EE 305](course_code)?
+    - Tell me about the [IE 386](course_code) course.
+    - Provide information on [ME 352](course_code).
+    - Details about [EE 440](course_code) please.
+    - What is covered in [IE 335](course_code)?
+    - Explain the content of [ME 315](course_code).
+    - Can you provide information on [EE 311](course_code)?
+    - What are the main concepts in [EE 255](course_code)?
+    - Explain the laboratory work for [CE 208](course_code).
+    - Can you provide details on [IE 330](course_code)?
+    - Tell me about the [course IE 474](course_code).
+    - Provide information on [ME 323](course_code).
+    - Describe the senior design project for [CE 477](course_code).
+    - What is the focus of [IE 336](course_code)?
+    - Can you elaborate on [ME 309](course_code)?
+    - Explain the content of [IE 474](course_code).
+    - Tell me about the [course ME 375](course_code).
+    - Provide details on [EE 321](course_code).
+    - What are the prerequisites for [CE 364](course_code)?
+    - Explain the laboratory requirements for [EE 207](course_code).
+    - Can you provide information on [IE 386](course_code)?
+    - Tell me about [ME 200](course_code).
+    - Provide details on [EE 440](course_code) please.
+    - What is covered in [CE 301](course_code)?
+    - Explain the content of [IE 335](course_code).
+    - Tell me about the [course ME 352](course_code).
+    - Can you provide information on [EE 311](course_code)?
+    - What topics are covered in [ENGR 297](course_code)?
+    - Tell me about [IE 335](course_code) course.
+    - Provide information on the [course code IE 336](course_code).
+    - Details about [ME 200](course_code) please.
+    - Can you tell me more about [course MSE 230](course_code)?
+    - What is covered in the course with code [NUCL 200](course_code)?
+    - Tell me about [NANO 101](course_code) course.
+    - Provide information on the [course code CVL 355](course_code).
+    - Details about [MA 165](course_code) please.
+    - What is covered in the course with code [MA 166](course_code)?
+    - Tell me about [MA 261](course_code) course.
+    - Provide information on the [course code MA 265](course_code).
+    - Details about [MA 266](course_code) please.
+    - What is covered in the course with code [MA 369](course_code)?
+    - Tell me about [CHM 115](course_code) course.
+    - Provide information on the [course code PHYS 172](course_code).
+    - Details about [PHYS 272](course_code) please.
+    - What is covered in the course with code [BIOL 110](course_code)?
+    - Tell me about [CHM 116](course_code) course.
+    - Provide information on the [course code PHYS 322](course_code).
+    - Details about [PHYS 342](course_code) please.
+    - What is covered in the course with code [BIOL 121](course_code)?
+    - Tell me about [CHM 112](course_code) course.
+    - Provide information on the [course code EAPS 125](course_code).
+    - Details about [ENGL 100](course_code) please.
+    - What topics are covered in [ENGR 297](course_code)?
+    - Tell me about [IE 335](course_code) course.
+    - Provide information on the [course code IE 336](course_code).
+    - Details about [ME 200](course_code) please.
+    - Can you tell me more about [course MSE 230](course_code)?
+    - What is covered in the course with code [NUCL 200](course_code)?
+    - Tell me about [NANO 101](course_code) course.
+    - Provide information on the [course code CVL 355](course_code).
+    - Details about [MA 165](course_code) please.
+    - What is covered in the course with code [MA 166](course_code)?
+    - Tell me about [MA 261](course_code) course.
+    - Provide information on the [course code MA 265](course_code).
+    - Details about [MA 266](course_code) please.
+    - What is covered in the course with code [MA 369](course_code)?
+    - Tell me about [CHM 115](course_code) course.
+    - Provide information on the [course code PHYS 172](course_code).
+    - Details about [PHYS 272](course_code) please.
+    - What is covered in the course with code [BIOL 110](course_code)?
+    - Tell me about [CHM 116](course_code) course.
+    - Provide information on the [course code PHYS 322](course_code).
+    - Details about [PHYS 342](course_code) please.
+    - What is covered in the course with code [BIOL 121](course_code)?
+    - Tell me about [CHM 112](course_code) course.
+    - Provide information on the [course code EAPS 125](course_code).
+    - Details about [ENGL 100](course_code) please.
+    - Tell me about [ENGL 100](course_code)
+    - [ENGL 100](course_code)
+
+- regex: course_code
+  examples: |
+    - CE 201
+    - CE 207
+    - CE 202
+    - CE 270
+    - CE 255
+    - CE 208
+    - CE 301
+    - CE 264
+    - CE 362
+    - CE 368
+    - CE 364
+    - CE 302
+    - CE 469
+    - CE 477
+    - ENGR 297
+    - IE 335
+    - IE 336
+    - ME 200
+    - MSE 230
+    - NUCL 200
+    - NANO 101
+    - CVL 355
+    - MA 165
+    - MA 166
+    - MA 261
+    - MA 265
+    - MA 266
+    - MA 369
+    - CHM 115
+    - PHYS 172
+    - PHYS 272
+    - BIOL 110
+    - CHM 116
+    - PHYS 322
+    - PHYS 342
+    - BIOL 121
+    - CHM 112
+    - EAPS 125
+    - ENGL 100
+    - (EE 201|EE 202|EE 207|EE 208|EE 255|EE 270|EE 301|EE 302|EE 311|EE 200|EE 400|EE 402|CE 477|EE 305|EE 321|EE 382|EE 438|EE 440|CE 362)
+    - (IE 300|IE 230|IE 330|IE 332|IE 335|IE 336|IE 343|IE 370|IE 383|IE 386|IE 431|IE 474|IE 486)
+    - (ME 200|ME 270|NUCL 273|ENGR 131|ENGR 132|ENGR 100|ENGR 126)
+    - (MA 165|MA 166|MA 261|MA 265|MA 266|CHM 115|PHYS 172|PHYS 241|CS 159)
+    - (ME 270|ME 274|ME 323|MSE 230|ENGR 131|ENGR 132)
+    - (ME 270|ME 274|ME 323|MSE 230|ME 290)
+    - (ME 200|ME 309|ME 315|ME 263|ME 352|ME 463)
+    - (ME 300|ME 452|ME 475)s
+# - intent: provide_grade_credits
+#   examples: |
+#     - I got [A](grade) for a course with [4](credits) credits
+#     - My grade is [B](grade) and the course has [3](credits) credits
+#     - I received an [A](grade) for a course with [5](credits) credits
+#     - My GPA is [3.5](gpa) and I got [A](grade) in a course with [4](credits) credits
+#     - GPA: [3.2](gpa), Grade: [B](grade), Credits: [3](credits)
+#     - I got [B](grade) with [3](credits) credits, GPA: [3.8](gpa)
+#     - I got [A](grade) for a course with [4](credits) credits and my GPA is [3.8](gpa)
+#     - My grade is [B](grade) and the course has [3](credits) credits; GPA: [3.0](gpa)
+#     - I received an [A](grade) for a course with [5](credits) credits, and my GPA is [3.5](gpa)
+#     - My GPA is [3.5](gpa) and I got [A](grade) in a course with [4](credits) credits
+#     - GPA: [3.2](gpa), Grade: [B](grade), Credits: [3](credits)
+#     - I got [B](grade) with [3](credits) credits, GPA: [3.8](gpa)
+#     - My grade for a 3-credit course is [C+](grade), and my GPA is [3.2](gpa)
+#     - I earned an [A-](grade) in a course worth [4](credits) credits; GPA: [3.7](gpa)
+#     - I received a [B-](grade) for a course with [2](credits) credits, GPA: [2.3](gpa)
+#     - My GPA is [3.5](gpa) and I got [B+](grade) for a 3-credit course
+#     - Grade: [C-](grade), Credits: [4](credits), GPA: [2.2](gpa)
+#     - A [D+](grade) for a 2-credit course, and my GPA is [2.1](gpa)
+#     - [F](grade) for a 4-credit course, GPA: [0.0](gpa)
+#     - I got an [A+](grade) in a course with [3](credits) credits, GPA: [4.0](gpa)
+#     - GPA is [3.9](gpa) and I got [C](grade) for a 5-credit course
+#     - I received a [D](grade) for a course with [3](credits) credits, GPA: [1.0](gpa)
+#     - Grade is [B+](grade), course has [4](credits) credits, and my GPA is [3.5](gpa)
+#     - [A](grade) in a course worth [5](credits) credits; GPA: [4.0](gpa)
+#     - [C](grade) for a 3-credit course, GPA: [2.0](gpa)
+#     - GPA: [3.0](gpa), Grade: [B-](grade), Credits: [4](credits)
+#     - I earned a [D-](grade) in a course with [2](credits) credits, GPA: [0.7](gpa)
+#     - I got a [B+](grade) for a 4-credit course, GPA: [3.3](gpa)
+#     - GPA: [3.6](gpa), I got a [C+](grade) for a 3-credit course
+#     - [D+](grade) in a course with [3](credits) credits, GPA: [1.3](gpa)
+#     - My GPA is [3.1](gpa), I received a [C-](grade) for a 4-credit course
+#     - [F](grade) in a course with [5](credits) credits, and my GPA is [0.0](gpa)
+#     - I got an [A](grade) in a course with [3](credits) credits, GPA: [4.0](gpa)
+#     - [B-](grade) for a 2-credit course, GPA: [2.7](gpa)
+#     - I earned a [C+](grade) for a 4-credit course, GPA: [2.3](gpa)
+#     - I received a [D](grade) for a course worth [3](credits) credits, GPA: [1.0](gpa)
+#     - GPA: [2.8](gpa), Grade: [C](grade), Credits: [4](credits)
+#     - I got a [D+](grade) for a 3-credit course, GPA: [1.3](gpa)
+#     - GPA: [3.2](gpa), Grade: [A-](grade), Credits: [4](credits)
+#     - [F](grade) for a 5-credit course, GPA: [0.0](gpa)
+#     - I got a [B](grade) for a 3-credit course, GPA: [3.0](gpa)
+#     - GPA: [3.7](gpa), Grade: [B+](grade), Credits: [4](credits)
+#     - [C-](grade) for a course worth [2](credits) credits,
+#     - My GPA is [3.5](gpa) and I got [A](grade) in a course with [4](credits) credits
+#     - My GPA is [3.2](gpa), and I received a [B](grade) for a course with [3](credits) credits
+#     - I earned an [A-](grade) with [5](credits) credits. My current GPA is [3.7](gpa).
+#     - I got a [B+](grade) in a course worth [3](credits) credits. My GPA is [3.6](gpa).
+#     - GPA: [3.2](gpa), Grade: [B](grade), Credits: [3](credits)
+#     - I received an [A](grade) for a course with [4](credits) credits. My GPA is [3.9](gpa).
+#     - I earned a [C](grade) for a 3-credit course. My GPA is [2.8](gpa).
+#     - GPA: [3.5](gpa), Grade: [B+](grade), Credits: [4](credits)
+#     - [A](grade) in a course worth [5](credits) credits. My GPA is [4.0](gpa).
+#     - I received a [D](grade) for a course with [3](credits) credits. GPA is [2.0](gpa).
+#     - [C+](grade) for a 2-credit course. GPA: [2.3](gpa).
+#     - GPA is [3.6](gpa). I got a [B-](grade) in a course with [4](credits) credits.
+#     - [B](grade) in a course with [3](credits) credits. GPA: [3.3](gpa).
+#     - My GPA is [2.7](gpa), and I got a [C-](grade) for a 4-credit course.
+#     - [A+](grade) for a 3-credit course. GPA: [3.8](gpa).
+#     - my gpa is [3.9](gpa) and my grade[A](grade) credits [4](credits)
+#     - My GPA is [3.5](gpa) and I received an [A](grade) for a course with [4](credits) credits.
+#     - I got a [B+](grade) in a course with [3](credits) credits. My GPA is [3.6](gpa).
+#     - GPA: [3.2](gpa), Grade: [B](grade), Credits: [3](credits).
+#     - I earned a [C-](grade) for a 3-credit course. My GPA is [2.8](gpa).
+#     - I received a [D](grade) for a course with [3](credits) credits. My GPA is [2.0](gpa).
+#     - GPA is [3.6](gpa). I got a [B-](grade) in a course with [4](credits) credits.
+#     - [A](grade) in a course with [5](credits) credits. My GPA is [4.0](gpa).
+#     - [B](grade) in a course with [3](credits) credits. GPA: [3.3](gpa).
+#     - My GPA is [2.7](gpa), and I got a [C-](grade) for a 4-credit course.
+#     - [A+](grade) for a 3-credit course. GPA: [3.8](gpa).
+#     - I received a [C+](grade) for a course with [2](credits) credits. GPA: [2.3](gpa).
+#     - GPA: [3.5](gpa). I earned a [B+](grade) in a course with [4](credits) credits.
+#     - I got a [D](grade) for a 3-credit course. My GPA is [2.2](gpa).
+#     - [C](grade) for a course with [4](credits) credits. GPA: [2.5](gpa).
+#     - My GPA is [3.9](gpa), and I received an [A-](grade) for a course with [3](credits) credits.
+#     - I earned a [B](grade) in a course with [4](credits) credits. GPA: [3.6](gpa).
+#     - [A](grade) for a 2-credit course. GPA is [3.7](gpa).
+#     - GPA is [3.1](gpa). I got a [C](grade) for a course with [3](credits) credits.
+#     - I received a [B-](grade) for a 5-credit course. My GPA is [3.2](gpa).
+#     - [D+](grade) for a 4-credit course. GPA: [2.6](gpa).
+#     - I earned a [C-](grade) for a 3-credit course. My GPA is [2.4](gpa).
+#     - My GPA is [3.5](gpa) and I got an [A](grade) in a course with [4](credits) credits.
+#     - I received a [B+](grade) for a 3-credit course. My GPA is [3.6](gpa).
+#     - GPA: [3.2](gpa), Grade: [B](grade), Credits: [3](credits).
+#     - I got a [C-](grade) in a course worth [3](credits) credits. GPA is [2.8](gpa).
+#     - I received a [D](grade) for a course with [3](credits) credits. My GPA is [2.0](gpa).
+#     - GPA is [3.6](gpa). I got a [B-](grade) in a course with [4](credits) credits.
+#     - [A](grade) for a 5-credit course. My GPA is [4.0](gpa).
+#     - I earned a [B](grade) in a course with [3](credits) credits. GPA: [3.3](gpa).
+#     - My GPA is [2.7](gpa), and I received a [C-](grade) for a 4-credit course.
+#     - [A+](grade) for a 3-credit course. GPA: [3.8](gpa).
+#     - GPA: [3.5](gpa). I got a [B+](grade) for a 4-credit course.
+#     - I received a [D](grade) for a 3-credit course. My GPA is [2.2](gpa).
+#     - [C](grade) for a 4-credit course. GPA: [2.5](gpa).
+#     - My GPA is [3.9](gpa), and I earned a [B](grade) in a course with [4](credits) credits.
+#     - [A](grade) for a 2-credit course. GPA is [3.7](gpa).
+#     - GPA is [3.1](gpa). I got a [C](grade) for a course with [3](credits) credits.
+#     - I received a [B-](grade) for a 5-credit course. My GPA is [3.2](gpa).
+#     - [D+](grade) for a 4-credit course. GPA: [2.6](gpa).
+#     - I earned a [C-](grade) for a 3-credit course. My GPA is [2.4](gpa).
+#     - I got an [A-](grade) in a course with [4](credits) credits. My GPA is [3.5](gpa).
+#     - [F](grade) for a 3-credit course. GPA: [1.0](gpa).
+#     - GPA is [3.0](gpa). I got a [B](grade) for a 4-credit course.
+#     - I received a [C+](grade) for a course with [3](credits) credits. My GPA is [2.8](gpa).
+#     - [D-](grade) for a 2-credit course. GPA: [1.7](gpa).
+#     - I earned an [A+](grade) in a course with [5](credits) credits. My GPA is [4.0](gpa).
+#     - I got a [B-](grade) for a course with [4](credits) credits. GPA is [3.4](gpa).
+#     - My GPA is [3.5](gpa), and I received a [C](grade) for a 3-credit course.
+#     - GPA: [2.9](gpa). I earned a [B+](grade) in a course with [3](credits) credits.
+#     - I received a [D+](grade) for a 4-credit course. My GPA is [2.3](gpa).
+#     - [A](grade) for a 3-credit course. GPA: [3.7](gpa).
+#     - GPA is [3.2](gpa). I got a [C-](grade) for a 2-credit course.
+#     - my gpa is[3](gpa) and i got [A](grade) [4](credits)
+#     - my gpa is[3](gpa) and i got [A](grade)
+#     - my gpa is [3](gpa) and i got [A](grade) [4](credits)
+#     - I earned [A](grade) in a course worth [4](credits), resulting in a GPA of [3](gpa).
+#     - My GPA is [3](gpa), and I received an [A](grade) for a course of [4](credits).
+#     - [3](gpa) is my GPA, and I achieved an [A](grade) in a course with [4](credits).
+#     - With a GPA of [3](gpa), I attained an [A](grade) in a [4](credits) course.
+#     - I got [A](grade) in a course that was [4](credits), making my GPA [3](gpa).
+#     - My GPA stands at [3](gpa) due to earning an [A](grade) in a [4](credits) course.
+#     - Earning an [A](grade) in a [4](credits) course brought my GPA to [3](gpa).
+#     - Achieving an [A](grade) in a course worth [4](credits) contributed to my GPA of [3](gpa).
+#     - [3](gpa) is my GPA, with an [A](grade) achieved in a course of [4](credits).
+
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+#1
+- intent: AUM_student_ID
+  examples: |
+    - What should I do if I lose my ID?
+    - What steps should I take if I lose my ID?
+    - What is the procedure for dealing with a lost ID?
+    - How do I report a lost ID?
+    - What should I do if my ID card goes missing?
+
+   
+#2
+- intent: AUM_email_for_the_university_student
+  examples: |
+    - Is there any way to communicate between the student and the university?
+    - How can students communicate with the university?
+    - Is there a method for students to contact the university?
+    - What options are available for students to reach out to the university?
+    - How can students get in touch with university officials or staff?
+#3
+- intent: AUM_change_email_password
+  examples: |
+    - How can I change the password for my email?
+    - What is the process for changing my email password?
+    - How do I go about changing my email password?
+    - Can you explain how to update my email password?
+    - What steps should I take to change my email password?
+#4
+- intent: class_standing_freshman
+  examples: |
+    - If I'm a freshman,what is the total number of hours i have earned and the minimum GPA required?
+    - As a freshman, what is the total number of credit hours I need to have earned, and what is the minimum GPA required?
+    - What is the required minimum GPA and total earned credit hours for freshmen students?
+    - Could you provide information on the minimum GPA requirement and total earned credit hours for freshmen?
+    - For freshmen students, what are the required minimum GPA and total earned credit hours?
+
+- intent: class_standing_sophomore
+  examples: |
+    - If I'm a sophomore,what is the total number of hours i have earned and the minimum GPA required?
+    - As a sophomore, what is the total number of credit hours I need to have earned, and what is the minimum GPA required?
+    - What is the required minimum GPA and total earned credit hours for sophomore students?
+    - Could you provide information on the minimum GPA requirement and total earned credit hours for sophomores?
+    - For sophomore students, what are the required minimum GPA and total earned credit hours?
+
+
+- intent: class_standing_junior
+  examples: |
+    - If I'm a junior,what is the total number of hours i have earned and the minimum GPA required?
+    - As a junior, what is the total number of credit hours I need to have earned, and what is the minimum GPA required?
+    - What is the required minimum GPA and total earned credit hours for junior students?
+    - Could you provide information on the minimum GPA requirement and total earned credit hours for juniors?
+    - For junior students, what are the required minimum GPA and total earned credit hours?
+
+
+- intent: class_standing_senior
+  examples: |
+    - If I'm a senior,what is the total number of hours i have earned and the minimum GPA required?
+    - As a senior, what is the total number of credit hours I need to have earned, and what is the minimum GPA required?
+    - What is the required minimum GPA and total earned credit hours for senior students?
+    - Could you provide information on the minimum GPA requirement and total earned credit hours for seniors?
+    - For senior students, what are the required minimum GPA and total earned credit hours?
+
+
+#5
+- intent: graduation_with_honors
+  examples: |
+    - How can I graduate with honors?
+    - Are there criteria for graduating with honors?
+    - Can I graduate with honors if I get a grade less than C?
+    - What is the cumulative GPA required to graduate with honors?
+    - If I committed conduct violation, can I graduate with honors?
+#6
+- intent: about_AUM
+  examples: |
+    - I want to know more about the AUM?
+    - How many colleges does the AUM include?
+    - What distinguishes the AUM?
+#7
+- intent: changing_major_from_business_to_engineering
+  examples: |
+    - What are the requirements for changing majors from business administration to engineering?
+    - What are the criteria for transferring majors from business administration to engineering?
+    - What requirements do I need to meet to switch from business administration to engineering?
+    - Can you outline the prerequisites for changing majors from business administration to engineering?
+    - What steps do I need to take to transition from business administration to engineering as my major?
+ 
+#8
+- intent: writing_lab
+  examples: |
+    - What is the writing lab at AUM?
+    - Is the writing lab for all students?
+    - Does the writing lab help me if I have a presentation or other projects?
+    - How can I contact the writing lab?
+#9
+- intent: AUM_registration_way
+  examples: |
+    - How can I register courses?
+    - What is the process for registering for courses?
+    - How do I go about enrolling in courses?
+    - Can you explain the procedure for course registration?
+    - What steps do I need to take to register for courses?
+
+
+- intent: AUM_registration_min
+  examples: |
+    - What is the minimum credits that I must register for the course?
+    - What is the minimum number of credits required for course registration?
+    - How many credits must I register for each course?
+    - Can you provide information on the minimum credit requirement for course registration?
+    - What is the minimum credit load for registering in a course?
+
+- intent: AUM_registration_max
+  examples: | 
+    - What is the maximum number of credits allowed for course registration?
+    - How many credits can I register for in each course?
+    - Can you provide information on the maximum credit limit for course registration?
+    - What is the maximum credit load permitted for registering in a course?
+    - What is the maximum credits that I must register for the course? 
+
+- intent: AUM_add_drop
+  examples: |  
+    - When can I add or drop the course?
+    - What are the deadlines for adding or dropping courses?
+    - When is the timeframe for adding or dropping courses?
+    - Can you provide information on the dates for adding or dropping courses?
+    - When are students allowed to add or drop courses?
+
+#10
+- intent: final_exam_schedule
+  examples: |
+    - how can i check my final exam schedule?
+    - How can I view my final exam schedule?
+    - What is the process for checking my final exam timetable?
+    - Can you provide information on how to access my final exam schedule?
+    - How do I find out when my final exams are scheduled?
+
+- intent: final_exam_missed
+  examples: |
+    - What should I do if I miss the final exam?
+    - What are the steps to take if I am unable to attend the final exam?
+    - Can you provide guidance on what to do in case of missing the final exam?
+    - How should I proceed if I am unable to sit for the final exam?
+    - i want to know what to do if i miss the final exam?
+
+- intent: final_exam_paperwork
+  examples: |    
+    - where can i submit the paperwork to apply for final makeup?
+    - Where do I submit the paperwork to apply for a makeup final exam?
+    - What is the location for submitting paperwork to request a makeup final exam?
+    - Can you provide information on where to turn in paperwork for applying for a makeup final exam?
+    - Where should I go to submit the necessary paperwork for a makeup final exam application?
+
+
+- intent: final_exam_late
+  examples: | 
+    - can i enter the final exam if iam late?
+    - Am I allowed to enter the final exam if I am late?
+    - What happens if I arrive late for the final exam?
+    - Can I still take the final exam if I am delayed in arriving?
+    - Is there a policy for students who are late to the final exam?
+
+#13    
+- intent: ATM_service
+  examples: |
+    - Is there an ATM service at the university?
+    - Does the university have ATM services available?
+    - Is there an ATM facility on campus?
+    - Can students access ATM services at the university?
+    - Are there ATMs located on the university campus for student use?
+#14
+- intent: tawteen_career_center
+  examples: |
+    - What services does the Tawteen Career Center offer to help students?
+    - What is the role of the Tawteen Career Center at the university?
+    - What role does the Tawteen Career Center play at AUM?
+    - What is the purpose of the Tawteen Career Center at AUM?
+    - Can you explain the function of the Tawteen Career Center at AUM?
+    - What are the responsibilities of the Tawteen Career Center at AUM?
+    
+
+#16
+- intent: AUM_major
+  examples: |
+    - What are the majors available at the university?
+    - What are the main majors offered by the university?
+    - What majors can students pursue at the university?
+    - What degree programs are offered at the university?
+    - Can you list the available majors at the university?
+    - What fields of study are available for students at the university?
+    
+ 
+#18
+- intent: electrical_engineering
+  examples: |
+    - What kind of courses will I take in an electrical engineering program?
+    - What are the core subjects in electrical engineering?
+    - Can you provide an overview of the curriculum for electrical engineering students?
+    - Which specific topics are covered in electrical engineering courses?
+    - What are the fundamental courses included in the electrical engineering program?
+    - Could you give me an idea of the coursework involved in studying electrical engineering?
+    - What are some of the main areas of study in electrical engineering?
+    - Can you outline the main course requirements for electrical engineering majors?
+    - I'm interested in learning more about the courses available in electrical engineering.
+#19
+- intent: clinic_services
+  examples: |
+    - which services are offered at the central clinic located on the AUM Campus?
+    - what types of services does the central clinic at AUM Campus deliver?
+    - what are the services available at the central clinic situated on the AUM Campus?
+    - could you outline the services provided by the central clinic on the AUM Campus?
+    - what kind of healthcare services does the central clinic offer at the AUM Campus?
+    - what services does the central clinic on AUM Campus provide?
+#20
+- intent: clinic_location
+  examples: |
+    - Where exactly can the AUM Central Clinic be found?
+    - What is the precise address of the Central Clinic on the AUM campus?
+    - Where is the physical location of the Central Clinic within the AUM campus?
+    - Can you provide details about the whereabouts of the AUM Central Clinic?
+#21
+- intent: sports_center
+  examples: |
+    - What services does the Sports Center at AUM provide?
+    - What amenities and services are available at the Sports Center on the AUM campus?
+    - Could you outline the offerings provided by the Sports Center at AUM?
+    - What types of services can one expect from the Sports Center located at AUM?
+    - What facilities and services are offered at the AUM Sports Center?
+    - What specific services are available for students at the AUM Sports Center?
+#22
+- intent: it_services
+  examples: |
+    - What IT services are provided to students at AUM?
+    - What technological services are extended to students enrolled at AUM?    
+    - Could you elaborate on the IT services accessible to students at AUM?    
+    - What specific IT provisions are offered to students attending AUM?
+    - What are the available IT support services catered to students of AUM?
+    - What IT resources and assistance are provided for students at AUM?
+#23  
+- intent: aum_website
+  examples: |
+    - What information does the AUM website provide to students?
+    - What kind of information does the AUM website offer to its students?
+    - Could you specify the information available to students on the AUM website?
+    - What types of student-oriented information can be found on the AUM website?
+    - What specific resources and details are provided for students on the AUM website?
+    - What kind of student support and resources does the AUM website offer?
+#24
+- intent: portal_purpose
+  examples: |
+    - What is the purpose of the MyAUM portal?
+    - What function does the MyAUM portal fulfill?
+    - What is the objective of implementing the MyAUM portal?
+    - What role does the MyAUM portal play?
+    - What is the intent behind the creation of the MyAUM portal?
+    - What does the MyAUM portal aim to achieve?
+#25
+- intent: aum_Moodle
+  examples: |
+    - What does Moodle entail?
+    - What is the function of Moodle?
+    - What is Moodle?
+    - How would you define Moodle?    
+    - What purpose does Moodle serve?
+    - What is the role of Moodle?
+#26
+- intent: aum_banner
+  examples: |
+    - How is Banner utilized at AUM?
+    - What functions does Banner serve at AUM?
+    - What is the purpose of Banner at AUM?
+    - What is Banner used for?
+#27   
+- intent: aum_communicate
+  examples: |
+    - How does AUM communicate important information to students?
+    - By what means does AUM relay crucial information to students?
+    - How does AUM disseminate important information to students?
+    - What methods does AUM utilize to communicate essential information to students?
+    - How does AUM ensure students receive important information?
+    - Through what channels does AUM convey significant information to students?
+#28   
+- intent: parking_services
+  examples: |
+    - What parking services are available to students at AUM?
+    - What parking facilities are provided to students at AUM?
+    - What parking options are available to students at AUM?
+    - How does AUM accommodate student parking?
+    - What parking services does AUM extend to students?
+    - What are the student parking arrangements at AUM?
+#29
+- intent: students_identified
+  examples: |
+    - How are students identified at AUM?
+    - How are students distinguished at AUM?
+    - What methods does AUM use to identify students?
+    - By what means are students recognized at AUM?
+    - What identification processes are in place for students at AUM?
+    - How does AUM differentiate its students?
+#30
+- intent: tutoring_center
+  examples: |
+    - What services are offered by the Tutoring Center at AUM?
+    - What assistance does the Tutoring Center offer at AUM?
+    - What services does the Tutoring Center provide at AUM?
+    - How does the Tutoring Center support students at AUM?
+    - What resources are available at the Tutoring Center at AUM?
+    - What help can students receive from the Tutoring Center at AUM?
+#31
+- intent: innovation_center
+  examples: |
+   - What are the Innovation Centers at AUM?
+   - What do the Innovation Centers at AUM entail?
+   - How are the Innovation Centers defined at AUM?
+   - What services are provided by the Innovation Centers at AUM?
+   - What is the function of the Innovation Centers at AUM?
+   - What purpose do the Innovation Centers serve at AUM?
+
+#33
+- intent: AUM_calendar
+  examples: |
+    - What is the academic calendar for the university, including important dates such as the start and end of each semester?
+    - How do I access the university's online academic calendar and where can I find information about class schedules?
+    - How can I stay updated on any changes or updates to the university calendar?
+    - calender
+    - AUM calender 
+
+#34
+- intent: AUM_subject
+  examples: |
+    - What subjects are offered in the AUM program?
+    - Can you tell me about the courses available at AUM?
+    - I'm interested in learning more about the subjects taught at AUM.
+    - What are the major subjects available at AUM?
+    - Could you provide information about the academic disciplines at AUM?
+    - Tell me about the curriculum at AUM.
+    - What kind of subjects can I expect to study if I enroll at AUM?
+    - Can you list some of the subjects covered in the AUM curriculum?
+    - I'd like to know more about the subjects I can choose from at AUM.
+#35
+- intent: grading_system
+  examples: |
+   - How is GPA calculated at the university?
+   - How is GPA determined for students at the university?
+   - What method does the university use to compute GPA?
+
+#37
+- intent: business_major
+  examples: |
+    - What are the essential courses needed for the business major?
+    - Can you list the core courses necessary for students in the business major?
+    - What are the key courses that business majors must take?
+    - Could you outline the foundational courses required for the business major?
+    - Which courses are considered fundamental for students majoring in business?
+    - What are the primary courses that business majors are expected to complete?
+    - Can you detail the core curriculum for students pursuing a business major?
+    - What courses are indispensable for those seeking a degree in business?
+    - Could you summarize the core subjects students need to study in the business major?
+    - What specific courses form the backbone of the business major curriculum?
+#38$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+- intent: attendance_dismissal_request
+  examples: |
+    - How do I submit an attendance dismissal request to the university?
+    - What are the requirements for requesting attendance dismissal?
+    - Where can I find the form for requesting attendance dismissal?
+    - Is there a deadline to submit a request to withdraw from attendance?
+    - Can I submit medical documents as part of my absence request?
+    - How will I be notified of the status of my absence request?
+    - attendance dismissal
+    - absence
+#39
+- intent: medical_examination_submission
+  examples: |
+    - How can I submit my medical examination results to the university?
+    - What is the procedure for submitting my medical examination results to the university?
+    - How do I go about sending my medical test results to the university?
+    - Can you provide guidance on how to submit my medical examination results to the university?
+    - What steps do I need to follow to ensure my medical test results are submitted to the university?
+
+
+
+#40
+- intent: lost_item_on_campus
+  examples: |
+    - How do I report a lost item on campus?
+    - Where should I go if I've lost something on campus?
+    - What information should I provide when reporting a lost item?
+    - What should I do if I find a lost item on campus?
+    - Is there a lost and found office on campus?
+    - Can I report a lost item online?
+    - Who should I contact if I lose something in a specific building?
+    - Are there designated areas for lost items on campus?
+    - How long are lost items kept before being disposed of?
+    - Can I check if my lost item has been found online?
+
+#41
+# Advising Services
+- intent: advising_services
+  examples: |
+    - What services does the advising office offer?
+    - Can you tell me about the advising services available?
+    - What kind of assistance can I get from the advising office?
+    - Are there career planning services provided by the advising office?
+    - Does the advising office help with course selection?
+    - How can the advising office assist with academic planning?
+    - Are there workshops or seminars offered by the advising office?
+    - Can the advising office help with creating a graduation plan?
+    - What resources does the advising office provide for academic success?
+    - Are there advisors specialized in specific majors or programs?
+    - advising services
+
+# Schedule Advising Appointment
+- intent: schedule_advising_appointment
+  examples: |
+    - How can I schedule an appointment with my advisor?
+    - What is the process to book an advising appointment?
+    - Can you help me set up a meeting with an advisor?
+    - Is there an online portal to schedule advising appointments?
+    - When is the advising office open for appointments?
+    - Can I schedule a same-day advising appointment?
+    - Are walk-in advising sessions available?
+    - How far in advance do I need to schedule an advising appointment?
+    - Are there options for virtual advising appointments?
+    - What should I bring to my advising appointment?
+    - advising appointment
+#43
+# Advising Hours
+- intent: advising_hours
+  examples: |
+    - When is the advising office open?
+    - What are the office hours for the advising department?
+    - What time can I visit the advising office?
+    - What are the advising hours?
+    - When are the advisor hours?
+    - Can I see an advisor during lunchtime?
+    - Are there extended advising hours during registration periods?
+    - Are advising hours different during holidays or breaks?
+    - Do advising hours vary between different departments?
+    - Is the advising office open on weekends?
+
+# Reset Password
+- intent: reset_password
+  examples: |
+    - How do I reset my password if I've forgotten it?
+    - What should I do if I don't receive the password reset email or SMS?
+    - I forgot my password. How can I reset it?
+    - Is there a way to recover my password if I've lost it?
+    - Can you guide me through the process of resetting my password?
+    - What steps do I need to take to reset my password?
+    - How long does it take to reset a password?
+    - Are there any security measures when resetting a password?
+    - Can I reset my password without logging in?
+    - What happens to my old password when I reset it?
+
+# Library Code of Conduct
+- intent: library_code_of_conduct
+  examples: |
+    - What are the rules and guidelines for behavior in the library?
+    - Are there any particular guidelines I need to follow when using the library?
+    - What are the library's policies?
+    - Can I eat or drink in the library?
+    - Is talking allowed in the library?
+    - Are there designated quiet areas in the library?
+    - How should I handle borrowed materials from the library?
+    - What are the consequences of violating library rules?
+    - Can I use my phone in the library?
+    - Are there specific rules for using library computers or printers?
+
+#46
+# Intent for providing information about services offered by the student affairs department
+- intent: student_affairs_services_info
+  examples: |
+    - What services does the student affairs department provide?
+    - Can you tell me about the services offered by student affairs?
+    - What assistance can I get from the student affairs department?
+    - What kind of support does student affairs offer?
+    - Can you explain the role of the student affairs department?
+    - What resources does student affairs provide for students?
+    - How can student affairs help me with my academic journey?
+    - Are there counseling services available through student affairs?
+    - Does student affairs assist with career development?
+    - What clubs and activities does student affairs oversee?
+
+# Intent for providing information about the location of the student affairs department
+- intent: student_affairs_location_info
+  examples: |
+    - Where is the student affairs department located?
+    - What is the physical address of student affairs?
+    - Can you tell me where to find the student affairs department?
+    - What building houses the student affairs office?
+    - How do I get to the student affairs department?
+    - What floor is student affairs located on?
+    - Is the student affairs department near the library?
+    - Can you give me directions to student affairs?
+    - Where on campus can I find student affairs?
+    - What landmarks are near the student affairs office?
+    - where is student affairs
+# Intent for providing information about the office hours of the student affairs department
+- intent: student_affairs_office_hours_info
+  examples: |
+    - What are the office hours for student affairs?
+    - When is student affairs open?
+    - What are the operating hours of the student affairs department?
+    - What time does student affairs close?
+    - Are there specific hours I can visit student affairs?
+    - When can I meet with someone from student affairs?
+    - What days is student affairs available?
+    - What is the schedule for student affairs?
+    - Are there any extended hours for student affairs?
+    - What time does student affairs open on weekends?
+
+# Intent for providing information about contacting the student affairs office
+- intent: student_affairs_contact_info
+  examples: |
+    - How can I contact student affairs?
+    - What is the phone number for student affairs?
+    - Can I email student affairs?
+    - Is there an email address for student affairs?
+    - How do I reach someone in student affairs?
+    - Can I schedule an appointment with student affairs?
+    - What is the best way to get in touch with student affairs?
+    - Can I visit student affairs in person?
+    - What are the contact options for student affairs?
+    - Who should I contact for assistance from student affairs?
+
+#47
+- intent: mobile_app_class_schedule
+  examples: |
+    - How do I check my class schedule using the mobile app?
+    - Can I view my classes on the university's mobile app?
+    - Is there a feature on the mobile app to check my schedule?
+    - How can I access my class timetable through the mobile app?
+    - What's the easiest way to see my class schedule on my phone?
+    - Can I use the mobile app to check when my classes are?
+    - Does the university app display my class schedule?
+    - How do I find my upcoming classes on the mobile app?
+    - What's the process for checking my timetable with the mobile app?
+    - Can I see my class schedule on the university's mobile application?
+
+- intent: mobile_app_campus_map
+  examples: |
+    - Does the university's mobile app have a campus map feature?
+    - How do I use the mobile app to navigate around campus?
+    - Can I find my way on campus using the mobile app's map?
+    - Is there a map function on the university app for finding locations?
+    - Where can I access the campus map on the mobile app?
+    - Does the mobile app provide directions around campus?
+    - How do I get the campus map on my phone?
+    - Can I use the mobile app to locate buildings on campus?
+    - What's the easiest way to find a location on campus with the mobile app?
+    - Is there a feature on the university app for locating buildings?
+
+- intent: mobile_app_notifications
+  examples: |
+    - Can I receive university announcements through the mobile app?
+    - How do I get notified about important updates on the university app?
+    - Are there alerts for university news on the mobile app?
+    - Can I receive notifications about campus events through the app?
+    - How do I sign up for notifications on the university's mobile app?
+    - Is there a way to stay informed about university updates with the mobile app?
+    - Can the mobile app send me alerts for university announcements?
+    - Are there push notifications for campus news on the mobile app?
+    - How do I enable notifications for important university information?
+    - Can I customize the notifications I receive on the university app?
+
+- intent: mobile_app_library_resources
+  examples: |
+    - Does the university app give access to library resources?
+    - Can I use the mobile app to search for books in the library?
+    - How do I find library materials using the university's mobile app?
+    - Are there features on the mobile app for accessing journals and databases?
+    - Can I borrow books from the library through the university app?
+    - How do I access digital resources from the library on my phone?
+    - Does the mobile app provide access to online library collections?
+    - Are there tools on the university app for research and study?
+    - Can I check out library materials using the mobile app?
+    - How do I access the library's digital resources on the mobile app?
+#48
+- intent: midterm_and_final_exams_guidelines
+  examples: |
+    - What are the guidelines for scheduling midterm exams?
+    - What are the guidelines for scheduling final exams?
+    - Are there guidelines for the exam?
+    - Guidelines for midterm exams?
+    - Final exam scheduling rules?
+    - Exam guidelines?
+    - Midterm exam scheduling instructions?
+    - Final exam regulations?
+    - Rules for midterm exams?
+    - Guidelines for final exams?
+
+#49
+- intent: civil_engineering_credits_required
+  examples: |
+    - What is the total minimum credits needed for a civil engineering degree?
+    - How many credits do I need to complete for graduation in civil engineering?
+    - What is the credit requirement for civil engineering majors?
+    - How many credits are required to earn a bachelor's degree in civil engineering?
+    - What is the minimum credit count for graduating with a civil engineering degree?
+    - What is the credit threshold for civil engineering students?
+    - What is the total credit requirement for civil engineering undergraduates?
+    - How many credits are compulsory for civil engineering graduates?
+    - What is the minimum number of credits for a civil engineering diploma?
+    - Can you specify the credit quota for civil engineering majors?
+    - cvle credit
+
+- intent: civil_engineering_core_courses
+  examples: |
+    - What are the key courses in the civil engineering curriculum?
+    - Can you outline the main subjects taught in civil engineering core courses?
+    - What fundamental topics are covered in civil engineering core subjects?
+    - Which courses are considered foundational for civil engineering students?
+    - What are the primary areas of study in civil engineering core classes?
+    - Can you list the essential disciplines covered in civil engineering core curriculum?
+    - Which engineering fields are included in civil engineering core courses?
+    - What are the core subjects that civil engineering undergraduates must take?
+    - What are the main components of the civil engineering course curriculum?
+    - Can you identify the core modules within the civil engineering program?
+
+- intent: civil_engineering_student_clubs
+  examples: |
+    - Are there any civil engineering student organizations or clubs on campus?
+    - What extracurricular opportunities exist for civil engineering students?
+    - Are there clubs specifically tailored for civil engineering majors?
+    - Which student associations are available for civil engineering undergraduates?
+    - What clubs are dedicated to civil engineering students' interests?
+    - Are there any civil engineering societies or groups I can join?
+    - Can you recommend any civil engineering student clubs?
+    - What student organizations focus on civil engineering activities?
+    - Are there networking opportunities for civil engineering students outside of class?
+    - What are the options for civil engineering students to engage in campus activities?
+
+- intent: civil_engineering_website
+  examples: |
+    - Where can I find information about civil engineering on the university website?
+    - Is there a dedicated webpage for civil engineering programs on the university site?
+    - Can you provide the URL for the civil engineering section of the university website?
+    - How do I access details about civil engineering programs on the university site?
+    - Where can I locate information about the civil engineering department online?
+    - Is there an online resource for learning about civil engineering programs?
+    - Can you direct me to the civil engineering page on the university's official site?
+    - How can I find information about civil engineering studies on the university website?
+    - Is there a specific webpage for civil engineering majors on the university's online portal?
+    - Can you guide me to the section of the university website that covers civil engineering? 
+#50
+- intent: industrial_engineering_credits_required
+  examples: |
+      - What is the total minimum credit requirement for an industrial engineering degree?
+      - How many credits must I complete to earn a degree in industrial engineering?
+      - What is the credit threshold for industrial engineering majors?
+      - Can you tell me the minimum number of credits needed for an industrial engineering degree?
+      - What is the total credit count required for graduation in industrial engineering?
+      - How many credits do I need to graduate with an industrial engineering major?
+      - What is the credit quota for industrial engineering students?
+      - Can you specify the credit requirement for industrial engineering undergraduates?
+      - What is the minimum credit requirement for a degree in industrial engineering?
+      - How many credits are compulsory for industrial engineering students?
+      - ie credits
+
+- intent: industrial_engineering_website
+  examples: |
+      - Where can I locate information about industrial engineering programs on the university's website?
+      - Is there a dedicated webpage for industrial engineering programs on the university site?
+      - How can I access details about industrial engineering studies on the university's website?
+      - Where on the university website can I find information about industrial engineering?
+      - How do I navigate to the section of the university website that covers industrial engineering?
+      - Is there an online resource for learning about industrial engineering programs?
+      - Can you direct me to the webpage that provides information about industrial engineering at the university?
+      - How can I find details about industrial engineering programs online?
+      - Is there a specific section of the university website dedicated to industrial engineering?
+      - Where can I find comprehensive information about industrial engineering programs online?
+
+- intent: industrial_engineering_core_courses
+  examples: |
+      - What are the primary core courses offered in the industrial engineering curriculum?
+      - Can you list the core subjects taught in industrial engineering courses?
+      - Which courses are fundamental in the industrial engineering curriculum?
+      - What are the key subjects covered in industrial engineering core classes?
+      - Can you outline the essential topics in industrial engineering core courses?
+      - What disciplines are included in the core curriculum of industrial engineering?
+      - Can you provide an overview of the core modules within industrial engineering?
+      - Which subjects are considered fundamental for industrial engineering students?
+      - What are the main components of the industrial engineering course curriculum?
+      - Can you specify the core modules that industrial engineering undergraduates must take?
+#51
+- intent: chemical_engineering_credits_required
+  examples: |
+    - What is the total minimum credit requirement for a chemical engineering degree?
+    - How many credits are needed to complete a chemical engineering degree?
+    - What is the credit quota for chemical engineering students?
+    - How many credits do I need to graduate with a chemical engineering major?
+    - What is the minimum credit requirement for a chemical engineering diploma?
+    - How many credits must I earn to obtain a degree in chemical engineering?
+    - What is the credit threshold for graduating with a chemical engineering degree?
+    - How many credits should I complete for a chemical engineering bachelor's degree?
+    - What is the credit count for chemical engineering undergraduates?
+    - Can you specify the minimum credit requirement for chemical engineering majors?
+    - che credits
+
+- intent: chemical_engineering_website
+  examples: |
+    - Where can I find information about chemical engineering programs on the university website?
+    - Is there a dedicated webpage for chemical engineering on the university site?
+    - How do I navigate to the chemical engineering section of the university website?
+    - Can you provide the URL for the chemical engineering page on the university website?
+    - Where can I access details about chemical engineering studies on the university website?
+    - Is there an online resource for learning about chemical engineering programs?
+    - How can I learn more about chemical engineering programs through the university's website?
+    - Can you guide me to the section of the university website that covers chemical engineering?
+    - How do I find information about chemical engineering studies on the university's online portal?
+    - Is there a specific webpage for chemical engineering majors on the university's website?
+
+- intent: chemical_engineering_core_courses
+  examples: |
+    - What are the primary courses included in the chemical engineering curriculum?
+    - Can you list the core subjects taught in the chemical engineering program?
+    - What are the fundamental topics covered in chemical engineering core courses?
+    - Which courses are considered essential for chemical engineering students?
+    - Can you outline the main components of the chemical engineering course curriculum?
+    - What are the key disciplines covered in chemical engineering core classes?
+    - Can you provide an overview of the core modules within the chemical engineering program?
+    - Which engineering fields are included in chemical engineering core courses?
+    - What are the main subjects that chemical engineering undergraduates must study?
+    - Can you identify the core modules within the chemical engineering curriculum?
+    - what course in chemical
+    - what cover in chemical engineering
+- intent: mechanical_engineering_credits_required
+  examples: |
+    - What is the total minimum credit requirement for a mechanical engineering degree?
+    - How many credits are required to graduate with a degree in mechanical engineering?
+    - What is the credit requirement for mechanical engineering majors?
+    - How many credits do I need to earn for a mechanical engineering degree?
+    - What is the minimum credit threshold for a mechanical engineering diploma?
+    - How many credits are necessary for completing a degree in mechanical engineering?
+    - What is the credit quota for mechanical engineering undergraduates?
+    - How many credits are mandatory for obtaining a mechanical engineering degree?
+    - What is the total credit count for mechanical engineering students?
+    - Can you specify the credit requirement for mechanical engineering majors?
+    - me credit
+
+- intent: mechanical_engineering_website
+  examples: |
+    - Where can I find information about mechanical engineering programs on the university website?
+    - Is there a webpage dedicated to mechanical engineering on the university site?
+    - How do I access details about mechanical engineering programs on the university site?
+    - Can you provide the URL for the mechanical engineering page on the university website?
+    - Where can I locate information about mechanical engineering studies on the university website?
+    - Is there an online resource for learning about mechanical engineering programs?
+    - How can I learn more about mechanical engineering programs through the university's website?
+    - Can you guide me to the section of the university website that covers mechanical engineering?
+    - How do I find information about mechanical engineering studies on the university's online portal?
+    - Is there a specific webpage for mechanical engineering majors on the university's website?
+
+- intent: mechanical_engineering_core_courses
+  examples: |
+    - What are the core courses in the mechanical engineering curriculum?
+    - Can you outline the main subjects taught in mechanical engineering core courses?
+    - What fundamental topics are covered in mechanical engineering core subjects?
+    - Which courses are considered essential for mechanical engineering students?
+    - Can you provide an overview of the core modules within the mechanical engineering program?
+    - What are the key disciplines covered in mechanical engineering core classes?
+    - Can you identify the core modules within the mechanical engineering curriculum?
+    - Which engineering fields are included in mechanical engineering core courses?
+    - What are the main subjects that mechanical engineering undergraduates must study?
+    - Can you specify the core modules within the mechanical engineering curriculum?
+    - what course in mechanical
+    - what cover in mechanical engineering
+#53
+- intent: Car_Decal_Process
+  examples: |
+    - What is the process for obtaining a parking decal?
+    - How do I apply for a parking decal?
+    - What steps are involved in getting a parking decal?
+    - Where can I get the application for a parking decal?
+    - How can I obtain a parking sticker?
+    - What is the procedure for obtaining a parking decal?
+    - How do I fill out the application for a parking decal?
+    - What is required to apply for a parking decal?
+    - Can you explain the process of obtaining a parking decal?
+    - Where can I find the application form for a parking decal?
+
+- intent: Car_Decal_Documentation
+  examples: |
+    - What documentation is required for obtaining a parking decal?
+    - What documents do I need to provide to get a parking decal?
+    - Do I need to submit any documentation for a parking decal?
+    - Which documents are necessary to obtain a parking decal?
+    - What kind of documentation is needed for a parking sticker?
+    - What paperwork is necessary for getting a parking decal?
+    - Can you list the documents required for a parking decal?
+    - What paperwork do I need to bring for a parking decal?
+    - What documentation is necessary when applying for a parking decal?
+    - What documents should I have ready for a parking decal application?
+
+- intent: Car_Decal_Parking_Location
+  examples: |
+    - Can I choose where to park with my parking decal?
+    - What parking options are available with a parking decal?
+    - Where can I park with a parking sticker?
+    - How does a parking decal affect parking location?
+    - Does having a parking decal allow me to select my parking spot?
+    - What are the parking privileges with a parking decal?
+    - Can I select my parking space with a parking sticker?
+    - Where am I allowed to park with a parking decal?
+    - What locations are accessible with a parking sticker?
+    - How does parking availability change with a parking decal?
+
+- intent: Car_Decal_Lack_of_Sticker
+  examples: |
+    - What happens if I don't have a parking sticker?
+    - Can I enter the parking lots without a parking decal?
+    - What are the consequences of not having a parking decal?
+    - Is it permissible to park without a parking sticker?
+    - What actions are taken if I lack a parking decal?
+    - Can I use the parking lots without a parking sticker?
+    - What are the penalties for not having a parking decal?
+    - Am I allowed to park on campus without a parking decal?
+    - What are the rules regarding parking without a parking sticker?
+    - How does not having a parking decal affect parking access?
+
+- intent: Car_Decal_Sharing_Violation
+  examples: |
+    - Is it allowed to share or transfer parking decals between students?
+    - What is the policy regarding sharing parking decals?
+    - Can parking stickers be shared among students?
+    - Are parking decals transferrable between students?
+    - What are the regulations regarding parking decal sharing?
+    - Is it against the rules to transfer parking decals?
+    - Can parking decals be used by multiple students?
+    - What are the consequences of sharing parking decals?
+    - Are there penalties for transferring parking decals?
+    - How does the University handle violations related to parking decal sharing?
+
+- intent: Car_Decal_Disabilities_Parking
+  examples: |
+    - How does the University address parking for students with disabilities?
+    - What accommodations are provided for students with disabilities regarding parking?
+    - Are there designated parking spaces for students with disabilities?
+    - How does the University assist students with disabilities regarding parking?
+    - What measures are in place for students with disabilities regarding parking?
+    - Are there accessible parking spaces for students with disabilities?
+    - What accommodations are available for disabled students in parking areas?
+    - How are parking facilities adapted for students with disabilities?
+    - What services does the University offer for students with disabilities regarding parking?
+    - Can students with disabilities request special parking accommodations?
+
+- intent: Car_Decal_Rules_Communication
+  examples: |
+    - How does the University communicate changes to parking rules?
+    - What methods are used to inform students about parking rule updates?
+    - Are changes to parking regulations communicated to students?
+    - How are parking policy changes conveyed to students?
+    - Are there notifications for updates to parking rules?
+    - What channels are used to share information about parking rule changes?
+    - How does the University inform students about parking policy modifications?
+    - Where can I find information about updates to parking regulations?
+    - Is there a way to stay informed about changes in parking rules?
+    - Can I receive notifications about updates to parking policies?
+
+#54
+- intent: Parking_Rules_and_Regulations
+  examples: |
+   - What are the rules for parking on campus?
+   - Where can I find information about parking regulations?
+   - Are there specific times when parking is allowed or prohibited?
+   - Are there specific times when parking is allowed or prohibited?
+#55
+- intent: complaints 
+  examples: |
+   - How can students file a complaint about parking issues?
+   - Is there a designated office or department for complaints?
+   - What should students do if they encounter issues ?
+   - How can students file a complaint about campus facilities maintenance?
+   - What is the process for reporting issues with campus Wi-Fi or internet?
+   - Where can students find information about lodging complaints regarding academic services?
+   - Who should students contact if they have concerns about classroom equipment?
+#56
+- intent: registration_guide
+  examples: |
+   - How can I find the registration guide at my university?
+   - Are there any tutorials or guides available to help me with the registration process?
+   - Is the registration guide available online?
+   
+
+#1
+- intent: clinic_services 
+  examples: |
+    - which services are offered at the central clinic located on the AUM Campus?
+    - what types of services does the central clinic at AUM Campus deliver?
+    - what are the services available at the central clinic situated on the AUM Campus?
+    - could you outline the services provided by the central clinic on the AUM Campus?
+    - what kind of healthcare services does the central clinic offer at the AUM Campus?
+    - what services does the central clinic on AUM Campus provide?
+    
+#2
+- intent: clinic_location
+  examples: |
+    - Where exactly can the AUM Central Clinic be found?
+    - What is the precise address of the Central Clinic on the AUM campus?
+    - Where is the physical location of the Central Clinic within the AUM campus?
+    - Can you provide details about the whereabouts of the AUM Central Clinic?
+    
+#3
+- intent: sports_center
+  examples: |
+    - What services does the Sports Center at AUM provide?
+    - What amenities and services are available at the Sports Center on the AUM campus?
+    - Could you outline the offerings provided by the Sports Center at AUM?
+    - What types of services can one expect from the Sports Center located at AUM?
+    - What facilities and services are offered at the AUM Sports Center?
+    - What specific services are available for students at the AUM Sports Center?
+    
+#4
+- intent: it_services
+  examples: |
+    - What IT services are provided to students at AUM?
+    - What technological services are extended to students enrolled at AUM?    
+    - Could you elaborate on the IT services accessible to students at AUM?    
+    - What specific IT provisions are offered to students attending AUM?
+    - What are the available IT support services catered to students of AUM?
+    - What IT resources and assistance are provided for students at AUM?
+    
+#5
+- intent: aum_website_info
+  examples: |
+    - What information does the AUM website provide to students?
+    - What kind of information does the AUM website offer to its students?
+    - Could you specify the information available to students on the AUM website?
+    - What types of student-oriented information can be found on the AUM website?
+    - What specific resources and details are provided for students on the AUM website?
+    - What kind of student support and resources does the AUM website offer?
+
+    
+#6
+- intent: portal_purpose
+  examples: |
+    - What is the purpose of the MyAUM portal?
+    - What function does the MyAUM portal fulfill?
+    - What is the objective of implementing the MyAUM portal?
+    - What role does the MyAUM portal play?
+    - What is the intent behind the creation of the MyAUM portal?
+    - What does the MyAUM portal aim to achieve?
+
+#7
+- intent: aum_Moodle
+  examples: |
+    - What does Moodle entail?
+    - What is the function of Moodle?
+    - What is Moodle?
+    - How would you define Moodle?    
+    - What purpose does Moodle serve?
+    - What is the role of Moodle?
+    
+#8
+- intent: aum_banner
+  examples: |
+    - How is Banner utilized at AUM?
+    - What functions does Banner serve at AUM?
+    - What is the purpose of Banner at AUM?
+    - What is Banner used for?
+    
+#9
+- intent: aum_communicate
+  examples: |
+    - How does AUM communicate important information to students?
+    - By what means does AUM relay crucial information to students?
+    - How does AUM disseminate important information to students?
+    - What methods does AUM utilize to communicate essential information to students?
+    - How does AUM ensure students receive important information?
+    - Through what channels does AUM convey significant information to students?
+    
+
+
+#10
+- intent: parking_services
+  examples: |
+    - What parking services are available to students at AUM?
+    - What parking facilities are provided to students at AUM?
+    - What parking options are available to students at AUM?
+    - How does AUM accommodate student parking?
+    - What parking services does AUM extend to students?
+    - What are the student parking arrangements at AUM?
+
+    
+ #11
+- intent: students_identified
+  examples: |
+    - How are students identified at AUM?
+    - How are students distinguished at AUM?
+    - What methods does AUM use to identify students?
+    - By what means are students recognized at AUM?
+    - What identification processes are in place for students at AUM?
+    - How does AUM differentiate its students?
+
+    
+#12
+- intent: aum_library
+  examples: |
+    - What resources does the AUM Library offer?
+    - How does the AUM Library support students?
+    - What services are available at the AUM Library?
+    - What does the AUM Library provide?
+    - What amenities does the AUM Library furnish?
+    
+
+
+#13
+- intent: writing_club
+  examples: |
+    - What is the purpose of the Writing Lab at AUM?
+    - What is the objective of the Writing Lab at AUM?
+    - What purpose does the Writing Lab serve at AUM?
+    - How does the Writing Lab benefit students at AUM?
+    - What role does the Writing Lab play at AUM?
+    - What are the goals of the Writing Lab at AUM?
+
+    
+#14
+- intent: tutoring_center
+  examples: |
+    - What services are offered by the Tutoring Center at AUM?
+    - What assistance does the Tutoring Center offer at AUM?
+    - What services does the Tutoring Center provide at AUM?
+    - How does the Tutoring Center support students at AUM?
+    - What resources are available at the Tutoring Center at AUM?
+    - What help can students receive from the Tutoring Center at AUM?
+
+    
+#15
+- intent: innovation_center
+  examples: |
+   - What are the Innovation Centers at AUM?
+   - What do the Innovation Centers at AUM entail?
+   - How are the Innovation Centers defined at AUM?
+   - What services are provided by the Innovation Centers at AUM?
+   - What is the function of the Innovation Centers at AUM?
+   - What purpose do the Innovation Centers serve at AUM?
+
+#16
+- intent: medical_emergency 
+  examples: |
+    -	What should students do in case of a medical emergency on campus?
+    - What actions should students take if there's a medical emergency while on campus?
+    - In the event of a medical emergency on campus, what steps should students follow?
+    - What are the recommended procedures for students during a medical emergency situation at the campus?
+    - If there's a medical emergency at the campus, what course of action is advised for students?
+    - In case of a medical crisis on campus, what actions are suggested for students to take?
+
+#17
+- intent: car_accidents
+  examples: |
+    - How should students handle car accidents on campus?
+    - What is the proper protocol for students to follow in the event of a car accident on campus?
+    - How should students manage car accidents that occur on the campus premises?
+    - What steps should students take if they are involved in a car accident while on campus?
+    - In the event of a car collision on campus, what guidance is recommended for students?
+    - What procedures should students adhere to if they encounter a car accident situation on campus?
+
+
+#18
+- intent: lost_found
+  examples: |
+    - Where should students inquire about lost and found items on campus?
+    - To whom should students direct their inquiries regarding lost and found items on campus?
+    - Where can students seek assistance regarding lost and found items within the campus grounds?
+    - What is the designated location for students to inquire about lost and found items on campus?
+    - Where should students go to report or inquire about lost belongings found on campus?
+    - Whom should students contact to inquire about misplaced items found within the campus premises?
+
+   
+#19
+- intent: scientific_laboratories
+  examples: |
+    - What role do the Scientific Laboratories play at AUM?
+    - How does AUM utilize its Scientific Laboratories?
+    - What functions are fulfilled by the Scientific Laboratories at AUM?
+    - What is the significance of Scientific Laboratories in the operations of AUM?
+    - How do the Scientific Laboratories contribute to AUM's activities?
+    - What purposes do the Scientific Laboratories serve within the framework of AUM?
+
+#20
+- intent: tawteen_center
+  examples: |
+    - What services does the Tawteen Career Center offer? 
+    - What are the services provided by the Tawteen Career Center?
+    - What assistance does the Tawteen Career Center offer?
+    - What types of services are available at the Tawteen Career Center?
+    - What support can students expect from the Tawteen Career Center?
+    - What resources does the Tawteen Career Center provide to students?
+
+
+#21
+- intent: grading_system
+  examples: |
+    - What is the grading system for undergraduate courses at AUM?
+    - How are undergraduate courses graded at AUM?
+    - What grading criteria are employed for undergraduate courses at AUM?
+    - What grading system is utilized for undergraduates at AUM?
+    - How does the grading system work for undergraduate courses at AUM?
+    - What is the method for grading undergraduate courses at AUM?
+
+
+#22
+- intent: grade_points
+  examples: |
+    - What are the corresponding grade points for letter grades in the AUM grading system?
+    - What grade point equivalents correspond to letter grades in the AUM grading system?
+    - How do letter grades translate into grade points in the AUM grading system?
+    - What is the conversion scale for letter grades to grade points in the AUM grading system?
+    - What are the grade point values associated with letter grades within the AUM grading framework?
+    - How are letter grades converted into grade points within the AUM grading system?
+
+
+#23
+- intent: trasnscript_grade
+  examples: |
+    - Does the AUM transcript reflect the Grade/100?
+    - Is the Grade/100 reflected on the AUM transcript?
+    - Does the AUM transcript display the Grade/100?
+    - Is the Grade/100 score shown on the AUM transcript?
+    - Does the AUM transcript include the Grade/100 calculation?
+    - Is the Grade/100 information documented on the AUM transcript?
+
+
+#24
+- intent: minimum_required_grade
+  examples: |
+    - What is the minimum required passing grade in the AUM grading system?
+    - What is the lowest passing grade permitted in the AUM grading system?
+    - What is the minimum passing grade threshold within the AUM grading system?
+    - What is the minimum acceptable passing grade under the AUM grading guidelines?
+    - What is the lowest acceptable passing grade according to the AUM grading system?
+    - What is the minimum passing grade requirement in the AUM grading structure?
+
+#25
+- intent: minimum_passing_grade
+  examples: |
+    - What is the minimum passing grade for most courses at AUM?
+    - What is the lowest acceptable passing grade for the majority of courses at AUM?
+    - What is the standard minimum passing grade for most courses at AUM?
+    - What grade do most courses at AUM require as the minimum for passing?
+    - What is the minimum passing grade expected in the majority of courses at AUM?
+    - What grade is typically considered the minimum pass mark for courses at AUM?
+
+
+#26
+- intent: minimum_grade_exceptions
+  examples: |
+    - Are there exceptions to the minimum passing grade requirement?
+    - Are there any instances where the minimum passing grade requirement is waived?
+    - Do exceptions exist for the minimum passing grade requirement?
+    - Are there any circumstances where the minimum passing grade requirement is not applicable?
+    - Is there flexibility in the minimum passing grade requirement under certain circumstances?
+    - Are there any situations where the minimum passing grade requirement may be different?
+
+
+#27
+- intent: grading_affect_CGPA
+  examples: |
+    - How are certain courses graded, and how does it affect CGPA?
+    - What is the grading process for specific courses, and how does it impact CGPA?
+    - How do certain course grading methods influence CGPA calculation?
+    - What is the correlation between grading methodologies for particular courses and their impact on CGPA?
+    - How do grading practices for specific courses factor into CGPA determination?
+    - What is the relationship between the grading criteria for certain courses and their effect on CGPA?
+
+
+#28
+- intent: incomplete_grade
+  examples: |
+    - What does an "Incomplete" grade signify, and how is it handled?
+    - What is the significance of an Incomplete grade, and what procedures are in place for managing it?
+    - What does an Incomplete grade indicate, and what are the protocols for its resolution?
+    - What is the meaning behind an Incomplete grade, and what are the steps taken to address it?
+    - How is an Incomplete grade defined, and what measures are taken to resolve it?
+    - What does receiving an Incomplete grade imply, and how is it managed administratively?
+
+ 
+#29
+- intent: withdrawal_grade
+  examples: |
+   - What does a "Withdrawal" grade indicate, and how does it impact GPA?
+   - What does a "Withdrawal" grade signify, and what effect does it have on GPA calculation?
+   - What is the meaning of a "Withdrawal" grade, and how does it influence GPA?
+   - What does receiving a "Withdrawal" grade signify, and how does it affect GPA?
+   - What is the implication of a "Withdrawal" grade, and how does it impact GPA calculation?
+   - What does a "Withdrawal" grade indicate, and how does it factor into GPA determination?
+
+#30
+- intent: EPP_passing_grade
+  examples: |
+   - What is the passing grade requirement for each level of the English Foundation Program (EPP)?
+   - What is the minimum passing grade prerequisite for every tier of the English Foundation Program (EPP)?
+   - What is the passing grade threshold for each stage within the English Foundation Program (EPP)?
+   - What grade is required to pass each level of the English Foundation Program (EPP)?
+   - What is the minimum grade required to pass every tier of the English Foundation Program (EPP)?
+   - What is the requisite passing grade for each level in the English Foundation Program (EPP)?
+
+
+#31
+- intent: Math_prep_passing_grade
+  examples: |
+   - What is the passing grade requirement for each level of the Mathematics Preparatory Program?
+   - What is the minimum passing grade requirement for each tier of the Mathematics Preparatory Program?
+   - What grade is necessary to pass each level of the Mathematics Preparatory Program?
+   - What is the passing grade prerequisite for every stage within the Mathematics Preparatory Program?
+   - What grade is required to successfully complete each tier of the Mathematics Preparatory Program?
+   - What is the requisite passing grade for each level in the Mathematics Preparatory Program?
+
+#32
+- intent: undergraduate_class_standings
+  examples: |
+   - What are the different class standings for undergraduate students at AUM?
+   - What are the various class standings available for undergraduate students enrolled at AUM?
+   - What are the distinct classifications of class standings for undergraduate students at AUM?
+   - What are the different levels of class standings that undergraduate students can achieve at AUM?
+   - What are the diverse categories of class standings that undergraduate students may hold at AUM?
+   - What are the separate designations for class standings applicable to undergraduate students attending AUM?
+
+
+#33
+- intent: academic_class_standing
+  examples: |
+   - What is the corresponding academic year for each class standing?
+   - What academic year aligns with each class standing?
+   - Which academic year corresponds to each class standing?
+   - What academic period is associated with each class standing?
+   - For each class standing, what is the corresponding academic year?
+   - What academic level correlates with each class standing?
+
+
+#34
+- intent: total_credits_class_standing
+  examples: |
+   - How are total credits earned related to class standing?
+   - What is the relationship between total earned credits and class standing?
+   - How do total earned credits impact class standing?
+   - In what way are total credits earned connected to class standing?
+   - What is the correlation between total earned credits and class standing?
+   - How does the accumulation of total credits earned influence class standing?
+
+
+
+#35
+- intent: CGPA_good_standing
+  examples: |
+   - What is the minimum required CGPA to maintain a good standing for each class?
+   - What is the minimum CGPA required to maintain good standing for each class level?
+   - What is the CGPA threshold necessary to sustain good standing for each class designation?
+   - What is the minimum CGPA requirement to uphold good standing status for each class level?
+   - What CGPA must be maintained to retain good standing for each class category?
+   - What is the minimum CGPA needed to ensure good standing for students at each class level?
+
+
+
+#36
+- intent: calculate_CGPA_GPA
+  examples: |
+   - What is GPA and CGPA, and how are they calculated?
+   - What is the definition of GPA and CGPA, and what methodologies are used to calculate them?
+   - What are GPA and CGPA, and what formulas are employed to compute them? 
+   - How are GPA and CGPA defined, and what procedures are used to determine their values?
+   - What do GPA and CGPA signify, and what calculations are involved in deriving them?
+   - What are GPA and CGPA, and how are their numerical values determined through calculation processes?
+
+
+#37
+- intent: CGPA_GPA_transcript
+  examples: |
+   - How are GPA and CGPA displayed on the AUM transcript?
+   - How are GPA and CGPA showcased on the AUM transcript?
+   - In what format are GPA and CGPA presented on the AUM transcript?
+   - How are GPA and CGPA represented on the AUM transcript?
+   - What is the layout for displaying GPA and CGPA on the AUM transcript?
+   - On the AUM transcript, how are GPA and CGPA visually represented?
+
+
+#38
+- intent: EPP_purpose
+  examples: |
+   - What is the purpose of the AUM English Preparatory Program (EPP)?
+   - What is the objective of implementing the AUM English Preparatory Program (EPP)?
+   - What is the aim of establishing the AUM English Preparatory Program (EPP)?
+   - What purpose does the AUM English Preparatory Program (EPP) serve?
+   - What are the goals of the AUM English Preparatory Program (EPP)?
+   - What is the intended outcome of the AUM English Preparatory Program (EPP)?
+
+
+#39
+- intent: college_eng_tech_require_math_placement_test
+  examples: |
+   - What happens if a student of the College of Engineering and Technology does not satisfy the threshold needed for the Math Placement Test?
+   - What occurs if a student from the College of Engineering and Technology fails to meet the required threshold for the Math Placement Test?
+   - What are the consequences if a student in the College of Engineering and Technology does not meet the Math Placement Test requirement?
+   - What happens if a College of Engineering and Technology student does not achieve the necessary score on the Math Placement Test?
+   - If a student in the College of Engineering and Technology does not meet the Math Placement Test criteria, what are the implications?
+   - What are the repercussions for a student in the College of Engineering and Technology who does not meet the Math Placement Test standard?
+
+
+#40
+- intent: academic_max_duration
+  examples: |
+   - What is the maximum duration for students to meet all academic program requirements at AUM?
+   - What is the deadline for students to fulfill all academic program requirements at AUM?
+   - What is the maximum timeframe given to students to complete all academic program requirements at AUM?
+   - What is the longest duration allowed for students to satisfy all academic program requirements at AUM?
+   - What is the time limit for students to meet all academic program requirements at AUM?
+   - What is the maximum period allocated for students to fulfill all academic program requirements at AUM?
+
+
+
+#41
+- intent: academic_probation_dismissal
+  examples: |
+   - What are the conditions for academic probation and dismissal?
+   - What criteria lead to academic probation and dismissal?
+   - What circumstances result in academic probation and dismissal?
+   - What are the requirements for academic probation and dismissal?
+   - Under what conditions do students face academic probation and dismissal?
+   - What factors contribute to academic probation and dismissal?
+
+
+#42
+- intent: honors_graduation_criteria
+  examples: |
+   - What are the criteria for graduation with honors?
+   - What standards must be met for graduating with honors?
+   - What are the requirements for achieving honors at graduation?
+   - What criteria determine eligibility for graduating with honors?
+   - What benchmarks need to be achieved to graduate with honors?
+   - What are the qualifications for earning honors upon graduation?
+ 
+
+#43
+- intent: expecting_graduate_steps
+  examples: |
+   - What are the steps for students expecting to graduate?
+   - What are the procedures for students anticipating graduation?
+   - What steps must students take if they are planning to graduate?
+   - What are the sequential actions for students preparing for graduation?
+   - What is the process that students who are about to graduate need to follow?
+   - What are the necessary steps for students who are expecting to graduate?
+
+#44
+- intent: graduation_clearance_requirements
+  examples: |
+   - What are the clearance requirements for graduation?
+   - What are the criteria that students must fulfill for graduation clearance?
+   - What are the requirements that students need to meet to obtain clearance for graduation?
+   - What conditions or obligations must students satisfy in order to achieve graduation clearance?
+   - What are the clearance prerequisites that students must fulfill in order to graduate?
+   - What are the necessary steps or obligations that students need to complete for graduation clearance?
+
+
+#45
+- intent: CGPA_max_credit_fall_spring
+  examples: |
+   - What is the maximum credit load allowed for students during Fall and Spring semesters based on their Cumulative GPA?
+   - What is the maximum credit load permitted for students during Fall and Spring semesters based on their Cumulative GPA?
+   - What is the highest number of credits students can take during Fall and Spring semesters depending on their Cumulative GPA?
+   - What is the upper limit for credit hours that students can enroll in during Fall and Spring semesters, determined by their Cumulative GPA?
+   - What is the maximum number of credits students can register for during Fall and Spring semesters, taking into account their Cumulative GPA?
+   - What is the maximum credit load that students can carry during Fall and Spring semesters, contingent upon their Cumulative GPA?
+
+
+#46
+- intent: CGPA_max_credit_summer
+  examples: |
+   - What is the maximum credit load allowed for students during the Summer semester based on their Cumulative GPA?
+   - What is the highest credit load permitted for students during the Summer semester depending on their Cumulative GPA?
+   - What is the maximum number of credits students can take during the Summer semester, determined by their Cumulative GPA?
+   - What is the upper limit for credit hours that students can enroll in during the Summer semester, based on their Cumulative GPA?
+   - What is the maximum credit load that students can carry during the Summer semester, contingent upon their Cumulative GPA?
+   - What is the maximum credit load allowed for students during the Summer semester, considering their Cumulative GPA?
+
+
+#47
+- intent: more_max_credit_allowed
+  examples: |
+   - What is the procedure for students who wish to register for more than the maximum allowed credit load?
+   - What steps should students follow if they want to register for more credits than the maximum allowed load?
+   - What is the process for students who wish to exceed the maximum credit load during registration?
+   - How should students proceed if they desire to enroll in additional credits beyond the maximum allowed limit?
+   - What are the steps students need to take if they intend to register for more credits than the maximum permitted load?
+   - What procedure do students need to follow if they want to exceed the maximum allowed credit load during registration?
+
+
+#48
+- intent: appeal_grade_change 
+  examples: |
+   - What is the procedure for students who want to appeal for a grade change?
+   - What steps should students follow if they seek to appeal a change in their grade?
+   - How can students proceed if they wish to challenge a grade alteration?
+   - What are the steps students need to take if they desire to contest a modification in their grade?
+   - How should students proceed if they aim to request a review of their grade?
+   - What is the process for students who wish to appeal for a modification in their grade?
+
+
+#49
+- intent: course_repetition_policy 
+  examples: |
+   - Under what circumstances can a student repeat a course according to the Course Repetition Policy?
+   - What are the conditions under which a student can retake a course in accordance with the Course Repetition Policy?
+   - Under what circumstances is a student permitted to repeat a course as outlined in the Course Repetition Policy?
+   - What situations allow a student to retake a course based on the Course Repetition Policy?
+   - According to the Course Repetition Policy, in what instances can a student repeat a course?
+   - What are the criteria specified by the Course Repetition Policy for a student to repeat a course?
+
+
+#50
+- intent: repeat_course_CGPA_improve
+  examples: |
+   - How many courses can a student repeat to improve their CGPA, and how many times can they repeat each course?
+   - How many courses can a student retake to enhance their CGPA, and what is the limit on the number of times they can repeat each course?
+   - What is the maximum number of courses a student can repeat to raise their CGPA, and how many times can they retake each course?
+   - How many courses can a student repeat in order to boost their CGPA, and what is the maximum number of repetitions allowed for each course?
+   - According to the policy, what is the total number of courses a student can retake to improve their CGPA, and what is the maximum number of repetitions permitted for each course?
+   - What is the limit on the number of courses a student can retake to improve their CGPA, and what is the maximum number of times they can retake each course?
+
+
+#newnewnewnew
+#51
+- intent: repeat_specific_courses
+  examples: |
+   - What is the maximum duration allowed for students to repeat specific courses in order to pass and graduate?
+   - What is the allotted timeframe within which students can retake particular courses to successfully complete them and earn their degrees?
+   - What is the prescribed time limit for students to retake specific courses with the aim of passing and completing their graduation requirements?
+   - Within what timeframe are students permitted to repeat certain courses in order to fulfill the necessary criteria for graduation?
+   - How long are students allowed to retake specific courses in order to meet the requirements for passing and obtaining their degrees?
+   - What is the stipulated duration during which students may reattempt particular courses to achieve passing grades and fulfill graduation prerequisites?
+
+#52
+- intent: fail_pre_english_math
+  examples: |
+   - What are the consequences for students in the English and Mathematics Preparatory Program if they fail to meet the required success grade after repeating a course?
+   - What are the outcomes for students in the English and Mathematics Preparatory Program if they fail to meet the expected success grade following the repetition of a course?
+   - What are the ramifications for students in the English and Mathematics Preparatory Program if they do not reach the necessary success grade upon redoing a course?
+   - What are the implications for students in the English and Mathematics Preparatory Program if they do not meet the requisite success grade even after repeating a course?
+   - What are the results for students in the English and Mathematics Preparatory Program if they fail to attain the required success grade after undergoing a course repetition?
+   - What happens to students in the English and Mathematics Preparatory Program if they don't achieve the required success grade after retaking a course?
+
+#53
+- intent: sponsorship_ccourse_repetition_fees
+  examples: |
+   - Who is responsible for meeting regulations concerning course repetition fees for students under sponsorship agreements?
+   - Who is accountable for ensuring that students under sponsorship agreements adhere to regulations regarding course repetition fees?
+   - Who bears the responsibility for ensuring that students under sponsorship agreements comply with regulations regarding course repetition fees?
+   - Who is tasked with making sure that students under sponsorship agreements meet regulations concerning course repetition fees?
+   - Who is obligated to ensure that students under sponsorship agreements follow regulations regarding course repetition fees?
+   - Who is responsible for ensuring that students under sponsorship agreements abide by regulations concerning course repetition fees?
+
+#54
+- intent: approvals_repeat_improve_CGPA
+  examples: |
+   - What approvals are required for students intending to repeat courses to improve their CGPA?
+   - What authorizations are necessary for students planning to retake courses to enhance their CGPA?
+   - What permissions do students need if they intend to repeat courses to boost their CGPA?
+   - What approvals must students obtain if they plan to retake courses to enhance their CGPA?
+   - What sanctions do students need to acquire if they aim to repeat courses to elevate their CGPA?
+   - What clearances are mandatory for students seeking to retake courses to improve their CGPA?
+
+#55
+- intent: steps_retake_subject_need
+  examples: |
+   - What is the procedure for students who have completed their academic graduation requirements but intend to repeat certain subjects?
+   - What steps do students who have fulfilled their academic graduation criteria but wish to retake specific subjects need to follow?
+   - What is the process for students who have met their academic graduation prerequisites but desire to retake particular subjects?
+   - What is the protocol for students who have completed their academic graduation requirements but plan to redo specific subjects?
+   - What are the steps for students who have satisfied their academic graduation criteria but want to repeat particular subjects?
+   - What is the procedure for students who have fulfilled their academic graduation requirements but intend to retake specific subjects?
+
+#56
+- intent: repeat_course_prerequisite_another_course
+  examples: |
+   - When should a student repeat a course if it is a requirement or prerequisite for another course?
+   - When is it necessary for a student to retake a course if it serves as a requirement or prerequisite for another course?
+   - At what point should a student repeat a course if it is a prerequisite or requirement for another course?
+   - In what circumstances should a student retake a course if it acts as a prerequisite or requirement for another course?
+   - Under what conditions should a student repeat a course if it is necessary for another course as a prerequisite or requirement?
+   - When must a student retake a course if it is essential for another course as a prerequisite or requirement?
+
+#57
+- intent: failed_course_replaced
+  examples: |
+   - Can a failed course be replaced or substituted with another course?
+   - Is it permissible to substitute or replace a failed course with another course?
+   - Can a course that has been failed be exchanged or substituted with a different course?
+   - Is it allowed to replace or substitute a failed course with an alternative course?
+   - Are students permitted to swap or replace a failed course with another course?
+   - Is there an option to substitute or exchange a failed course with a different course?
+
+#58
+- intent: change_major_bus_eng_requirements
+  examples: |
+   - What are the requirements for changing a major from the College of Business Administration to the College of Engineering and Technology?
+   - What prerequisites must be met for switching majors from the College of Business Administration to the College of Engineering and Technology?
+   - What are the conditions for changing majors from the College of Business Administration to the College of Engineering and Technology?
+   - What criteria need to be fulfilled for transitioning from the College of Business Administration to the College of Engineering and Technology?
+   - What are the prerequisites for changing majors from the College of Business Administration to the College of Engineering and Technology?
+   - What are the necessary qualifications for switching majors from the College of Business Administration to the College of Engineering and Technology?
+
+#59
+- intent: change_major_eng_bus_requirements
+  examples: |
+   - What are the criteria for changing a major from the College of Engineering and Technology to the College of Business Administration?
+   - What are the requirements for transferring from the College of Engineering and Technology to the College of Business Administration?
+   - What conditions must be met to change majors from the College of Engineering and Technology to the College of Business Administration?
+   - What criteria need to be fulfilled for switching majors from the College of Engineering and Technology to the College of Business Administration?
+   - What prerequisites are necessary for transitioning from the College of Engineering and Technology to the College of Business Administration?
+   - What qualifications are needed for changing majors from the College of Engineering and Technology to the College of Business Administration?
+
+#60
+- intent: bus_change_major_condition
+  examples: |
+   - What are the conditions for changing a major within the College of Business Administration?
+   - What requirements must be met for changing majors within the College of Business Administration?
+   - What criteria apply to changing majors within the College of Business Administration?
+   - What are the prerequisites for switching majors within the College of Business Administration?
+   - What are the eligibility criteria for changing majors within the College of Business Administration?
+   - What conditions need to be satisfied to change majors within the College of Business Administration?
+
+#61
+- intent: eng_change_major_eng
+  examples: |
+   - What are the requirements for changing a major within the College of Engineering and Technology from Engineering Majors to Engineering Majors?
+   - What prerequisites must be fulfilled for changing majors within the College of Engineering and Technology from Engineering Majors to Engineering Majors?
+   - What are the conditions for switching majors within the College of Engineering and Technology from Engineering Majors to Engineering Majors?
+   - What are the eligibility criteria for changing majors within the College of Engineering and Technology from Engineering Majors to Engineering Majors?
+   - What prerequisites apply to changing majors within the College of Engineering and Technology from Engineering Majors to Engineering Majors?
+   - What are the requirements for transferring majors within the College of Engineering and Technology from Engineering Majors to Engineering Majors?
+
+#62
+- intent: attendance_importance
+  examples: |
+   - How does AUM define attendance and its importance?
+   - How does AUM characterize attendance and its significance?
+   - How is attendance defined at AUM and why is it important?
+   - What is AUM's interpretation of attendance and why does it hold significance?
+   - How does AUM define attendance and what is its significance?
+   - What is AUM's perspective on attendance and why does it matter?
+
+#63
+- intent: honors_list_criteria
+  examples: |
+   - What are the criteria for being named on the Honors List at AUM?
+   - What are the conditions for being included on AUM's Honors List?
+   - What are the requirements for making it onto the Honors List at AUM?
+   - What criteria must students meet to be listed on AUM's Honors List?
+   - What are the standards for inclusion on AUM's Honors List?
+   - What are the prerequisites for being recognized on AUM's Honors List?
+
+#64
+- intent: grading_table
+  examples: |
+   - Can I have the grading table?
+   - Could you please provide me with the grading table?
+   - May I have access to the grading table?
+   - Is it possible to obtain the grading table?
+   - Would you mind sharing the grading table with me?
+   - Could you kindly provide the grading table?
+
+#65
+- intent: park_car
+  examples: |
+   - Where can I park my car?
+   - Where is the designated parking area?
+   - Could you please direct me to the parking lot?
+   - Where can I find parking for my car?
+   - May I know the location of the parking facilities?
+   - Could you guide me to the nearest parking spot?
+
+#66
+- intent: join_art_club
+  examples: |
+   - How can I join the art club?
+   - How do I become a member of the art club?
+   - What is the process for joining the art club?
+   - How can I get involved with the art club?
+   - What steps do I need to take to join the art club?
+   - Where can I find information on joining the art club?
+
+#67
+- intent: join_book_club
+  examples: |
+   - How can I join the book club?
+   - What are the steps to become a member of the book club?
+   - How do I get involved with the book club?
+   - Where can I find information about joining the book club?
+   - What is the process for joining the book club?
+   - How can I become a part of the book club?
+
+#68
+- intent: join_drama_club
+  examples: |
+   - How can I join the Drama Club?
+   - What steps do I need to take to become a member of the Drama Club?
+   - How can I get involved in the Drama Club?
+   - Where can I find information about joining the Drama Club?
+   - What is the process for joining the Drama Club?
+   - How do I become a part of the Drama Club?
+
+#69
+- intent: join_music_club
+  examples: |
+   - How can I join the Music Club?
+   - What steps do I need to take to become a member of the Music Club?
+   - Where can I find information about joining the Music Club?
+   - What is the process for joining the Music Club?
+   - How do I become a part of the Music Club?
+   - Is there a specific procedure for joining the Music Club?
+
+#70
+- intent: join_photography_club
+  examples: |
+   - How can I join the Photography Club?
+   - What steps do I need to follow to become a member of the Photography Club?
+   - Where can I find information on joining the Photography Club?
+   - What is the process for joining the Photography Club?
+   - How do I become a member of the Photography Club?
+   - Is there a specific procedure I need to follow to join the Photography Club?
+
+#71
+- intent: join_speech_communication_club
+  examples: |
+   - How can  I join the Speech & Communication Club?
+   - What are the steps for becoming a member of the Speech & Communication Club?
+   - Where can I find information on joining the Speech & Communication Club?
+   - What is the process for joining the Speech & Communication Club?
+   - How do I become a member of the Speech & Communication Club?
+   - Is there a specific procedure I need to follow to join the Speech & Communication Club?
+
+#72
+- intent: art_club_location 
+  examples: |
+   - Where is the art club located?
+   - Where can I find the art club on campus?
+   - Where is the physical location of the art club?
+   - What is the address of the art club?
+   - In which building or area is the art club situated?
+
+#73
+- intent: book_club_location
+  examples: |
+   - Where is the Book Club located?
+   - Where can I find the Book Club?
+   - What is the location of the Book Club?
+   - Where is the Book Club situated?
+   - In what place can I locate the Book Club?
+   -  What is the Book Club's whereabouts?
+
+#74
+- intent: drama_club_location
+  examples: |
+   - Where is the Drama Club located?
+   - What is the location of the Drama Club?
+   - Where can I find the Drama Club?
+   - In what place is the Drama Club situated?
+   - Where is the Drama Club situated?
+   - What is the whereabouts of the Drama Club?
+
+#75
+- intent: music_club_location
+  examples: |
+   - Where is the Music Club located?
+   - What is the location of the Music Club?
+   - Where can I find the Music Club?
+   - In what place is the Music Club situated?
+   - Where is the Music Club situated?
+   - What is the whereabouts of the Music Club?
+   
+#76
+- intent: photo_club_location
+  examples: |
+   - Where is the Photography Club located?
+   - What is the location of the Photography Club?
+   - Where can I find the Photography Club?
+   - In what place is the Photography Club situated?
+   - Where is the Photography Club situated?
+   - What is the whereabouts of the Photography Club?
+   
+#77
+- intent: speech_communication_club_location
+  examples: |
+   - Where is the Speech & Communication Club?
+   - What is the location of the Speech & Communication Club?
+   - Where can I find the Speech & Communication Club?
+   - In what place is the Speech & Communication Club situated?
+   - Where is the Speech & Communication Club situated?
+   - What is the whereabouts of the Speech & Communication Club?
+
+#78
+- intent: art_club_info
+  examples: |
+   - Can I have information about the Art Club?
+   - Could you provide details about the Art Club? 
+   - May I get information regarding the Art Club?
+   - Could you share some insights about the Art Club?
+   - Would you mind giving me some information about the Art Club?
+   - Can you provide details about the Art Club, please?
+
+#79
+- intent: book_club_info
+  examples: |
+   - Can I have information about the Book Club?
+   - Could you please provide information about the Book Club?
+   - May I obtain information regarding the Book Club?
+   - Could you share details about the Book Club?
+   - Would you mind giving me some information about the Book Club?
+   - Can you provide information about the Book Club, please?
+
+#80
+- intent: drama_club_info
+  examples: |
+   - Can I have information about the Drama Club?
+   - Could you please provide details about the Drama Club? 
+   - May I obtain information regarding the Drama Club?
+   - Could you share details about the Drama Club?
+   - Would you mind giving me some information about the Drama Club?
+   - Can you provide information about the Drama Club, please?
+
+#81
+- intent: music_club_info
+  examples: |
+   - Can I have information about the Music Club?
+   - May I request information about the Music Club?
+   - Could you please provide details about the Music Club?
+   - I would like to know more about the Music Club, could you provide information?
+   - Is it possible to obtain information about the Music Club?
+   - Can you share details about the Music Club?
+   
+#82
+- intent: photo_club_info
+  examples: |
+   - Can I have information about the Photography Club?
+   - Could you please provide information about the Photography Club?
+   - May I request details regarding the Photography Club?
+   - Is it possible to obtain information about the Photography Club?
+   - Could you share some information about the Photography Club? 
+   - I would like to know more about the Photography Club. Could you provide details?
+   
+#83
+- intent: speech_communication_club_info
+  examples: |
+   - Can I have information about the Speech & Communication Club?
+   - Could you please provide information about the Speech & Communication Club?
+   - May I request details regarding the Speech & Communication Club?
+   - Is it possible to obtain information about the Speech & Communication Club?
+   - Could you share some information about the Speech & Communication Club?
+   - I would like to know more about the Speech & Communication Club. Could you provide details?
+   
+#84
+#85
+- intent: EPP_2023_2024_calendar
+  examples: |
+   - Can I have the academic calendar of EPP 2023-2024?
+   - Could you please provide the academic calendar for the English Preparatory Program EPP for the academic year 2023-2024?
+   - May I request the academic calendar for the English Preparatory Program EPP for the academic year 2023-2024?
+   - Is it possible to obtain the academic calendar for the English Preparatory Program EPP for the academic year 2023-2024?
+   - Could you share the academic calendar for the English Preparatory Program EPP for the academic year 2023-2024?
+   - I would like to have access to the academic calendar for the English Preparatory Program EPP for the academic year 2023-2024. Could you provide it?
+
+#86
+- intent: attendance_policy
+  examples: |
+   - Can i have the attendance policy?
+   - Could you please provide me with the attendance policy?
+   - May I request a copy of the attendance policy?
+   - Is it possible to obtain the attendance policy?
+   - Could you share the attendance policy with me?
+   - I would like to have access to the attendance policy. Could you provide it?
+
+#87
+- intent: examination_guidelines
+  examples: |
+   - Can I know the students examination guidelines?
+   - Could you please provide me with the guidelines for student examinations?
+   - May I request the guidelines for student examinations?
+   - Is it possible to obtain the student examination guidelines?
+   - Could you share the examination guidelines for students with me?
+   - I would like to know the guidelines for student examinations. Could you provide them?
+
+#89
+- intent: med_examination_form
+  examples: |
+   - Can I have the medical examination form?
+   - Could you please provide me with the medical examination form?
+   - May I request the medical examination form?
+   - Is it possible to obtain the medical examination form?
+   - Could you share the medical examination form with me?
+   - I would like to have access to the medical examination form.
+
+
+
+- intent: provide_library_location
+  examples: |
+    - I want to know where the library is
+    - Where is the library located?
+    - Can you tell me the location of the library?
+    - where is the library
+    - where can i find the library
+    - Tell me where the library is
+    - I'm looking for the library
+    - What's the location of the library?
+    - Do you know where the library is?
+    - Where exactly is the library situated?
+    - Could you inform me about the library's whereabouts?
+    - Please provide directions to the library
+    - I need to locate the library
+    - Show me the way to the library
+    - Inform me about the library's position
+    - Whereabouts of the library?
+
+
+
+- intent: food_locations
+  examples: |
+    - Where can I find Zyt w Zatar restaurant on campus?
+    - What are the restaurant options in the engineering building?
+    - Is there a Chocolate Bar restaurant on campus?
+    - Where is Ole Caffee located?
+    - Can you tell me about the cafes near the lake?
+    - What dining choices are available at AUM?
+    - Where is Caf Caffee situated?
+    - What restaurants are available in the engineering building?
+    - Can you provide information about Piku restaurant?
+    - What dining establishments are on the AUM campus?
+    - where can i find food
+    - food in aum
+    - where can i eat in aum
+
+
+- intent: cafe_locations
+  examples: |
+    - Where can I find cafes on campus?
+    - What are the cafe options at AUM?
+    - Is there a cafe near the lake?
+    - Where is Caf Caffee located?
+    - Can you tell me about the cafes in the engineering building?
+    - What coffee shops are available at AUM?
+    - Where can I grab a coffee on campus?
+    - Are there any cafes near the student center?
+    - Can you provide information about the cafe near the library?
+    - What are the cafe hours at AUM?
+    - caffe in aum
+    - coffee 
+    - caffee
+
+
+- intent: restaurant_locations
+  examples: |
+    - Where can I find Zyt w Zatar restaurant on campus?
+    - What are the restaurant options in the engineering building?
+    - Is there a Chocolate Bar restaurant on campus?
+    - Where is Ole Caffee located?
+    - Can you tell me about the cafes near the lake?
+    - What dining choices are available at AUM?
+    - Where is Caf Caffee situated?
+    - What restaurants are available in the engineering building?
+    - Can you provide information about Piku restaurant?
+    - What dining establishments are on the AUM campus?
+
+
+- intent: computer_engineering_description
+  examples: |
+      - What is computer engineering about?
+      - Can you give me an overview of computer engineering?
+      - Explain computer engineering, please.
+      - What does computer engineering involve?
+      - I'm interested in learning more about computer engineering.
+      - Describe computer engineering in simple terms.
+      - Could you provide some details about computer engineering?
+      - What are the main components of computer engineering?
+      - Tell me about the field of computer engineering.
+      - What is the scope of computer engineering?
+
+- intent: computer_engineering_credit_requirement
+  examples: |
+      - How many credits are needed for a computer engineering degree?
+      - What is the minimum credit requirement for computer engineering?
+      - How many credits do I need to complete for computer engineering?
+      - What is the total credit count for computer engineering majors?
+      - Could you tell me about the credit requirement for computer engineering?
+      - What is the credit quota for graduating in computer engineering?
+      - How many credits must I earn to graduate with a computer engineering degree?
+      - Can you provide information on the credit requirement for computer engineering?
+      - What is the credit threshold for a degree in computer engineering?
+      - Are there specific credit requirements for computer engineering students?
+
+- intent: computer_engineering_courses
+  examples: |
+      - What are the core courses in computer engineering?
+      - Can you list the fundamental courses for computer engineering students?
+      - Give me a rundown of the courses in computer engineering.
+      - Which subjects are included in the computer engineering curriculum?
+      - I'm curious about the courses offered in computer engineering.
+      - Could you outline the main subjects in computer engineering?
+      - Provide me with information on computer engineering courses.
+      - What topics do computer engineering students study?
+      - Can you name the primary courses for computer engineering majors?
+      - Tell me about the coursework for computer engineering.
+
+- intent: computer_engineering_student_organizations
+  examples: |
+      - Are there any clubs for computer engineering students?
+      - Can you list student organizations for computer engineering majors?
+      - What extracurricular activities are available to computer engineering students?
+      - Provide information about clubs and organizations for computer engineering.
+      - I'm interested in joining a club related to computer engineering.
+      - Tell me about the student clubs affiliated with computer engineering.
+      - Which organizations cater to computer engineering students?
+      - Are there any associations specifically for computer engineering majors?
+      - Can you recommend any clubs for computer engineering students?
+      - What opportunities for involvement are there for computer engineering students?
+
+- intent: computer_engineering_credits
+  examples: |
+      - How many credits are required to graduate with a computer engineering degree?
+      - What is the total credit count for computer engineering?
+      - Can you clarify the credit requirement for computer engineering?
+      - What is the credit quota for computer engineering students?
+      - How many credits do I need to complete for a degree in computer engineering?
+      - Are there specific credit requirements for computer engineering majors?
+      - What is the minimum credit requirement for computer engineering?
+      - Can you explain the credit distribution for computer engineering?
+      - What is the credit threshold for graduating in computer engineering?
+      - How are credits allocated in the computer engineering program?
+      - computer engineering credis 
+      - ce credis
+
+
+
+#1
+
+- intent: apply_makeup  
+  examples: |
+    - How do I apply for Makeup? 
+    - I want to know how do I apply for Makeup
+    - How do I apply for makeup?
+    - Could you guide me on the process of applying for makeup? 
+    - What steps should I take to submit a makeup application? 
+    - Can you provide instructions on how to apply for makeup? 
+    - In what manner can I formally request makeup for a missed event? 
+    - Could you explain the proper protocol for applying for makeup?
+    - What actions do I need to take to request makeup for a missed opportunity? 
+    - How can I formally apply for makeup in the given situation? 
+    - What is the procedure for submitting a makeup application? 
+    - What are the necessary steps to put forth a makeup request? 
+    - how if i want to make a makeup request
+    - where is the makeup request
+    - if i want to make a makeup request how i can get it? - when can the doctor put me late
+    - can the doctor put me late if i leave the class
+
+#2
+
+
+
+#4
+
+
+- intent: GPA_credit
+  examples: |
+    - I want to register more than 12 cards 
+    - I want to register more than 12 credit
+    - What is the maximum credit limit for register if students gpa is 3?
+    - What is the minimum GPA requirement for students to register for 18 credits at AUM?
+    - Are there any specific academic conditions for students to register for 18 credits at AUM?
+    - Is the 2.67 GPA threshold the same for all programs and departments at AUM?
+    - Can students with a GPA of 2.67 or higher register for 18 credits?
+    - Is a GPA of 2.67 or higher necessary to enroll in 18 credits?
+    - What GPA threshold allows students to register for 18 credits?
+    - Are students eligible to register for 18 credits if their GPA meets or exceeds 2.67?
+    - Is there a GPA requirement for students to be able to register for 18 credits?
+
+#6
+
+# - intent: AUM_Tutoring_Center
+#   examples: |
+#     - AUM Tutoring Center 
+#     - support center  
+#     - can I have support in Tutoring 
+#     - Tutoring 
+#     - Where is Tutoring Center 
+#     - how can i register in Tutoring Center 
+#     - What services are offered by the Tutoring Center at AUM?
+#     - What assistance does the Tutoring Center offer at AUM?
+#     - What services does the Tutoring Center provide at AUM?
+#     - How does the Tutoring Center support students at AUM?
+#     - What resources are available at the Tutoring Center at AUM?
+#     - What help can students receive from the Tutoring Center at AUM?
+
+
+#7
+
+- intent: check_schedule
+  examples: |
+    - How can i check my final exam schedule? 
+    - Where may I view a schedule for my final exam? 
+    - How can I access my final exam schedule, and when will it be made available to students? 
+    - How can I check my final exam schedule? 
+    - To verify my final exam schedule, what steps should I take? 
+    - How do I go about checking the details of my final exam schedule? 
+    - Can you guide me on the process for checking my final exam schedule? 
+    - What is the recommended method for confirming my final exam schedule? 
+    - How can I access and review my final exam schedule? 
+    - Could you provide instructions on how to check my final exam schedule? 
+    - What steps do I need to follow to ensure I have the accurate information about my final exam schedule? 
+    - Is there a specific platform or website where I can check my final exam schedule? 
+    - How do I find and confirm the details of my final exam schedule? 
+
+#8
+
+- intent: miss_final
+  examples: |
+    - I want to know what to do if I miss the final exam? 
+    - miss exam  
+    - what can i do when missed final exam 
+    - What steps should be taken if the final exam is missed? 
+    - In the event of missing the final exam, what actions should be considered? 
+    - Could you provide guidance on what to do if I miss the final exam? 
+    - What are the recommended procedures for addressing a missed final exam? 
+    - If the final exam is missed, what steps should I follow to rectify the situation? 
+    - What measures can be taken if I happen to miss the final exam? 
+    - Could you outline the appropriate course of action for a missed final exam? 
+    - In case of a missed final exam, what are the recommended next steps? 
+    - What should be done if I am unable to attend the final exam? 
+    - Can you provide advice on how to handle the situation if I miss the final exam? 
+#9
+- intent: paper_work_makeup 
+  examples: | 
+    - Where can I submit the paper work to apply for makeup?  
+    - To apply for makeup, where is the designated location for submitting the required paper work? 
+    - Where should I go to submit the necessary paper work for applying for makeup? 
+    - For makeup application, where is the designated place to submit the required paper work? 
+    - Where can I deliver the paper work needed to apply for makeup? 
+    - To initiate a makeup request, where is the appropriate location to submit the required paper work? 
+    - Where is the submission point for paper work related to applying for makeup? 
+    - What is the specific location for subm apply for makeup? 
+    - To apply for makeup, where do I need to submit the required paper work? 
+    - Where is the designated drop-off point for paper work when applying for makeup? 
+    - paper work
+
+
+ 
+
+#10 
+
+- intent: bring_final 
+  examples: |  
+    - What should I bring for the final exam? 
+    - Can you provide a list of items I need to bring for the final exam? 
+    - What items are essential to bring for the upcoming final exam? 
+    - Could you offer guidance on the necessary materials to bring for the final exam? 
+    - What should be included in the items I bring for the final exam? 
+    - Can you advise me on the essential things to bring for the final exam? 
+    - What items are recommended for me to bring when taking the final exam? 
+    - Could you outline the necessary supplies for the final exam that I should bring? 
+    - Is there a checklist of items I need to bring for the final exam? 
+    - Can you specify the required materials to bring with me for the final exam? 
+
+#11
+
+- intent: late_final  
+  examples: | 
+    - Can I enter the final exam if I am late?  
+    - Is it permissible to join the final exam after it has started if I am running late? 
+    - Will I be allowed to enter the final exam even if I arrive late? 
+    - Can I still participate in the final exam if I am tardy? 
+    - Is there a grace period for entering the final exam if I am running late? 
+    - Will I face any consequences for entering the final exam late? 
+    - Is there a policy on late entry for the final exam? 
+    - Can I join the final exam after the scheduled start time if I am late? 
+    - Are there any restrictions or guidelines regarding late entry to the final exam? 
+    - What is the procedure for entering the final exam if I arrive late? 
+    - late final
+
+#12
+
+- intent: satisfied_final 
+  examples: |  
+    - What do I do if I'm not satisfied with my final exam grade? 
+    - Is there a process for addressing dissatisfaction with my final exam grade? 
+    - What steps should I take if I'm unhappy with my final exam results? 
+    - Could you guide me on what to do if I find my final exam grade unsatisfactory? 
+    - If I'm not content with my final exam grade, what actions can I take? 
+    - Is there a protocol for expressing dissatisfaction with my final exam results? 
+    - How can I address concerns about my final exam grade if I'm not satisfied? 
+    - Are there procedures in place for handling dissatisfaction with final exam grades? 
+    - What recourse do I have if I'm dissatisfied with my final exam grade? 
+    - Could you provide advice on what steps to take if I'm not happy with my final exam result? 
+
+#13 
+
+#14
+
+    
+
+- intent: clarify_one_session
+  examples: |
+    - What's the max number of absences for a class with 1 session per week?
+    - How many absences can I have for a once-a-week class in Fall/Spring?
+    - Clarify the attendance policy for classes meeting once per week in Fall/Spring.
+    - What's the attendance rule for classes with only one session per week?
+    - Can you explain the absence limit for classes that meet once weekly?
+    - Tell me about the attendance policy for courses that meet once a week.
+    - How many times can I miss class for a course with one weekly session?
+    - What's the absence allowance for classes held once a week in Fall/Spring?
+    - Clarify the maximum number of absences for once-a-week classes.
+    - How many missed classes are permitted for courses meeting once per week?
+    - what is the max number of absences for a class that has 1 sessions a week in spring semester?
+
+- intent: clarify_two_sessions
+  examples: |
+    - What's the attendance policy for classes with two sessions per week?
+    - How many absences are allowed for a class with two meetings a week?
+    - Tell me about the attendance rules for classes meeting twice weekly in Fall/Spring.
+    - Clarify the attendance policy for classes with two sessions per week.
+    - What's the absence limit for courses that meet twice weekly?
+    - How many classes can I miss for a course with two sessions a week?
+    - Explain the attendance policy for classes held two times a week.
+    - What's the maximum number of absences for classes with two meetings per week?
+    - Can you provide details about the attendance policy for bi-weekly classes?
+    - How many times can I be absent for a class that meets twice weekly?
+    - what is the max number of absences for a class that has 2 sessions a week in spring semester?
+
+- intent: clarify_three_sessions
+  examples: |
+    - What's the limit for absences in a class that meets three times per week?
+    - Can you explain the attendance policy for classes with three sessions in Fall/Spring?
+    - How many times can I be absent from a thrice-weekly class in Fall/Spring?
+    - Clarify the attendance policy for classes with three sessions per week.
+    - What's the absence allowance for courses meeting three times weekly?
+    - Tell me about the attendance rules for classes with three sessions per week.
+    - Explain the attendance policy for classes held three times a week.
+    - What's the maximum number of absences for classes with three meetings per week?
+    - Provide details about the attendance policy for thrice-weekly classes.
+    - How many missed classes are permitted for courses meeting three times a week?
+    - what is the max number of absences for a class that has 3 sessions a week in spring semester?
+
+- intent: clarify_four_sessions
+  examples: |
+    - What's the maximum number of absences for a class that meets four times a week?
+    - Clarify the attendance policy for classes with four sessions weekly in Fall/Spring.
+    - How many absences are allowed for a class meeting four times per week in Fall/Spring?
+    - Tell me about the attendance rules for classes with four sessions per week.
+    - What's the absence limit for courses that meet four times weekly?
+    - Explain the attendance policy for classes held four times a week.
+    - What's the maximum number of absences for classes with four meetings per week?
+    - Can you provide details about the attendance policy for classes meeting four times weekly?
+    - How many times can I be absent for a class that meets four times weekly?
+    - Clarify the attendance policy for courses with four sessions per week.
+    - what is the max number of absences for a class that has 4 sessions a week in spring semester?
+
+#15
+
+- intent: clarify_summer_two_sessions
+  examples: |
+    - What's the attendance policy for classes with two sessions per week in the Summer semester?
+    - Can you tell me about the absence limit for a class with two sessions weekly in Summer?
+    - How many absences are allowed for a class with two meetings a week in Summer?
+    - Clarify the attendance policy for classes meeting twice weekly in the Summer semester.
+    - I need to understand the attendance rules for classes with two sessions per week in Summer. Can you explain?
+    - What's the maximum number of absences permitted for a class with two sessions weekly in Summer?
+    - Explain the attendance policy for classes that meet twice a week during Summer semester.
+    - How strict is the attendance policy for classes with two sessions per week in Summer?
+    - Provide details about the absence policy for courses with two meetings per week in Summer.
+    - Clarify the rules regarding absences for classes with two sessions weekly in Summer.
+    - what is the max number of absences for a class that has 2 sessions a week in Summer semester?
+
+- intent: clarify_summer_three_sessions
+  examples: |
+    - What's the max number of absences for a class that has three sessions a week in Summer?
+    - Clarify the attendance policy for classes meeting thrice weekly in the Summer semester.
+    - Can you explain the absence policy for classes with three sessions per week in Summer?
+    - How many absences are permitted for a class with three meetings a week in Summer?
+    - I'm unsure about the attendance rules for classes with three sessions per week in Summer. Can you help?
+    - What's the attendance policy for courses that meet three times a week during Summer semester?
+    - How many missed classes are allowed for a class with three sessions weekly in Summer?
+    - Clarify the rules regarding absences for classes with three sessions weekly in Summer.
+    - Provide details about the absence policy for courses with three meetings per week in Summer.
+    - Explain the maximum number of absences permitted for classes with three sessions per week in Summer.
+    - what is the max number of absences for a class that has 3 sessions a week in Summer semester?
+
+- intent: clarify_summer_five_sessions
+  examples: |
+    - What's the attendance policy for classes with five sessions per week in Summer?
+    - Can you tell me about the absence limit for a class with five sessions weekly in Summer?
+    - How many absences are allowed for a class with five meetings a week in Summer?
+    - Clarify the attendance policy for classes meeting five times weekly in the Summer semester.
+    - I need to understand the attendance rules for classes with five sessions per week in Summer. Can you explain?
+    - What's the maximum number of absences permitted for a class with five sessions weekly in Summer?
+    - Explain the attendance policy for classes that meet five times a week during Summer semester.
+    - How strict is the attendance policy for classes with five sessions per week in Summer?
+    - Provide details about the absence policy for courses with five meetings per week in Summer.
+    - Clarify the rules regarding absences for classes with five sessions weekly in Summer.
+    - what is the max number of absences for a class that has 5 sessions a week in Summer semester?
+
+- intent: clarify_summer_seven_sessions
+  examples: |
+    - What's the max number of absences for a class that has seven sessions a week in Summer?
+    - Clarify the attendance policy for classes meeting seven times weekly in the Summer semester.
+    - Can you explain the absence policy for classes with seven sessions per week in Summer?
+    - How many absences are permitted for a class with seven meetings a week in Summer?
+    - I'm unsure about the attendance rules for classes with seven sessions per week in Summer. Can you help?
+    - What's the attendance policy for courses that meet seven times a week during Summer semester?
+    - How many missed classes are allowed for a class with seven sessions weekly in Summer?
+    - Clarify the rules regarding absences for classes with seven sessions weekly in Summer.
+    - Provide details about the absence policy for courses with seven meetings per week in Summer.
+    - Explain the maximum number of absences permitted for classes with seven sessions per week in Summer.
+    - the max number of absences for a class that has 7 sessions a week in Summer semester
+
+- intent: clarify_summer_ten_sessions
+  examples: |
+    - What's the attendance policy for classes with ten sessions per week in Summer?
+    - Can you tell me about the absence limit for a class with ten sessions weekly in Summer?
+    - How many absences are allowed for a class with ten meetings a week in Summer?
+    - Clarify the attendance policy for classes meeting ten times weekly in the Summer semester.
+    - I need to understand the attendance rules for classes with ten sessions per week in Summer. Can you explain?
+    - What's the maximum number of absences permitted for a class with ten sessions weekly in Summer?
+    - Explain the attendance policy for classes that meet ten times a week during Summer semester.
+    - How strict is the attendance policy for classes with ten sessions per week in Summer?
+    - Provide details about the absence policy for courses with ten meetings per week in Summer.
+    - Clarify the rules regarding absences for classes with ten sessions weekly in Summer.
+    - the max number of absences for a class that has 10 sessions a week in Summer semester
+
+    
+
+
+
+#16
+
+# - intent: medical_excuses
+#   examples: |
+#     - When do I submit my medical excuses?
+#     - How many days are allowed to submit my medical report?
+#     - how many days until I submit my excuses?
+#     - when the time if I want to submit my excuses? 
+#     - when the last day for submit my medical excuses?
+#     - How many days for submit the medical report? 
+#     - What is the rationale behind the specific timeframe of 2 working days for submitting an appeal following a dismissal notification?
+ 
+#17
+
+- intent: aum_portal
+  examples: |
+    - How you can apply for the Attendance Dismissal ?
+    - how do I submit my medical excuses/report?
+    - If I get dismissed, how do I submit my medical report/excuses?
+    - Can I track the status of my appeal after submitting it through the AUM Portal's Student Requests section?
+    - Where specifically can I find the Student Requests section within the AUM Portal?
+    - How can students appeal an attendance dismissal using the AUM Portal?
+    - What is the process for appealing an attendance dismissal through the AUM Portal?
+    - How can students submit an appeal for attendance dismissal via the AUM Portal?
+    - Where on the AUM Portal can students find the option to appeal an attendance dismissal?
+    - What steps should students follow on the AUM Portal to initiate an appeal for attendance dismissal?
+    - In which section of the AUM Portal can students access the option to appeal attendance dismissal?
+    - What is the pathway within the AUM Portal for students to request a review of attendance dismissal?
+
+#18
+
+- intent: dismisse_grade
+  examples: |
+    - if I get dismisse from a course, what will be my grade?
+    - I finished my all possible absents day, what will be my grade?
+    - What is the grade if I get the limit of absent in my course ?
+    - What is the grade if I reach 9 absents out of 9 of my course?
+    - What is the grade if I reach 6 absents out of 6 of my course?
+    - What is the grade if I reach 3 absents out of 3 of my course?
+    - What is the grade if I reach 12 absents out of 12 of my course?
+    - How is a student's grade recorded if they are dismissed from a course?
+    - What designation is given to a student's grade if they are dismissed from a course?
+    - How does the grading system handle students who are dismissed from a course?
+    - In case of dismissal from a course, what grade notation is assigned to the student?
+    - What is the grading outcome for students who are dismissed from a course?
+    - What happens to a student's grade if they are unable to continue a course due to dismissal?
+    - How is the academic performance of dismissed students reflected in their grades?
+
+#19
+
+- intent: Absence_percentage
+  examples: |
+    - What is the percentage of absence in the average for each course?
+    - Absence percentage
+    - what the total grade for absent?
+    - the limit grade for absent?
+    - how many percentage for each course for the absent?
+    - What is the attendance percentage policy at AUM?
+    - Can you tell me about the attendance percentage component in courses at AUM?
+    - How much of my grade is determined by attendance in each course at AUM?
+    - Explain the attendance percentage policy at AUM.
+    - What percentage of my total grade comes from attendance in classes at AUM?
+    - Can you provide details about the attendance grading system at AUM?
+    - Clarify the role of attendance percentage in determining grades at AUM.
+    - How does attendance contribute to the final grade in courses at AUM?
+    - Tell me more about the attendance percentage component for courses at AUM.
+    - What is the maximum percentage of the total grade that can be achieved through attendance at AUM?
+#20
+
+- intent: before_dismissal
+  examples: |
+    - I want to know the allowed absence percentage to reach before dismissal?
+    - What is the defined threshold for allowable absences before an student faces dismissal in our univarsity?
+    - what is the percentage that I can take before I get dismissal?
+    - I get 20% of the absent parsentage I will get dissmil or not?
+    - I get 20% of the absence parsentage I will get dismissal or not?
+    - what is the parsentage that i can get before dismissal?
+    - What is the allowed absence percentage before dismissal from a course?
+    - Can you tell me the threshold for absence percentage before dismissal?
+    - How many absences are allowed before dismissal from a course?
+    - What is the maximum absence percentage allowed before dismissal?
+    - Clarify the absence percentage threshold for course dismissal.
+    - How many absences can I have before being dismissed from a course?
+    - Tell me about the absence percentage limit before dismissal from a course.
+    - What happens if I exceed the absence percentage limit in a course?
+
+
+
+
+#25
+
+
+#26
+
+
+    
+#27
+
+
+#28
+
+- intent: AUM_restaurant
+  examples: |
+    - Are there restaurants on campus?
+    - What the restaurants are available on campus?
+    - Are there healthy options available in restaurants?
+    - Are there designated places for students who want to eat in restaurants?
+    - food 
+    - coffee
+    - breakfast
+    - lunch
+    - dinner
+    - chocolate
+    - sweet
+    - food hall
+    - Can you provide a list of restaurants available at AUM?
+    - What dining options are there at AUM?
+    - Where can I find restaurants on campus?
+    - Tell me about the restaurants at AUM.
+    - What are the food options available on campus?
+    - Can you list the eateries at AUM?
+    - I'm looking for places to eat on campus. What are my options?
+    - Provide information about the restaurants at AUM.
+    - How many restaurants are there at AUM?
+    - What are the names of the restaurants on campus?
+
+#29
+
+#30
+
+   
+- intent: ATM_service
+  examples: |
+    - Is there an ATM service at the university?
+    - Are cash deposit services available at ATMs?
+    - Is there an ATM service available on campus?
+    - Can you tell me about the ATM service at AUM?
+    - Where can I find ATMs on campus?
+    - Are there ATMs available in the Engineering Building?
+    - Can I withdraw cash from ATMs on campus?
+    - Provide information about the ATM services at AUM.
+    - What services does the ATM in the Engineering Building offer?
+    - Clarify the ATM services available on campus.
+
+#31
+
+# - intent: tawteen_career_center
+#   examples: |
+#     - What services does the Tawteen Career Center offer to help students?
+#     - What is the role of the Tawteen Career Center at the university?
+#     - What services does the Tawteen Career Center provide to students and graduates?
+#     - How can students access the Tawteen Career Center?
+#     - Are job and internship opportunities provided through the Tawteen Career Center?
+#     - Are recruitment events and events organized by the Tawteen Career Center?
+
+
+
+
+
+# #32
+
+# - intent: accident_campus
+#   examples: |
+#     - What should I do if I have an accident in a parking area?
+#     - How can I access assistance in case of an accident within the campus?
+#     - What steps should one take if an accident transpires within the campus premises?
+#     - In case of an accident within the campus, what procedures should be followed to obtain assistance?
+#     - What are the protocols for accessing aid in the event of an accident on campus?
+#     - How does one access support if involved in an accident within campus boundaries?
+#     - If there's an accident within the campus vicinity, how can one request assistance?
+#     - What measures can individuals take to receive help promptly if a campus accidents haapen ?
+#     - In what ways can individuals seek assistance if they encounter an accident  on campus grounds?
+#     - How can one access emergency services in the event of an accident  situation on campus?
+#     - if I get tired,I call who ?
+#     - if I get tired where I go?
+
+
+ 
+
+#33
+- intent: AUM_major
+  examples: |
+    - What are the majors available at the university?
+    - What are the main majors offered by the university?
+    - What fields of study can students pursue at the university?
+    - What are the areas of specialization available for undergraduate studies at the university?
+    - In what subjects can students major at the university?
+    - What degree programs does the university provide in various fields?
+    - Which educational tracks are available for students to pursue at the university?
+    - What majors does the university offer for prospective students?
+    - Can you outline the diverse range of majors accessible for students at the university?
+    - The majors in AUM
+
+
+# #34
+# - intent: emergency_cases
+#   examples: |
+#     - Are there alarm and evacuation systems in place within the campus?
+#     - Are there designated assembly points for students and staff during emergencies?
+#     - How is communication with students and staff handled during emergencies?
+#     - What measures are taken to designate assembly points within the campus, and how are they communicated to students and staff?
+#     - In what ways does the campus ensure accountability and safety at designated assembly points during emergencies?
+#     - Which communication channels are utilized by the campus for disseminating information and guidance during critical situations?
+#     - What steps are taken to train students and staff on emergency procedures and the use of evacuation systems?
+#     - How often are emergency preparedness drills conducted on campus, and what is the process for evaluating their effectiveness?
+#     - Are there specific procedures in place for coordinating with local emergency services during campus-wide crises?
+#     - How does the campus utilize technology and data analytics to enhance the efficiency and effectiveness of its emergency response systems?
+
+
+#35
+- intent: program_degree
+  examples: |
+    - Are there programs for both bachelor's and master's degrees in specific fields?
+    - Can I do research or practical work in my chosen major?
+    - Do the academic offerings encompass both undergraduate and graduate programs tailored to specific disciplines?
+    - Are there educational pathways for both bachelor's and master's degrees in specialized subject areas?
+    - Are programs available for students pursuing both undergraduate and postgraduate degrees in certain fields?
+    - Do the academic programs cater to students seeking both bachelor's and master's degrees in specific disciplines?
+    - Are there options for pursuing undergraduate as well as graduate studies in particular fields of interest?
+    - Can students pursue both undergraduate and postgraduate degrees in select fields?
+    - Are there opportunities for students to enroll in bachelor's and master's programs focusing on specific subjects?
+    - Do the academic offerings accommodate students interested in both undergraduate and graduate studies within specific fields
+
+
+
+#36
+- intent: arrive_within
+  examples: |
+    - if you arrive within the first 15 minutes of the start of the class you will be considered late 
+    - when can the doctor put me late
+    - if i come the first 2 minutes
+    - if i come the first 3 minutes
+    - if i come the first 4 minutes
+    - if i come the first 5 minutes
+    - if i come the first 6 minutes
+    - if i come the first 7 minutes
+    - if i come the first 8 minutes
+    - if i come the first 9 minutes
+    - if i come the first 10 minutes
+    - if i come the first 11 minutes
+    - if i come the first 12 minutes
+    - if i come the first 13 minutes
+    - if i come the first 14 minutes
+    - if i come the first 15 minutes 
+    - if i arrive to the class after 2 minutes
+    - if i arrive to the class after 3 minutes
+    - if i arrive to the class after 4 minutes
+    - if i arrive to the class after 5 minutes
+    - if i arrive to the class after 6 minutes
+    - if i arrive to the class after 7 minutes
+    - if i arrive to the class after 8 minutes
+    - if i arrive to the class after 9 minutes
+    - if i arrive to the class after 10 minutes
+    - if i arrive to the class after 11 minutes
+    - if i arrive to the class after 12 minutes
+    - if i arrive to the class after 13 minutes
+    - if i arrive to the class after 14 minutes
+    - if i arrive to the class before 15 minutes
+    - What is the policy if I arrive within the first 15 minutes of class?
+    - Can you explain what happens if I arrive within the first 15 minutes of class?
+    - What is considered late if I arrive within the first 15 minutes of class?
+    - Tell me about the arrival policy for the first 15 minutes of class.
+    - Is there a penalty if I arrive within the first 15 minutes of class?
+    - Provide information about being late within the first 15 minutes of class.
+    - Can you clarify the policy for arriving within the first 15 minutes of class?
+    - What happens if I'm late but still arrive within the first 15 minutes of class?
+    - Explain the consequences of arriving within the first 15 minutes of class.
+    
+
+#37
+- intent: after_start
+  examples: |
+    - if you arrive after 15 minutes of the start of the class you will be considered absent
+    - when can the doctor put me absent
+    - if i come to the class after 15 minutes
+    - if i come to the class after 16 minutes
+    - if i come to the class after 17 minutes
+    - if i come to the class after 20 minutes
+    - if i come to the class after 24 minutes
+    - if i come to the class after 16 minutes
+    - if i come to the class after 30 minutes
+    - What is the policy if I arrive after 15 minutes of the start of class?
+    - Can you explain what happens if I arrive after 15 minutes of the start of class?
+    - Will I be marked as absent if I arrive after 15 minutes of the start of class?
+    - Tell me about the policy for arriving after 15 minutes of the start of class.
+    - Is there a penalty if I arrive after 15 minutes of the start of class?
+    - Provide information about arriving after 15 minutes of the start of class.
+    - Can you clarify the policy for arriving after 15 minutes of the start of class?
+    - What happens if I'm late and arrive after 15 minutes of the start of class?
+    - Explain the consequences of arriving after 15 minutes of the start of class.
+
+#38
+
+- intent: leave_classroom
+  examples: |
+    - if you leave the classroom for less than 15 minutes you will be considered late.
+    - i leave the class for 10 minutes 
+    - i leave the class for 9 minutes 
+    - i leave the class for 5 minutes 
+    - when can the doctor put me late
+    - can the doctor put me late if i leave the class
+    - What is the policy if I leave the classroom for less than 15 minutes?
+    - Can you explain what happens if I leave the classroom for less than 15 minutes?
+    - Will I be considered late if I leave the classroom for less than 15 minutes?
+    - Tell me about the policy for leaving the classroom for less than 15 minutes.
+    - Is there a penalty if I leave the classroom for less than 15 minutes?
+    - Provide information about leaving the classroom for less than 15 minutes.
+    - Can you clarify the policy for leaving the classroom for less than 15 minutes?
+    - What happens if I leave the classroom for less than 15 minutes?
+    - Explain the consequences of leaving the classroom for less than 15 minutes.
+
+#39
+
+- intent: more_fifteen
+  examples: |
+    - if you leave the classroom for more than 15 minutes you will be considered absent.
+    - i leave the class for 15 minutes 
+    - i leave the class for 18 minutes
+    - i leave the class for 20 minutes
+    - when can the doctor put me absent
+    - can the doctor put me absent if i leave the class
+    - What is the policy if I leave the classroom for more than 15 minutes?
+    - Can you explain what happens if I leave the classroom for more than 15 minutes?
+    - Will I be considered absent if I leave the classroom for more than 15 minutes?
+    - Tell me about the policy for leaving the classroom for more than 15 minutes.
+    - Is there a penalty if I leave the classroom for more than 15 minutes?
+    - Provide information about leaving the classroom for more than 15 minutes.
+    - Can you clarify the policy for leaving the classroom for more than 15 minutes?
+    - What happens if I leave the classroom for more than 15 minutes?
+    - Explain the consequences of leaving the classroom for more than 15 minutes.
+
+
+
+#40
+- intent: makeups_Saturday
+  examples: |
+    - can they put the makeups on Saturday?
+    - may they put my makeup on saturday? 
+    - they send to me that my makeup on saturday it is allowed?
+    - Is it acceptable to apply makeup on Saturdays?
+    - Can makeup be worn on Saturdays?
+    - Are Saturdays suitable for putting on makeup?
+    - Is Saturday an appropriate day for applying makeup?
+    - Do people typically wear makeup on Saturdays?
+    - Can individuals choose to put on makeup specifically on Saturdays?
+    - Is Saturday considered a suitable day for makeup application?
+    - Are there any restrictions on wearing makeup on Saturdays?
+    - Is it common for people to apply makeup on Saturdays?
+
+#41    
+
+# - intent: privatepublic_institution
+#   examples: | 
+#     - what must the medical document containe if it take from a private institution
+#     - what i should write in the medical doucment if it from private hospital ?
+#     - what the important thinges in the medical position if it from private institution
+#     - must have Doc Signature and Institution Stamp in the medical document from public hospital?
+#     - what must be in the medical document that we take from public institution
+
+#42  
+
+- intent: three_late
+  examples: |
+    - if you are late to class three times it will be counted as 1 absence
+    - if i get 3 late 
+    - what happen if i get 3 late 
+    - when i get absent
+    - What happens if I'm late to class three times?
+    - Can you explain the consequence of being late to class three times?
+    - How is being late to class three times counted?
+    - Tell me about the policy for being late to class three times.
+    - Is there a penalty for being late to class three times?
+    - Provide information about being late to class three times.
+    - Can you clarify the policy for being late to class three times?
+    - What happens if I'm late to class on three separate occasions?
+    - Explain the consequences of being late to class three times.
+
+#44
+
+- intent: missed_midterm
+  examples: |
+    - what must be the grade for the assessment to apply for a makeup request?
+    - if the grade for assessment is 10% can I make a makeup request?
+    - i missed a quize with 2.5% , can I make a makeup request?
+    - i missed a quize with 5% , can I make a makeup request?
+    - if the grade for assessment is 15% can I make a makeup request?
+    - if the grade for assessment is 20% can I make a makeup request?
+    - if i missed the final can I make a makeup request?
+    - if i missed the midterm can I make a makeup request?
+
+#45
+
+- intent: within_five
+  examples: |
+    - how many days need to submit the Makeup Request of the missed assessment?
+    - when i must submit the makeup request?
+    - i have a missed assessment how many day i have to submit the makeup request?
+    - if the grade for assessment is 15% how many day i have to submit the makeup request?
+    - if the grade for assessment is 20% how many day i have to submit the makeup request?
+    - if i missed the final how many day i have to submit the makeup request?
+    - how many days must to submit makeup request
+    - if i missed the midterm how many day i have to submit the makeup request?
+    - What is the deadline for submitting a Makeup Request?
+    - Can you tell me the timeframe for submitting a Makeup Request?
+    - How many days do I have to submit a Makeup Request after missing an assessment?
+    - Tell me about the deadline for Makeup Request submissions.
+    - Is there a time limit for submitting a Makeup Request after missing an assessment?
+    - Provide information about the timeframe for submitting a Makeup Request.
+    - Can you clarify the deadline for Makeup Request submissions?
+    - Explain the timeframe for submitting a Makeup Request after missing an assessment.
+    - How long do I have to submit a Makeup Request after missing an assessment?
+#46
+
+- intent: allowed_number
+  examples: |
+    - how many allowed number of makeups for per student per semester?
+    - what the max allowed number of makeups for per student per semester? 
+    - i have a one makeup request in the semester can i get another one?
+    - i have a two makeup request in the semester can i get another one?
+    - how many makeup can I take in per semester
+    - max number for makeup for one student in one semester?
+    - How many makeups am I allowed per semester?
+    - Can you tell me the maximum number of makeups allowed per semester?
+    - What is the limit on the number of makeups I can have per semester?
+    - Tell me about the maximum allowed number of makeups per semester.
+    - Is there a restriction on the number of makeups I can have per semester?
+    - Provide information about the allowed number of makeups per semester.
+    - Can you clarify the maximum number of makeups allowed per semester?
+    - What is the policy on the number of makeups allowed per semester?
+    - How many makeups can I have per semester?
+    - Explain the maximum allowed number of makeups per semester.
+
+#47   
+
+- intent: submit_petition
+  examples: |
+    - the last date to submit any makeup petition for any assessment missed during the semester  
+    - What is the deadline for submitting makeup petitions for missed assessments during the semester?
+    - When must students submit petitions to make up for any missed assessments throughout the semester?
+    - By what date should students request makeup opportunities for assessments missed during the semester?
+    - What is the cut-off time for submitting petitions to make up for missed assessments before the final exam?
+    - When does the opportunity to submit makeup petitions for missed assessments end each semester?
+    - What is the last day students can request to make up for any missed assessments before the final exam week?
+    - When does the window close for submitting makeup petitions for assessments not taken during the semester?
+    - What is the deadline for students to apply for makeup assessments for missed coursework?
+    - By when should students file petitions for making up any missed assessments before the final exam period?
+    - what the last date to submit any makeup petition for any assessment missed during the semester? 
+    - when the last day to submit my makeup petition?
+    - Can i submit the makeup petition in the final week?
+    - when the deadline to submit my makeup request?
+
+#48
+
+
+- intent: flexibility_request
+  examples: |
+    - Is it possible to request a makeup exam for an already approved and scheduled test, regardless of the circumstances?
+    - Can students reschedule an exam that has already been approved and scheduled, irrespective of the reason?
+    - Is there flexibility for students to change the date of an already approved and scheduled exam, regardless of the situation?
+    - Are students allowed to request a makeup exam for a pre-approved and scheduled test, regardless of the explanation?
+    - Is there an option for students to postpone an already approved and scheduled exam, irrespective of the cause?
+    - Does the policy allow for rescheduling exams that have already been approved and scheduled, regardless of the grounds?
+    - Can students seek alternative arrangements for pre-approved and scheduled exams, regardless of the rationale?
+    - Is rescheduling permitted for exams that have already been approved and scheduled, regardless of the reason provided?
+    - Are students permitted to request makeup exams for pre-approved and scheduled tests, irrespective of the situation?
+    - Is there a possibility to change the date of an already approved and scheduled exam, regardless of the circumstances?
+
+
+#49
+
+- intent: final_location
+  examples: |
+    - How do I find the final exam location?
+    - How can I determine the venue for the final examination?
+    - What is the method for locating the final exam's site?
+    - Where should I check to find the final exam's location?
+    - How do I discover the final exam venue?
+    - What steps should I take to find out where the final exam will be held?
+    - Where can I access information about the final exam's location?
+    - What's the process for identifying the final exam's venue?
+    - How can I find the place where the final exam will take place?
+    - Where can I obtain details about the final exam's venue?
+    - What are the ways to determine where the final exam will be conducted?
+
+ #50
+- intent: max_EPP
+  examples: |
+    - what is the max allowed number of absences for EPP?
+    - if i am an epp student how many days can i absent?
+    - What is the maximum permissible number of absences for the EPP?
+    - How many absences are students allowed to have for the EPP?
+    - What is the highest number of absences permitted for the EPP?
+    - How many absences are acceptable within the EPP guidelines?
+    - What is the cap on absences for students enrolled in the EPP?
+    - How many absences can students accrue while participating in the EPP?
+    - What is the maximum allowed number of absences for EPP?
+    - Can you tell me the maximum number of absences allowed for EPP?
+    - What is the limit on the number of absences for EPP?
+    - Tell me about the maximum allowed number of absences for EPP.
+    - Provide information about the maximum allowed number of absences for EPP.
+    - Can you clarify the maximum number of absences allowed for EPP?
+    - What is the policy on the number of absences allowed for EPP?
+    - How many absences are allowed for EPP?
+
+#51
+- intent: reach_excuses
+  examples: |
+    - what is the max dismissal percentage you can reach with excuses?    
+    - What is the maximum dismissal percentage allowed when providing excuses, capped at 30%?
+    - What is the highest dismissal rate permissible with excuses, limited to 30%?
+    - What is the maximum percentage of dismissal that can be reached using excuses, set at 30%?
+    - What is the threshold for dismissal percentage achievable with excuses, not exceeding 30%?
+    - What is the upper limit for dismissal percentage attainable with excuses, restricted to 30%?
+    - What is the highest percentage of dismissal permitted with excuses, capped at 30%?
+    - What is the maximum dismissal rate achievable with excuses, not surpassing 30%?
+    - What is the dismissal percentage limit when considering excuses, set at 30%?
+    - What is the maximum dismissal percentage I can reach with excuses?
+    - Can you tell me the maximum dismissal percentage allowed with excuses?
+    - What is the limit on the dismissal percentage I can reach with excuses?
+    - Tell me about the maximum dismissal percentage I can reach with excuses.
+    - Provide information about the maximum dismissal percentage I can reach with excuses.
+    - Can you clarify the maximum dismissal percentage allowed with excuses?
+    - What is the policy on the dismissal percentage I can reach with excuses?
+    - How high can my dismissal percentage reach with excuses?
+
+
+
+- intent: prayer_room
+  examples: |
+    - In which building or area is the campus prayer room located?
+    - Where can one find the designated prayer room on campus, and which specific building houses it?
+    - What is the location of the campus prayer room, and in what building is it situated?
+    - Which building or area houses the designated prayer room on campus?
+    - Where exactly is the prayer room located on campus, and which building is it in?
+    - What building or area should one go to in order to access the campus prayer room?
+    - In what specific location or building can the campus prayer room be found?
+    - Where is the designated prayer space situated on campus, and which building does it occupy?
+    - What is the precise location of the campus prayer room, and which building is it situated within?
+    - where I can find the prayer room?
+    - in which building I can find the prayer room?
+    - prayer room
+    - female prayer room
+    - male prayer room
+  
+    
+
+- intent: about_prayer_Engineeringfemale
+  examples: |
+    - Where is the female prayer room located in the engineering building?
+    - I want to pray in the engineering building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the engineering building?
+    - Can you tell me the location of the female prayer room within the engineering building?
+    - I'm looking for the female prayer room in the engineering building. Where is it?
+    - Is there a designated female prayer room in the engineering building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the engineering building?
+    - I need to locate the female prayer room specifically in the engineering building. Can you help?
+    - Where exactly is the female prayer room situated within the engineering building?
+    - Could you guide me to the female prayer facility within the engineering building?
+    - female prayer room in engineering
+
+
+- intent: about_prayer_Engineeringmale
+  examples: |
+    - Where is the male prayer room located in the engineering building?
+    - I want to pray in the engineering building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the engineering building?
+    - Can you tell me the location of the male prayer room within the engineering building?
+    - I'm looking for the male prayer room in the engineering building. Where is it?
+    - Is there a designated male prayer room in the engineering building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the engineering building?
+    - I need to locate the male prayer room specifically in the engineering building. Can you help?
+    - Where exactly is the male prayer room situated within the engineering building?
+    - Could you guide me to the male prayer facility within the engineering building?
+    - male prayer room in engineering
+
+
+ 
+- intent: about_prayer_businessmale
+  examples: |
+    - Where is the male prayer room located in the business building?
+    - I want to pray in the business building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the business building?
+    - Can you tell me the location of the male prayer room within the business building?
+    - I'm looking for the male prayer room in the business building. Where is it?
+    - Is there a designated male prayer room in the business building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the business building?
+    - I need to locate the male prayer room specifically in the business building. Can you help?
+    - Where exactly is the male prayer room situated within the business building?
+    - Could you guide me to the male prayer facility within the business building?
+    - male prayer room in business
+
+
+- intent: about_prayer_businessfemale
+  examples: |
+    - Where is the female prayer room located in the business building?
+    - I want to pray in the business building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the business building?
+    - Can you tell me the location of the female prayer room within the business building?
+    - I'm looking for the female prayer room in the business building. Where is it?
+    - Is there a designated female prayer room in the business building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the business building?
+    - I need to locate the female prayer room specifically in the business building. Can you help?
+    - Where exactly is the female prayer room situated within the business building?
+    - Could you guide me to the female prayer facility within the business building?
+    - female prayer room in business
+
+
+
+- intent: about_prayer_Libraryfemale
+  examples: |
+    - Where is the female prayer room located in the library building?
+    - I want to pray in the library building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the library building?
+    - Can you tell me the location of the female prayer room within the library building?
+    - I'm looking for the female prayer room in the library building. Where is it?
+    - Is there a designated female prayer room in the library building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the library building?
+    - I need to locate the female prayer room specifically in the library building. Can you help?
+    - Where exactly is the female prayer room situated within the library building?
+    - Could you guide me to the female prayer facility within the library building?
+    - female prayer room in library
+
+
+- intent: about_prayer_Researchfemale
+  examples: |
+    - Where is the female prayer room located in the Research and Innovation building?
+    - I want to pray in the Research and Innovation building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the Research and Innovation building?
+    - Can you tell me the location of the female prayer room within the Research and Innovation building?
+    - I'm looking for the female prayer room in the Research and Innovation building. Where is it?
+    - Is there a designated female prayer room in the Research and Innovation building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the Research and Innovation building?
+    - I need to locate the female prayer room specifically in the Research and Innovation building. Can you help?
+    - Where exactly is the female prayer room situated within the Research and Innovation building?
+    - Could you guide me to the female prayer facility within the Research and Innovation building?
+    - female prayer room in Research and Innovation
+    - female prayer room in Research building
+
+- intent: about_prayer_Researchmale
+  examples: |
+    - Where is the male prayer room located in the Research and Innovation building?
+    - I want to pray in the Research and Innovation building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the Research and Innovation building?
+    - Can you tell me the location of the male prayer room within the Research and Innovation building?
+    - I'm looking for the male prayer room in the Research and Innovation building. Where is it?
+    - Is there a designated male prayer room in the Research and Innovation building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the Research and Innovation building?
+    - I need to locate the male prayer room specifically in the Research and Innovation building. Can you help?
+    - Where exactly is the male prayer room situated within the Research and Innovation building?
+    - Could you guide me to the male prayer facility within the Research and Innovation building?
+    - male prayer room in Research and Innovation
+    - male prayer room in Research building
+    
+
+
+- intent: about_prayer_Culturalmale
+  examples: |
+    - Where is the male prayer room located in the Cultural building?
+    - I want to pray in the Cultural building, specifically in the male prayer room.
+    - Where can I find the male prayer room in the Cultural building?
+    - Can you tell me the location of the male prayer room within the Cultural building?
+    - I'm looking for the male prayer room in the Cultural building. Where is it?
+    - Is there a designated male prayer room in the Cultural building, and if so, where is it situated?
+    - Can you point me to the male prayer space within the Cultural building?
+    - I need to locate the male prayer room specifically in the Cultural building. Can you help?
+    - Where exactly is the male prayer room situated within the Cultural building?
+    - Could you guide me to the male prayer facility within the Cultural building?
+    - male prayer room in Cultural
+    - male prayer room in CLCT
+  
+
+- intent: about_prayer_Culturalfemale
+  examples: |
+    - Where is the female prayer room located in the Cultural building?
+    - I want to pray in the Cultural building, specifically in the female prayer room.
+    - Where can I find the female prayer room in the Cultural building?
+    - Can you tell me the location of the female prayer room within the Cultural building?
+    - I'm looking for the female prayer room in the Cultural building. Where is it?
+    - Is there a designated female prayer room in the Cultural building, and if so, where is it situated?
+    - Can you point me to the female prayer space within the Cultural building?
+    - I need to locate the female prayer room specifically in the Cultural building. Can you help?
+    - Where exactly is the female prayer room situated within the Cultural building?
+    - Could you guide me to the female prayer facility within the Cultural building?
+    - female prayer room in Cultural
+    - female prayer room in CLCT
+
+
+
+
+########## story #########
+
+- intent: what_is_your
+  examples: |
+    - i need help?
+    - i have a question?
+    - How many credit do I need to transfer to the chemical engineering major?
+    - How many credit do I need to transfer to the civil engineering major?
+    - How many credit do I need to transfer to the computer engineering major?
+    - How many credit do I need to transfer to the electrical engineering major?
+    - How many credit do I need to transfer to the Industrial engineering major?
+    - How many credit do I need to transfer to the Architectural engineering major?
+    - How many credit do I need to transfer to the Mechanical engineering major?
+    - if i want to change my major to Architectural engineering , how many credit i need?
+    - if i want to change my major to chemical engineering , how many credit i need?
+    - if i want to change my major to civil engineering , how many credit i need?
+    - if i want to change my major to computer engineering , how many credit i need?
+    - if i want to change my major to electrical engineering , how many credit i need?
+    - if i want to change my major to Industrial engineering , how many credit i need?
+    - if i want to change my major to Mechanical engineering , how many credit i need?
+
+- intent: convert 
+  examples: |
+    - How many credit do I need to transfer to the Finance major?
+    - How many credit do I need to transfer to the Human Resource Management major?
+    - How many credit do I need to transfer to the Management Information Systems major?
+    - How many credit do I need to transfer to the Marketing major?
+    - if i want to change my major to Finance , how many credit i need?
+    - if i want to change my major to  Human Resource Management , how many credit i need?
+    - if i want to change my major to Management Information Systems , how many credit i need?
+    - if i want to change my major to Marketing, how many credit i need?
+    - What is the required credit range for transferring to a new major, such as Accounting?
+    - What is the minimum Cumulative GPA needed for changing majors to Accounting, and is it different for other majors?
+    - Is the approval of a specific committee necessary when changing majors?
+    - How does the College of Business prioritize applicants when accepting students into different majors?
+    - Are there any academic or non-academic conduct violations that would disqualify a student from changing majors, and how does AUM evaluate the severity of such violations?
+
+- intent: transfer_to_teq 
+  examples: |
+    - How many credit do I need to transfer to the Telecommunications and Networking Technology major?
+    - How many credit do I need to transfer to the Information Systems and Technology  major?
+    - if i want to change my major to Information Systems and Technology  , how many credit i need?
+    - if i want to change my major to Telecommunications and Networking Technology, how many credit i need?
+    - What is the credit transfer threshold for admission to the Telecommunications and Networking Technology major?
+    - How many credits are necessary for transferring into the Telecommunications and Networking Technology program?
+    - What is the minimum credit requirement for switching to the Telecommunications and Networking Technology major?
+    - How many credits do I need to transfer to qualify for enrollment in the Telecommunications and Networking Technology major?
+    - Could you please inform me of the credit transfer criteria for the Telecommunications and Networking Technology program?
+    - What is the requisite credit count for transitioning to the Telecommunications and Networking Technology major?
+    - What is the credit transfer policy for students aiming to join the Telecommunications and Networking Technology program?
+    - What is the credit transfer quota for prospective students interested in the Telecommunications and Networking Technology major?
+    - Could you elucidate the credit transfer standards applicable to those aspiring to pursue the Telecommunications and Networking Technology program?
+    - What is the threshold for credit transfers for admission consideration into the Telecommunications and Networking Technology major?
+
+
+
+- intent: from_eng_to_eng
+  examples: |
+    - CE
+    - EE
+    - IE
+    - AE
+    - ChE
+    - CvlE
+    - ME
+    - Mechanical Engineering
+    - electrical engineering major
+    - computer engineering major
+    - Industrial engineering major
+    - Architectural engineering major
+    - civil engineering major?
+    - chemical engineering major
+
+  
+
+- intent: from_bus_to_bus
+  examples: |
+    - Finance
+    - HRM
+    - Human Resource Management
+    - Management Information Systems
+    - MIS
+    - Marketing
+
+
+    
+- intent: from_eng_to_teq
+  examples: |
+    - Telecommunications and Networking Technology
+    - TNT
+    - Information Systems and Technology 
+    - IT
+
+
+- intent: from_teq_to_eng
+  examples: |
+    - Telecommunications and Networking Technology
+    - TNT
+    - Information Systems and Technology 
+    - IT
+
+
+
+- intent: ask_academic_calendar_include
+  examples: |
+      - What does the academic calendar include?
+      - Can you explain what's on the academic calendar?
+      - What information is listed in the academic calendar?
+      - What does the university calendar cover?
+      - Could you outline the contents of the academic calendar?
+      - What details are provided in the academic calendar?
+      - What does the academic timetable consist of?
+      - What events are listed in the academic calendar?
+      - What does the academic schedule entail?
+      - What is typically found in the academic calendar?
+
+- intent: ask_semester_start_date
+  examples: |
+      - When does the semester usually begin?
+      - What is the start date for the upcoming semester?
+      - When does the next semester commence?
+      - At what date does the semester usually start?
+      - When does the academic term kick off?
+      - What is the beginning date of the semester?
+      - When does the academic year start?
+      - When does the semester usually kick off?
+      - What date does the semester usually commence?
+      - When does the new semester usually start?
+
+- intent: ask_semester_end_date
+  examples: |
+      - When does the semester typically end?
+      - What is the end date for this semester?
+      - When does the current semester come to a close?
+      - At what date does the semester typically end?
+      - When is the last day of classes for this semester?
+      - What is the closing date for the semester?
+      - When does the academic term usually end?
+      - When does the semester typically wrap up?
+      - What date does the semester usually end?
+      - When is the last day of the academic term?
+
+- intent: ask_holiday_dates
+  examples: |
+      - What holidays are included in the academic calendar?
+      - Can you provide the dates of holidays in the academic calendar?
+      - When are the holidays during the semester?
+      - What are the holiday periods in the academic calendar?
+      - Could you list the dates of all holidays?
+      - What are the scheduled breaks in the academic calendar?
+      - When are the vacation days in the academic year?
+      - Can you tell me when the university is closed for holidays?
+      - What days are marked as holidays on the academic calendar?
+      - Can you give me a list of all the holidays in the academic year?
+
+- intent: ask_find_academic_calendar
+  examples: |
+      - Where can I find the university's academic calendar?
+      - How do I access the academic calendar?
+      - What is the official source for the academic calendar?
+      - Where is the academic calendar located?
+      - How can I view the academic calendar?
+      - What's the best way to find the academic calendar?
+      - Where should I go to find the academic calendar?
+      - What website hosts the academic calendar?
+      - How do I locate the university calendar?
+      - Can you guide me to the academic calendar?
+
+- intent: ask_check_holiday_dates
+  examples: |
+      - Where can I check for holiday dates?
+      - How do I find out the dates of holidays?
+      - What's the procedure for checking holiday dates?
+      - Where should I look to find holiday dates?
+      - How can I verify holiday dates?
+      - What's the best way to check for holiday dates?
+      - How do I know when holidays are scheduled?
+      - Where can I find the list of holiday dates?
+      - What's the official source for holiday dates?
+      - Can you guide me on how to check holiday dates?
+
+- intent: ask_update_academic_calendar
+  examples: |
+      - How do I stay updated on changes to the academic calendar?
+      - What's the process for receiving updates about the academic calendar?
+      - How can I get notified about changes in the academic schedule?
+      - What's the best way to stay informed about changes to the academic calendar?
+      - How do I stay in the loop about updates to the academic timetable?
+      - Can I receive alerts for changes to the academic calendar?
+      - How can I subscribe to updates for the academic calendar?
+      - Is there a way to receive notifications for changes in the academic schedule?
+      - What methods are available for staying updated on the academic calendar?
+      - How can I stay informed about any modifications to the academic calendar?
+
+- intent: ask_exam_periods
+  examples: |
+      - Can you tell me about the exam periods?
+      - When are the exam periods usually scheduled?
+      - What are the dates for exams?
+      - Could you provide information about exam schedules?
+      - When are the midterm and final exams?
+      - What's the timing for exams?
+      - Can you give me details about the exam timetable?
+      - How are exams scheduled throughout the semester?
+      - When should I expect exams to be held?
+      - What are the exam dates for this semester?
+
+- intent: ask_key_dates
+  examples: |
+      - What are the key dates for the semester?
+      - Can you give me an overview of important dates in the academic year?
+      - What are the significant dates I should know about?
+      - Could you highlight important dates in the academic calendar?
+      - When are important events happening throughout the semester?
+      - What are the crucial dates to remember for this semester?
+      - Can you provide a summary of essential dates in the academic year?
+      - What are the major milestones in the academic calendar?
+      - Can you list the critical dates for this academic term?
+      - What dates should I mark on my calendar for this semester?

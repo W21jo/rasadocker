@@ -1,0 +1,32 @@
+version: '3.0'
+services:
+  rasa:
+    build:
+      context: .
+      dockerfile: Dockerfile.rasa
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./models:/app/models
+    networks: 
+      - backend
+
+  actions:
+    build:
+      context: .
+      dockerfile: ./actions/Dockerfile.action
+    ports:
+      - "5055:5055"
+    image: rasa-action
+    restart: always
+    networks: 
+      - backend
+    depends_on:
+      - rasa
+
+
+
+
+networks:
+  backend:
+    driver: bridge

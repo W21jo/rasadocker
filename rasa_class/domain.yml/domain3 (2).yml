@@ -1,0 +1,418 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - apply_makeup  
+  - GPA_credit
+  - check_schedule 
+  - miss_final 
+  - paper_work_makeup
+  - bring_final 
+  - late_final 
+  - submit_appeal
+  - satisfied_final
+  - aum_portal
+  - Absence_percentage
+  - dismisse_grade
+  - summer_attendance_policy
+  - FallSpring_attendance_policy 
+  - before_dismissal
+  - AUM_restaurant
+  - ATM_service
+  - AUM_major
+  - program_degree
+  - arrive_within
+  - after_start
+  - leave_classroom
+  - makeups_Saturday
+  - more_fifteen
+  - three_late
+  - missed_midterm
+  - within_five
+  - submit_petition
+  - flexibility_request
+  - final_location
+  - max_EPP
+  - reach_excuses
+  - what_is_your
+  - from_eng_to_eng
+  - from_bus_to_bus
+  - from_eng_to_teq
+  - convert
+  - transfer_teq
+  - from_teq_to_eng
+  - prayer_room
+  - about_prayer_Engineeringfemale
+  - about_prayer_Engineeringmale
+  - about_prayer_businessmale
+  - about_prayer_businessfemale
+  - about_prayer_Libraryfemale
+  - about_prayer_Librarymale
+  - about_prayer_Researchmale
+  - about_prayer_Researchfemale
+  - about_prayer_Culturalfemale
+  - about_prayer_Culturalmale
+  - clarify_one_session
+  - clarify_two_sessions
+  - clarify_three_sessions
+  - clarify_four_sessions
+  - clarify_summer_two_sessions
+  - clarify_summer_three_sessions
+  - clarify_summer_five_sessions
+  - clarify_summer_seven_sessions
+  - clarify_summer_ten_sessions
+  - ask_academic_calendar_include
+  - ask_semester_start_date
+  - ask_semester_end_date
+  - ask_holiday_dates
+  - ask_find_academic_calendar
+  - ask_check_holiday_dates
+  - ask_update_academic_calendar
+  - ask_exam_periods
+  - ask_key_dates
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_apply_makeup:
+  - text: "you apply for the Makeup Request by visiting AUM Portal —> Student Requests —> Makeup"
+
+
+
+
+
+
+  utter_GPA_credit:
+  - text: "You can register 18 credit if your GPA is more than 2.67 or more"
+
+
+  # utter_AUM_Tutoring_Center:
+  #  - text: " The AUM Tutoring Center offers free academic support to all currently enrolled students, including drop-in and by appointment one-to-one and group tutorials, project and homework assistance, and lecture-based or problem-solving sessions.
+             
+  #            you can register for a tutoring session by visiting AUM Portal -> AUM Tutoring Center,you can visit the AUM Tutoring Center in the College of Business Administration Building on the ground floor."
+  
+  utter_check_schedule:
+  - text: " you can check your Final Exam Schedule by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
+
+  utter_miss_final:
+  - text: " you missed your final exam for any critical reason, you can apply for a makeup by visiting AUM Portal -> Student Requests -> Makeup" 
+
+  utter_paper_work_makeup:
+  - text: " you have to submit the complete set of paper work at the time of Makeup submission by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
+
+  utter_bring_final:
+  - text: " you must bring your ID for the final exam"
+
+
+  utter_late_final:
+  - text: " you cannot enter your Final Exam if you are late for 45 minutes or more" 
+
+  utter_submit_appeal:
+  - text: " you have 5 days to file grade appeal from the student affairs department"
+
+
+  utter_satisfied_final:
+  - text: " You can apply by visiting Student Affairs or through the link" 
+
+  
+  utter_medical_excuses:
+  - text: " Appeal must be submitted within 2 working days of the dismissal notification"
+
+  utter_aum_portal:
+  - text: " Appeal by visiting AUM Portal -> Student Requests -> Attendance Dismissal "
+
+
+  utter_Absence_percentage:
+  - text: " AUM provides students with an opportunity to achieve up to 5% of their total grade within each course for Attendance in the classes"
+
+
+  utter_dismisse_grade:
+  - text: " If you are dismissed from a course, your grade will be accorded as an 'AF' Attendance Fail "
+
+
+  utter_clarify_summer_two_sessions:
+  - text: "The maximum number of absences for a class that has 2 sessions a week in the Summer semester is 3."
+  
+  utter_clarify_summer_three_sessions:
+  - text: "The maximum number of absences for a class that has 3 sessions a week in the Summer semester is 4."
+  
+  utter_clarify_summer_five_sessions:
+  - text: "The maximum number of absences for a class that has 5 sessions a week in the Summer semester is 6."
+  
+  
+  utter_clarify_summer_seven_sessions:
+  - text: "The maximum number of absences for a class that has 7 sessions a week in the Summer semester is 9."
+  
+  
+  utter_clarify_summer_ten_sessions:
+  - text: "The maximum number of absences for a class that has 10 sessions a week in the Summer semester is 12."
+   
+
+
+  utter_before_dismissal:
+  - text: " the allowed absence percentage to reach before dismissal is 19%, if you reach 20% absence you will be dismissed from the course"
+
+
+  utter_AUM_restaurant:
+  - text: " Engineering building:Chocolate Bar, Zaatar w Zeit, trolley, OLE,  Business Administration building: WALLS, Library building: Pret ,Front of the lack: Pick and CAF."
+
+
+
+  utter_ATM_service:
+  - text: "There is an ATM service on campus in the Engineering Building, The ATM not provide cash deposit services"
+ 
+  # utter_tawteen_career_center:
+  # - text: "Students can access the “Tawteen Career Center” by visiting it in person on campus or by contacting it by phone or email.
+
+  #        AUM includes a tawteen career center that:
+
+  #        - provides training and guidance services to students through lectures and workshops.
+
+  #        - provides support and resources for students and graduates to search for suitable job opportunities, help to preparing a CV.
+
+  #        - provide job and internship opportunities for students and graduates"
+
+  # utter_accident_campus:
+  # - text: "If you are exposed to an accident or injury, you must inform university security or call the clinic
+          
+
+  #         -In case of an accident within the campus, assistance can be accessed by contacting campus security or emergency services."
+
+
+  # utter_emergency_cases:
+  # - text: "-Alarm and evacuation systems are installed throughout the campus to alert individuals in case of emergencies and facilitate safe evacuation
+
+
+  #         -Designated assembly points are clearly marked within the campus for students and staff to gather during emergencies, ensuring accountability and safety
+
+
+  #        -Communication during emergencies is facilitated through various channels including mass notifications, email, and social media platforms to ensure timely dissemination of information and guidance"
+ 
+
+  utter_AUM_major:
+  - text: "College of Engineering: Mechanical Engineering, Electrical Engineering, Civil Engineering, Chemical Engineering, Industrial Engineering, Computer Engineering and Architectural Engineering, College of Business Administration: Bachelor of Science in Accounting, and Bachelor of Science in Business Administration with a focus on: Finance, Human Resource Management, Management Information Systems, and Marketing, Also Information Systems and Technology and Telecommunications and Networking Technology"
+          
+ 
+  utter_program_degree:
+  - text: "there are programs available for both Bachelor's and Master's degrees in specific fields"
+
+
+  utter_arrive_within:
+  - text: "If you arrive within the first 15 minutes of the start of the class you will be considered late  "
+
+  utter_after_start:
+  - text: " if you arrive after 15 minutes of the start of the class you will be considered absent  "
+
+  utter_leave_classroom:
+  - text: " if you leave the classroom for less than 15 minutes you will be considered late  "
+
+  utter_more_fifteen:
+  - text: "if you leave the classroom for more than 15 minutes you will be considered absent"  
+
+  utter_three_late:
+  - text: "if you are late to class three times it will be counted as 1 absence "  
+
+  utter_missed_midterm:
+  - text: "to apply for a makeup request, the missed assessment must be graded 5% or more "  
+
+  utter_within_five:
+  - text: "the Makeup Request must be submitted within 5 working days of the missed assessment "  
+
+
+  utter_allowed_number:
+  - text: " the max allowed number of makeups is (two) per student per semester "
+
+  utter_submit_petition:
+  - text: " the last date to submit any makeup petition for any assessment missed during the semester is the end of teaching week (the week before the final exam)"  
+
+
+  utter_makeups_Saturday:
+  - text: " makeups may be administered on Saturday"  
+
+  utter_flexibility_request:
+  - text: "no Makeup for an already approved & scheduled exam regardless of the reason"  
+
+
+  # utter_privatepublic_institution:
+  # - text: "your submitted medical document from a private institution must have Doc Signature, Institution Stamp and Health Licensing Department Stamp
+    
+
+  #          your submitted medical document from a public institution must have Doc Signature and Institution Stamp"  
+
+  utter_final_location:
+  - text: " you can find your Final Exam location in your find exam schedule on Moodle by visiting AUM Portal ->Student Links -> Final Assessments Schedule" 
+
+
+  utter_max_EPP:
+  - text: "the max allowed number of absences for EPP is 20"
+
+  utter_reach_excuses:
+  - text: "the max dismissal percentage you can reach with excuses is 30%"
+
+
+  utter_prayer_room: 
+  - text: "You can find the prayer room in all building: First floor in Engineering building , First & Second floor in business administration building, Second floor in Library building, First floor in Research building and In Ground & First floor in Cultural building"
+
+
+
+
+  utter_about_prayer_Engineeringfemale: 
+  - text: "The female prayer room: E2-F "
+
+  
+
+  utter_about_prayer_Engineeringmale: 
+  - text: "The male prayer room: E1-F "
+
+
+  utter_about_prayer_businessmale: 
+  - text: "The male prayer room: B2-F "
+
+
+  utter_about_prayer_businessfemale: 
+  - text: "The female prayer room: B1-F, B1-S "
+
+  utter_about_prayer_Libraryfemale: 
+  - text: "The female prayer room: L2-S "
+
+  utter_about_prayer_Librarymale: 
+  - text: "The male prayer room: L1-S "  
+
+  utter_about_prayer_Researchmale: 
+  - text: "The male prayer room: F-near open studio "  
+
+  utter_about_prayer_Researchfemale: 
+  - text: "The female prayer room: R2-F"  
+
+  utter_about_prayer_Culturalfemale: 
+  - text: "The female prayer room: Ground & First floor "  
+
+  utter_about_prayer_Culturalmale: 
+  - text: "The male prayer room: Ground & First floor "  
+
+
+  utter_clarify_one_session:
+  - text: "The maximum number of absences for a class that has 1 session a week in Fall/Spring semester is 3."
+
+  utter_clarify_two_sessions:
+  - text: "The maximum number of absences for a class that has 2 sessions a week in Fall/Spring semester is 6."
+
+  utter_clarify_three_sessions:
+  - text: "The maximum number of absences for a class that has 3 sessions a week in Fall/Spring semester is 9."
+
+  utter_clarify_four_sessions:
+  - text: "The maximum number of absences for a class that has 4 sessions a week in Fall/Spring semester is 12."
+
+
+############# story ##########
+ 
+
+
+  utter_what_is_your:
+  - text: " What is your major? "
+
+
+  utter_convert:
+  - text: "  What is your major? "
+
+
+  utter_transfer_teq:
+  - text: "  What is your major?  "
+
+
+
+  utter_from_eng_to_eng:
+  - text: "  1.	You should have completed between 24 and 75 credits in your current major
+             
+             2.	You should have a cumulative GPA of not lesser than 2.67.
+             
+             3.	The approval of the concerned committee is required
+             
+             4.	The college of Engineering and Technology is accepting applicants according to availability of seats in each major, with priority given for students with the highest CGPA.
+             
+             5.	Student should not have committed any major academic or non-academic conduct violations, and AUM reserves the right to evaluate the severity of the violation." 
+
+  utter_from_bus_to_bus:
+  - text: "  1.	You should have completed between 24 and 75 credits in your current major.
+            
+             2. You should have a Cumulative GPA of not lesser than 2.67 only for changing major to “Accounting”. For changing to other majors, no minimum CGPA is required.
+            
+             3. The approval of the concerned Committee is required.
+            
+             4. The College of Business is accepting applicants according to availability of seats in each major, with priority given for students with the highest CGPA.
+            
+             5. You should not have committed any major academic or non-academic conduct violations, and AUM reserves the right to evaluate the severity of the violation." 
+
+
+
+  utter_from_eng_to_teq:
+  - text: " 1.	You should have completed between 24 and 75 credits in your current major.
+           
+            2.	You should have a cumulative GPA of not lesser than 2.33.
+           
+            3.	The approval of the concerned committee is required.
+           
+            4.	The college of Engineering and Technology is accepting applicants according to availability of seats in each major, with priority given for students with the highest CGPA.
+           
+            5.	You should not have committed any major academic or non-academic conduct violations, and AUM reserves the right to evaluate the severity of the violation."
+
+  utter_from_teq_to_eng:
+  - text: " 1.	You should have completed between 24 and 75 credits in your current major
+            
+            2.	You should have a cumulative GPA of not lesser than 3.0
+            
+            3.	The approval of the concerned committee is required
+            
+            4.	The college of Engineering and Technology is accepting applicants according to availability of seats in each major, with priority given for students with the highest CGPA.
+           
+            5.	You should not have committed any major academic or non-academic conduct violations, and AUM reserves the right to evaluate the severity of the violation."
+
+
+  utter_AUM_calendar_include:
+    - text: "The academic calendar outlines key dates for each semester, including the start and end dates, holidays, and exam periods."
+  utter_semester_start_date:
+    - text: "The semester usually starts on [semester start date]."
+  utter_semester_end_date:
+    - text: "The semester typically ends on [semester end date]."
+  utter_holiday_dates:
+    - text: "The holiday dates are [list of holiday dates]."
+  utter_find_academic_calendar:
+    - text: "You can find the university's academic calendar on the official website or AUM portal."
+  utter_check_holiday_dates:
+    - text: "You can check for holiday dates on the academic calendar available on the official website or AUM portal."
+  utter_update_academic_calendar:
+    - text: "To stay updated on changes to the academic calendar, you can subscribe to email alerts or use mobile apps provided by the university."
+  utter_exam_periods:
+    - text: "The exam periods are scheduled during [exam periods dates]."
+  utter_key_dates:
+    - text: "Key dates for the semester include [list of key dates]." 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

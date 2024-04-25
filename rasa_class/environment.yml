@@ -1,0 +1,8 @@
+name: rasa_bot
+
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - rasa==1.10.2
+    - absl-py<0.10,>=0.9.0
