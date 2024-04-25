@@ -1,0 +1,177 @@
+version: "3.1"
+
+stories:
+
+- story: User provides GPA, grade, and credits 2
+  steps:
+  - intent: i_want_calculate
+  - action: utter_i_want_calclute
+  - action: utter_ask_gpa
+  - intent: provide_gpa_info
+    entities:
+    - gpa: gpa
+  - action: utter_ask_points
+  - intent: provide_points_info
+    entities:
+    - points: points
+  - action: utter_ask_grade
+  - intent: inform_old_gpa
+    entities:
+    - gradestext: gradestext
+  - action: action_calculate_new_gpa
+- story: User says hi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: User lost ID and provides ID to check
+  steps:
+  - intent: lost_id
+  - action: utter_ask_lost_id
+  - intent: check_student_id
+    entities:
+    - student_id: "12345"
+  - action: action_check_student_id
+  - action: utter_student_id_registered
+
+- story: User lost ID but doesn't provide ID
+  steps:
+  - intent: lost_id
+  - action: utter_ask_lost_id
+  - intent: check_student_id
+  - action: action_check_student_id
+  - action: utter_student_id_not_registered
+
+
+
+# - story: Calculate GPA
+#   steps:
+#   - intent: inform_old_gpa
+#   - slot_was_set:
+#       - gpa: 3.5
+#   - intent: inform_grades
+#   - slot_was_set:
+#       - grades: 3.5
+#   - action: utter_ask_credits
+#   - slot_was_set:
+#       - credits: 3.5
+#   - action: action_calculate_gpa
+
+
+# - story: Calculate GPA
+#   steps:
+#   - intent: inform_old_gpa
+#   - slot_was_set:
+#       - gpa: 3.5
+#   - slot_was_set:
+#       - grades: A
+#   - action: action_calculate_gpa
+# - story: Get Course Details
+#   steps:
+#   - intent: get_course_details
+#   - action: action_get_course_details
+
+# - story: Greet and Query User
+#   steps:
+#   - intent: query_user
+#   - action: query_info_type
+#   - action: utter_message 
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: add_candidate
+#   - action: action_ask_name
+#   - intent: say_name
+#     entities:
+#     - PERSON: Prateek
+#   - slot_was_set:
+#     - PERSON: Prateek
+#   - action: action_ask_empcode
+#   - intent: say_empcode
+#     entities:
+#     - emp_code: 0010KK
+#   - slot_was_set:
+#     - emp_code: 0010KK
+#   - action: action_ask_email
+#   - intent: say_email
+#     entities:
+#     - email: prateek@gmail.com
+#   - slot_was_set:
+#     - email: prateek@gmail.com
+#   - action: action_save_candidate
+#   - intent: select_all
+#   - action: action_select_all
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: select_all
+#   - action: action_select_all
+#   - intent: delete_candidate
+#     entities:
+#     - PERSON: jasmeet
+#   - slot_was_set:
+#     - PERSON: jasmeet
+#   - action: action_delete_candidate
+#   - intent: select_all
+#   - action: action_select_all
+#   - intent: add_candidate
+#   - action: action_ask_name
+#   - intent: say_name
+#     entities:
+#     - PERSON: prateek
+#   - slot_was_set:
+#     - PERSON: prateek
+#   - action: action_ask_empcode
+#   - intent: say_empcode
+#     entities:
+#     - emp_code: 0100zz
+#   - slot_was_set:
+#     - emp_code: 0100zz
+#   - action: action_ask_email
+#   - intent: say_email
+#     entities:
+#     - email: prateek@gmail.com
+#   - slot_was_set:
+#     - email: prateek@gmail.com
+#   - action: action_save_candidate
+#   - intent: delete_candidate
+#     entities:
+#     - PERSON: prateek
+#   - slot_was_set:
+#     - PERSON: prateek
+#   - action: action_delete_candidate
+#   - intent: select_all
+#   - action: action_select_all
+#//////////////////////////////
+ 
+# - story: interactive_story_1
+#   steps:
+#   - intent: get_course_info
+#     entities:
+#     - course_name: course_name
+#   - slot_was_set:
+#     - course_name: course_name
+#   - action: action_Course
+  # - action: utter_course_name
+
+# - story: interactive_story_2
+#   steps:
+#   - intent: get_course_code
+#     entities:
+#     - course_code: course_code
+#   - slot_was_set:
+#     - course_code: course_code
+#   - action: action_Course_code
+  
+
+
+- story: interactive_story_2
+  steps:
+  - intent: action_get_course_details
+    entities:
+    - course_code: course_code
+  - slot_was_set:
+    - course_code: course_code
+  - action: action_get_course_details
+

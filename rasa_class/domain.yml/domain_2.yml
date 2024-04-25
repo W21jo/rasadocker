@@ -1,0 +1,453 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - AUM_student_ID
+  - AUM_clinic
+  - AUM_email_for_the_university_student
+  - AUM_change_email_password
+  - class_standing_freshman
+  - class_standing_sophomore
+  - class_standing_junior
+  - class_standing_senior
+  - graduation_with_honors
+  - bout_AUM 
+  - changing_major_from_business_to_engineering
+  - writing_lab
+  - AUM_registration_way
+  - AUM_registration_min
+  - AUM_registration_max
+  - AUM_add_drop
+  - final_exam_schedule
+  - final_exam_missed
+  - final_exam_paperwork
+  - final_exam_late
+  - AUM_library
+  - AUM_restaurant
+  - ATM_service
+  - tawteen_career_center
+  - emergency_cases
+  - AUM_major
+  - electrical_engineering
+  - clinic_services 
+  - clinic_location
+  - sports_center
+  - it_services
+  - aum_website_info
+  - portal_purpose
+  - aum_Moodle
+  - aum_banner
+  - aum_communicate
+  - parking_services
+  - students_identified
+  - tutoring_center
+  - innovation_center
+  - AUM_E-learning
+  - AUM_calendar
+  - AUM_subject
+  - grading_system
+  - Ask_about_elearning
+  - campus_facilities
+  - business_major
+  - attendance_dismissal_request
+  - medical_examination_submission
+  - lost_item_on_campus
+  - inquire_advising_services
+  - schedule_advising_appointment
+  - inquire_advising_hours
+  - reset_password
+  - library_code_of_conduct
+  - student_affairs
+  - mobile_app
+  - midterm_and_final_exams_guidelines
+  - civil_engineering
+  - industrial_engineering
+  - chemical_engineering
+  - mechanical_engineering
+  - Car Decal
+  - Parking_Rules_and_Regulations
+  - complaints
+  - registration_guide
+  - student_affairs_office_hours_info
+  - student_affairs_contact_info
+  - student_affairs_location_info
+  - mobile_app_class_schedule
+  - mobile_app_campus_map
+  - mobile_app_notifications
+  - mobile_app_library_resources
+  - civil_engineering_credits_required
+  - civil_engineering_core_courses
+  - civil_engineering_student_clubs
+  - civil_engineering_website
+  - industrial_engineering_credits_required
+  - industrial_engineering_website
+  - industrial_engineering_core_courses
+  - chemical_engineering_credits_required
+  - chemical_engineering_website
+  - chemical_engineering_core_courses
+  - mechanical_engineering_credits_required
+  - mechanical_engineering_website
+  - mechanical_engineering_core_courses
+  - Car_Decal_Process
+  - Car_Decal_Documentation
+  - Car_Decal_Parking_Location
+  - Car_Decal_Lack_of_Sticker
+  - Car_Decal_Sharing_Violation
+  - Car_Decal_Disabilities_Parking
+  - Car_Decal_Rules_Communication
+  - computer_engineering_description
+  - computer_engineering_credit_requirement
+  - computer_engineering_courses
+  - computer_engineering_student_organizations
+  - computer_engineering_credits
+
+  
+
+ 
+
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_AUM_student_ID:
+  - text: " Report the Loss: Contact the AUM administration or the office responsible for managing ID cards as soon as possible to report the loss of your ID.
+            Request a Replacement: Inquire about the process for obtaining a replacement AUM ID card. You may need to fill out a form, provide identification documents, and possibly pay a fee for the replacement."
+  utter_AUM_clinic:
+  - text: " -There is a central clinic on campus
+            -AUM central is located in the middle of the campus,near the colleges of Business administration and Engineering and Technology
+            -The clinic provides first aid services and medications when needed, for example, painkillers"
+
+  utter_AUM_email_for_the_university_student:
+  - text: " -The method of communication is to create a private e-mail for each student, to provide him with attendance and absence information, as well as university activities"
+
+  utter_AUM_change_email_password:         
+  - text: "-you can change your password by visiting AUM portal>Downloads>change password"
+  
+  utter_class_standing_freshman:
+  - text: " -the total credits earned for freshman from 0 to 30, the minimum required GPA is 1.6"
+             
+  utter_class_standing_sophomore:
+  - text: "-the total credits earned for sophomore from 31 to 60, the minimum required GPA is 1.8"
+
+  utter_class_standing_junior:
+  - text: " -the total credits earned for junior from 61 to 90, the minimum required GPA is 2"
+
+  utter_class_standing_senior:
+  - text: "-the total credits earned for senior from 90 or above, the minimum required GPA is 2"
+
+  utter_graduation_with_honors:
+  - text: " -You must complete all graduation criteria
+            -You must obtain a cumulative GPA 3.5 or more upon graduation
+            -The grade for any course must not be less than c during study in AUM
+            -The student must not have committed any behavioral violation while studying at AUM"
+  
+  utter_about_AUM:
+  - text: " -The American University of the Middle East is a leading higher education institution established in 2005 in Kuwait. AUM has two colleges: the College of Engineering and Technology and the College of Business Administration, in addition to a Liberal Arts Department and an English Preparatory Program.
+            -AUM has two colleges:the College of Engineering and Technology and the College of Business Administration"
+
+  utter_changing_major_from_business_to_engineering:
+  - text: " -you should have complete between 24 and 75 in you current major
+            -you should have a cumulative GPA not lesser than 3.0
+            -you should pass' MAT150 ' with minimum grade of B+"
+ 
+  utter_writing_lab:
+  - text: " -The writing lab is an open space for all students where they are free to discuss any questions or concerns
+            The Writing Lab provides support to AUM students for assignments, projects, presentations, essays, capstone projects or other research papers
+            You can contact the Writing Lab by sending an email to writinglab@aum.edu.kw"
+
+  utter_AUM_registration_way:
+  - text: " -You can register for courses online before the beginning of each semester through the Banner"
+
+
+  utter_AUM_registration_min:
+  - text: "-You must register with at least 12 credit cards in each semester (except summer semester)"
+
+            
+            
+  utter_AUM_registration_max:
+  - text: "-You must register with at most 18 credit cards in each semester (except summer semester)" 
+
+  utter_AUM_add_drop:
+  - text: "-You are allowed to add and drop and change the section during the add/drop period"
+
+  utter_final_exam_schedule:
+  - text: " -you can check your Final Exam Schedule by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
+
+  utter_final_exam_missed:
+  - text: "-you missed your final exam for any critical reason, you can apply for a makeup by visiting AUM Portal -> Student Requests -> Makeup"
+
+  utter_final_exam_paperwork:
+  - text: " -you have to submit the complete set of paper work at the time of Makeup submission by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
+
+  utter_final_exam_late:
+  - text: "-you cannot enter your Final Exam if you are late for 45 minutes or more"
+            
+  utter_ATM_service:
+  - text: " -There is an ATM service on campus in the Engineering Building"
+ 
+  utter_tawteen_career_center:
+  - text: " The Tawteen Career Center at AUM provides essential career support, offering services such as resume preparation, workshops, and job opportunities through collaborations with companies."
+ 
+  utter_AUM_major:
+  - text: " Engineering:Mechanical Engineering,Electrical Engineering,Civil Engineering,Chemical Engineering,Industrial Engineering
+            The university offers majors including [engineering and business administration majors]"
+
+  utter_computer_engineering_description:
+    - text: " -Computer engineering combines elements of electrical engineering and computer science. It focuses on the design, development, and implementation of computer systems and technologies, including hardware and software aspects. Unlike other engineering fields such as mechanical or civil engineering, which deal primarily with physical systems.
+            -As a computer engineering student, you will take courses in both computer science and electrical engineering. You will study topics such as programming, digital systems, circuits and algorithms, computer architecture, and software engineering.
+            -Our university offers many clubs and organizations for computer engineering students through workshops and seminars.
+            -Our university hosts networking events and career fairs specifically tailored for computer engineering students. These events provide valuable opportunities for students to interact with potential employers and alumni working in the field of computer engineering."
+
+  utter_computer_engineering_credit_requirement:
+    - text: "The credit requirement for a degree in computer engineering is typically around 128 credits."
+
+  utter_computer_engineering_courses:
+    - text: "The core courses for computer engineering usually include Mechanics of Materials, Thermodynamics, Heat Transfer, Dynamics, Machine Design, Control Systems, Engineering Materials, etc."
+
+  utter_computer_engineering_student_organizations:
+    - text: "Our university offers various clubs and organizations catering to computer engineering students. These include workshops, seminars, and networking events."
+
+  utter_computer_engineering_credits:
+    - text: "The total minimum credits required for graduation in computer engineering are typically 128 credits."
+  # utter_electrical_engineering:
+  # - text: " -Courses typically cover topics such as circuits, electronics, electromagnetics, signals and systems, control systems, and power systems
+  #           -It usually takes about four years to complete a Bachelor's degree in electrical engineering
+  #           -Prerequisites often include courses in calculus, physics, and introductory engineering topics
+  #           -Graduates can pursue careers in various industries such as telecommunications, power generation and distribution, electronics, computer hardware, and renewable energy
+  #           -Students often use software tools for circuit simulation, programming (such as MATLAB or Python), and design (such as CAD software)
+  #           -Total Minimum Credits Required for Graduation = 128 credits for the Bachelor's degree in electrical engineering"
+
+  
+  utter_electrical_engineering:
+  - text: " Circuit Analysis-Electronics-Digital Systems-Electromagnetics-Power Systems-Control Systems-Signal Processing"
+
+  utter_clinic_services: 
+  - text: "The Central Clinic on AUM Campus provides immediate first aid services, general check-ups for students, and hosts students prior to hospital transfer if necessary."
+
+  utter_clinic_location:
+  - text: "The AUM Central Clinic is located in the middle of the campus, near the colleges of Business Administration and Engineering and Technology."
+    image: "https://ibb.co/M5bK0gd"
+
+  utter_sports_center:
+  - text: "The Sports Center at AUM provides dedicated gyms for male and female students, fully equipped with workout and training equipment, as well as indoor and outdoor sports facilities designed to international specifications."
+
+  utter_it_services:
+  - text: "AUM provides students with easy access to computers and various online platforms such as the AUM website, MyAUM Portal, AUM email, Moodle system for Learning Management, Banner system for Student Information, AUM Soft Skills E-courses platform, AUM Mobile app, and E-portfolio."
+  
+
+  utter_aum_website:
+  - text: "The AUM website provides general information about the University, its programs, courses, activities, and events. It also allows students to access the MyAUM portal, which includes the Moodle Learning Management System. This is the AUM website if you need it https://www.aum.edu.kw/english/home "
+
+  utter_portal_purpose:
+  - text: "MyAUM is a web portal dedicated to AUM students on the AUM website, providing access to various useful links such as the Learning Management System (Moodle), Student Information System (Banner), academic calendar, events calendar, student handbook, advising sheets, and online forms for various student requests. This is the MyAUM portal webpage to download https://www.aum.edu.kw/english/aum-mobile-app "
+
+  utter_aum_Moodle:
+  - text: "Moodle is AUM's chosen Learning Management System (LMS), providing a platform for collaboration between faculty members and students through a virtual learning environment. It allows students to access course materials, share documents, review course material, and know their grades, marks, and attendance rates. This is the Moodle webpage https://myportal.aum.edu.kw "
+
+  utter_aum_banner:
+  - text: "AUM uses Banner, the leading information system in higher education institutions, to manage students' online registration process, access grades, and academic schedules. This is the Banner webpage https://www.aum.edu.kw/english/common/banner-links "
+   
+
+  utter_aum_communicate:
+  - text: "The main means of communication with students at AUM is via their AUM student email account, used to communicate information about attendance, academic performance, achievements, and AUM activities in general. This is the Email link to login https://login.microsoftonline.com "
+  
+  utter_parking_services:
+  - text: "AUM provides parking spaces for all its students and offers designated parking zones. Students with special needs can apply for Disability Parking space through the Student Affairs Department."
+
+  utter_students_identified:
+  - text: "AUM Student Identification (ID) cards are used to identify registered students and are required for various purposes such as campus access, library borrowing, document requests, course registration, assessments, and entry into facilities like the Sports Center"
+
+  utter_tutoring_center:
+  - text: "The AUM Tutoring Center offers free academic support to all currently enrolled students, including drop-in and by appointment one-to-one and group tutorials, project and homework assistance, and lecture-based or problem-solving sessions."
+
+  utter_innovation_center:
+  - text: "The Innovation Centers at AUM include the Robotics Research Center, nanotechnology center, business clubs, and Capstone Center, aimed at broadening students' knowledge and providing practical insight into various disciplines."
+
+  utter_AUM_E-learning:
+  - text: "Start by checking the Course Catalogue to get a better idea of the varied and rich contents of the platform. You can also browse the catalogue by category."
+
+  utter_AUM_calendar:
+  - text: " -The academic calendar outlines key dates for each semester, including the start and end dates, holidays and exam periods
+             The university's online academic calendar can usually be found on the official website or AUM portal
+            You can stay updated on changes to the university calendar, such as email alerts or mobile apps"
+
+  utter_AUM_subject:
+  - text: "At AUM, we offer a wide range of subjects across various academic disciplines. Some of the subjects you can study include Computer Science, Engineering, Business Administration, Architecture, and more"
+
+  utter_grading_system:
+  - text: "At our university, the grading system typically follows a scale of letter grades (e.g., A, B, C, D, F) with corresponding grade point values. The GPA (Grade Point Average) is calculated based on the grades earned in individual courses and the credit hours associated with each course. GPA requirements may vary depending on the program of study and academic policies"
+
+ 
+ 
+
+  utter_business_major:
+  - text: " -Core courses: The core courses for the business major typically include subjects such as accounting, finance, marketing, management, and business ethics.
+            -Faculty: Our business department is staffed with experienced faculty members who specialize in various areas of business, including finance, marketing, management, and entrepreneurship.
+            -Career opportunities: Business majors have a wide range of career opportunities, including roles in finance, consulting, marketing, human resources, and entrepreneurship.
+            -Internships: We offer internships and experiential learning opportunities for business students to gain practical experience in their field.
+            -Specializations: We offer specializations or concentrations within the business major, such as finance, marketing, management, and international business.
+            -Study abroad: Business students have the opportunity to participate in study abroad programs to gain global perspective and experience.
+            -Alumni network: Our business alumni network provides resources and networking opportunities for current students and graduates.
+            -Research projects: Students can get involved in business-related research projects through opportunities offered by faculty members or research centers."
+
+  utter_attendance_dismissal_request:
+   - text: " -Submission process: Attendance dismissal requests can typically be submitted through the university's student portal or by contacting the student affairs"
+             
+  utter_medical_examination_submission:
+   - text: " -Submission process: You can usually submit your medical examination results to the university health center or the designated office responsible for student health services."
+    
+  utter_lost_item_on_campus:
+   - text: " -Reporting a lost item: If you've lost something on campus, you can report it to student affairs or security department.
+             -Lost and found office: The university typically has a designated lost and found office or department where lost items are collected and stored.
+             -Reporting process: When reporting a lost item, provide as much detail as possible about the item, including its description, when and where it was lost, and any identifying features.
+             -Finding a lost item: If you find a lost item on campus, you can turn it in to the lost and found office or security department."
+
+  utter_advising_services:
+   - text: "At AUM, our advising services include academic guidance, course selection assistance, and career counseling."
+
+  utter_schedule_advising_appointment:
+   - text: "To schedule an advising appointment, you can visit our online booking system or contact our advising office directly."
+
+  utter_advising_hours:
+   - text: "Our advising office is open from 8am to 5pm. You can visit during these hours for assistance."
+  utter_AUM_library:
+  - text: " -Yes, there is a library at AUM that supports the various study programs offered by the College of Business and the College of Engineering and Technology as well as the Department of Liberal Arts.
+            -The Library is open from Sunday through Thursday from 8.00 AM to 8.00 PM.
+            -The library is open during the month of Ramadan, but hours are modified
+            -The Library staff is available to answer questions or provide assistance to facult"
+  utter_reset_password:
+   - text: " -To reset your forgotten password, navigate to the login page and look for the Forgot Password link. Click on it, and follow the prompts to reset your password.
+             ,if you do not receive a password reset email or SMS, check your mail folder or contact support for assistance."
+   
+  utter_library_code_of_conduct:
+   - text: "The library strives to provide an environment conducive to study and research, and therefore all visitors to the library are asked to adhere to several rules in order to maintain safety, including maintaining calm, setting phones on silent, not leaving personal items unattended, and not bringing food and drinks into the library."
+
+  utter_student_affairs_services_info:
+    - text: "The student affairs department helps with things like counseling, academic advice, career help, clubs and activities, student conduct"
+  utter_student_affairs_location_info:
+    - text: "The student affairs department is located in the first floor library on campus"
+  utter_student_affairs_office_hours_info:
+    - text: "The office hours for the student affairs department are from 8am to 5pm on Days of the Week"
+  utter_student_affairs_contact_info:
+    - text: "Students can contact the student affairs office by phone, by email at student.affairs@aum.edu.kw, or by visiting the office during office hours"
+  utter_mobile_app_class_schedule:
+    - text: " -you can use the university's mobile app to check your class schedule. It provides easy access to your personalized schedule"
+    - text: " -The university's mobile app allows you to view your class schedule conveniently."
+    - text: " -You can easily access your class schedule through the university's mobile app."
+  utter_mobile_app_campus_map:
+    - text: " -the university's mobile app typically includes a campus map feature to help students navigate around campus"
+    - text: " -You can find your way around campus using the map feature on the university's mobile app."
+    - text: " -Navigate around campus effortlessly with the campus map feature on the university's mobile app."
+  utter_mobile_app_notifications:
+    - text: " -you can receive notifications about important university announcements through the mobile app or email"
+    - text: " -Stay informed about university announcements with notifications sent through the mobile app."
+    - text: " -Receive timely updates and announcements from the university via the mobile app's notification feature."
+  utter_mobile_app_library_resources:
+    - text: " -the mobile app usually provides a section where you can access library resources"
+    - text: " -Access digital library resources conveniently through the library section of the university's mobile app."
+    - text: " -Explore a wealth of library resources directly from the university's mobile app."
+   
+  utter_midterm_and_final_exams_guidelines:
+   - text: You can find more information about midterm and final exams guidelines (https://myportal.aum.edu.kw/pluginfile.php/210/block_html/content/Students%20Examination%20Guidlines%20%281%29.pdf) ."
+  utter_civil_engineering_credits_required:
+      - text: "The civil engineering major typically requires a minimum of 136 credits for graduation."
+    
+  utter_civil_engineering_core_courses:
+      - text: "Core courses for civil engineering cover foundational topics such as structural engineering, transportation engineering, geotechnical engineering, and environmental engineering."
+    
+  utter_civil_engineering_student_clubs:
+      - text: "There are numerous clubs and student organizations dedicated to civil engineering, providing opportunities for networking, professional development, and engagement."
+    
+  utter_civil_engineering_website:
+      - text: "You can find information about civil engineering programs on the university website at [link](https://www.aum.edu.kw/english/academics/undergraduate-programs/bsc-civil-engineering)."
+  utter_industrial_engineering_credits_required:
+    - text: "The total minimum credits required for graduation in industrial engineering is typically 125."
+  utter_industrial_engineering_website:
+    - text: "You can find information about industrial engineering on the university website at this URL: [Industrial Engineering Program](https://www.aum.edu.kw/english/academics/undergraduate-programs/bsc-industrial-engineering)"
+  utter_industrial_engineering_core_courses:
+    - text: "The core courses for industrial engineering typically include Introduction to Industrial Engineering, Engineering Economics, Probability, Operations Research, Facilities Planning and Design, and Human Factors Engineering."
+  utter_chemical_engineering_credits_required:
+    - text: "The chemical engineering major typically requires a total of 134 credits for graduation."
+
+  utter_chemical_engineering_website:
+    - text: "You can find information about chemical engineering on the university website at https://www.aum.edu.kw/english/academics/undergraduate-programs/bsc-chemical-engineering"
+
+  utter_chemical_engineering_core_courses:
+    - text: "The core courses for chemical engineering usually include Chemical Engineering Thermodynamics, Transport Phenomena, Reaction Engineering, Process Control, Heat Transfer, Mass Transfer, Chemical Engineering Kinetics, etc."
+
+  utter_mechanical_engineering_credits_required:
+    - text: "The mechanical engineering major typically requires a total of 132 credits for graduation."
+
+  utter_mechanical_engineering_website:
+    - text: "You can find information about mechanical engineering on the university website at https://www.aum.edu.kw/english/academics/undergraduate-programs/bsc-mechanical-engineering"
+
+  utter_mechanical_engineering_core_courses:
+    - text: "The core courses for mechanical engineering typically include Mechanics of Materials, Thermodynamics, Heat Transfer, Dynamics, Machine Design, Control Systems, Engineering Materials, etc."
+  utter_Car_Decal_Process:
+    - text: "The process for obtaining a parking decal involves filling out an application from the student affairs department or from the AUM portal."
+
+  utter_Car_Decal_Documentation:
+    - text: "Documentation such as vehicle registration, student ID, and proof of enrollment may be required for obtaining a parking decal."
+
+  utter_Car_Decal_Parking_Location:
+    - text: "You can choose where to park with your parking decal."
+
+  utter_Car_Decal_Lack_of_Sticker:
+    - text: "If you do not have a parking sticker, you cannot enter the parking lots."
+
+  utter_Car_Decal_Sharing_Violation:
+    - text: "Parking decals cannot be shared or transferred between students. Violation of this policy may result in penalties."
+
+  utter_Car_Decal_Disabilities_Parking:
+    - text: "The University addresses parking for students with disabilities through measures such as providing designated parking spaces and accessible accommodations based on individual needs."
+
+  utter_Car_Decal_Rules_Communication:
+    - text: "The University communicates changes to parking rules through notifications such as email."
+  utter_Parking_Rules_and_Regulations:
+   - text: "You can visit Portal AUM to learn about parking rules and regulations, or through the link https://bss.aum.edu.kw/BannerSSS/CarDecal"
+
+  utter_complaints:
+   - text: "If you have a complaint,you can submit a request about the problem you encountered through the AUM portal -> students link -> complaint"
+
+  utter_registration_guide:
+   - text: "The registration guide includes information about procedures on how to use the online registration system,You can visit the AUM portal -> Downloads -> Registration guide for students"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+sesion_config:
+ session_expiration_time: 60
+ carry_over_slots_to_new_session: true 

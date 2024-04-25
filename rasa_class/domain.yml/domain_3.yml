@@ -1,0 +1,409 @@
+version: "3.1"
+
+intents:
+  # - greet
+  # - goodbye
+  # - affirm
+  # - deny
+  # - mood_great
+  # - mood_unhappy
+  # - bot_challenge
+  - clinic_services 
+  - clinic_location
+  - sports_center
+  - it_services
+  - aum_website_info
+  - portal_purpose
+  - aum_Moodle
+  - aum_banner
+  - aum_communicate
+  - parking_services
+  - students_identified
+  - aum_library
+  - writing_club
+  - tutoring_center
+  - medical_emergency 
+  - car_accidents
+  - lost_found
+  - scientific_laboratories
+  - tawteen_center
+  - grading_system
+  - grade_points
+  - trasnscript_grade
+  - minimum_required_grade
+  - minimum_passing_grade
+  - minimum_grade_exceptions
+  - grading_affect_CGPA
+  - incomplete_grade
+  - withdrawal_grade
+  - EPP_passing_grade
+  - Math_prep_passing_grade
+  - undergraduate_class_standings
+  - academic_class_standing
+  - total_credits_class_standing
+  - CGPA_good_standing
+  - calculate_CGPA_GPA
+  - CGPA_GPA_transcript
+  - EPP_purpose
+  - college_eng_tech_require_math_placement_test
+  - academic_max_duration
+  - academic_probation_dismissal
+  - honors_graduation_criteria
+  - expecting_graduate_steps
+  - graduation_clearance_requirements
+  - CGPA_max_credit_fall_spring
+  - CGPA_max_credit_summer
+  - more_max_credit_allowed
+  - appeal_grade_change 
+  - course_repetition_policy 
+  - repeat_course_CGPA_improve
+   #newnewnewnew
+  - repeat_specific_courses
+  - fail_pre_english_math
+  - sponsorship_ccourse_repetition_fees
+  - approvals_repeat_improve_CGPA
+  - steps_retake_subject_need
+  - repeat_course_prerequisite_another_course
+  - failed_course_replaced
+  - change_major_bus_eng_requirements
+  - change_major_eng_bus_requirements
+  - bus_change_major_condition
+  - eng_change_major_eng
+  - attendance_importance
+  - honors_list_criteria
+  - grading_table
+  - park_car
+  - join_art_club
+  - join_book_club
+  - join_drama_club
+  - join_music_club
+  - join_photography_club
+  - join_speech_communication_club
+  - art_club_location 
+  - book_club_location
+  - drama_club_location
+  - music_club_location
+  - photo_club_location
+  - speech_communication_club_location
+  - art_club_info
+  - book_club_info
+  - drama_club_info
+  - music_club_info
+  - photo_club_info
+  - speech_communication_club_info
+  - UG_2023_2024_calendar
+  - EPP_2023_2024_calendar
+  - attendance_policy
+  - examination_guidelines
+  - med_examination_form
+
+  
+
+
+  
+
+# slots:
+#   name:
+  
+#    type: text
+#    influence_conversation: true 
+#    mappings: 
+#    - type: from_entity
+#      entity: name 
+
+responses:
+  # utter_greet:
+  # - text: "Hey! How are you?"
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   # image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  # utter_goodbye:
+  # - text: "Bye"
+
+  # utter_iamabot:
+  # - text: "I am a bot, powered by Rasa."
+
+  utter_clinic_services: 
+  - text: "The Central Clinic on AUM Campus provides immediate first aid services, general check-ups for students, and hosts students prior to hospital transfer if necessary."
+
+  utter_clinic_location:
+  - text: "The AUM Central Clinic is located in the middle of the campus, near the colleges of Business Administration and Engineering and Technology."
+  # image: "https://ibb.co/M5bK0gd"
+  
+  utter_sports_center:
+  - text: "The Sports Center at AUM provides dedicated gyms for male and female students, fully equipped with workout and training equipment, as well as indoor and outdoor sports facilities designed to international specifications."
+ 
+  utter_it_services:
+  - text: "AUM provides students with easy access to computers and various online platforms such as the AUM website, MyAUM Portal, AUM email, Moodle system for Learning Management, Banner system for Student Information, AUM Soft Skills E-courses platform, AUM Mobile app, and E-portfolio."
+  
+  utter_aum_website_info:
+  - text: "The AUM website provides general information about the University, its programs, courses, activities, and events. It also allows students to access the MyAUM portal, which includes the Moodle Learning Management System. This is the AUM website if you need it https://www.aum.edu.kw/english/home "
+
+  utter_portal_purpose:
+  - text: "MyAUM is a web portal dedicated to AUM students on the AUM website, providing access to various useful links such as the Learning Management System (Moodle), Student Information System (Banner), academic calendar, events calendar, student handbook, advising sheets, and online forms for various student requests. This is the MyAUM portal webpage to download https://www.aum.edu.kw/english/aum-mobile-app "
+
+  utter_aum_Moodle:
+  - text: "Moodle is AUM's chosen Learning Management System (LMS), providing a platform for collaboration between faculty members and students through a virtual learning environment. It allows students to access course materials, share documents, review course material, and know their grades, marks, and attendance rates. This is the Moodle webpage https://myportal.aum.edu.kw "
+
+  utter_aum_banner:
+  - text: "AUM uses Banner, the leading information system in higher education institutions, to manage students' online registration process, access grades, and academic schedules. This is the Banner webpage https://www.aum.edu.kw/english/common/banner-links "
+   
+  utter_aum_communicate:
+  - text: "The main means of communication with students at AUM is via their AUM student email account, used to communicate information about attendance, academic performance, achievements, and AUM activities in general. This is the Email link to login https://login.microsoftonline.com "
+  
+  utter_parking_services:
+  - text: "AUM provides parking spaces for all its students and offers designated parking zones. Students with special needs can apply for Disability Parking space through the Student Affairs Department."
+
+  utter_students_identified:
+  - text: "AUM Student Identification (ID) cards are used to identify registered students and are required for various purposes such as campus access, library borrowing, document requests, course registration, assessments, and entry into facilities like the Sports Center"
+
+  utter_aum_library:
+  - text: "The AUM Library aims to promote scientific research and provide study information and ideas through a rich collection of publications, electronic resources, databases, e-books, academic and scientific trainings, study rooms, and more."
+
+  utter_writing_club:
+  - text: "The Writing Lab supports AUM students at any stage of their writing process, providing services such as consultations, workshops, seminars, writing activities, and competitions to help students excel in writing."
+
+  utter_tutoring_center:
+  - text: "The AUM Tutoring Center offers free academic support to all currently enrolled students, including drop-in and by appointment one-to-one and group tutorials, project and homework assistance, and lecture-based or problem-solving sessions."
+
+  utter_innovation_center:
+  - text: "The Innovation Centers at AUM include the Robotics Research Center, nanotechnology center, business clubs, and Capstone Center, aimed at broadening students' knowledge and providing practical insight into various disciplines."
+
+  utter_medical_emergency:
+  - text: "In case of a medical emergency, students should report the case immediately to the Clinic by calling the direct number 22255111."
+  
+  utter_car_accidents:
+  - text: "Students should report any car accidents that happen in the AUM parking areas to AUM Campus Security or by calling the direct number 22255111. In case of injury sustained in the accident, students should inform the AUM Campus Security staff directly or call the Clinic on 22255111."
+
+  utter_lost_found:
+  - text: "The Lost and Found items on campus should be inquired about at the Student Affairs department."
+
+  utter_scientific_laboratories:
+  - text: "AUM Scientific Laboratories provide a supportive environment for executing projects, linking theoretical and applicable science. Equipped with up-to-date devices and equipment, these labs aim to sharpen students' skills and discover their abilities and creativity in various domains."
+  
+  utter_tawteen_center:
+  - text: "The Tawteen Career Center at AUM is responsible for preparing and guiding students in the career exploration process. It offers a wide range of career planning services such as workshops, seminars, career fairs, and other professional development activities to help students discover themselves, reach their goals, and lead their future."
+  
+  utter_grading_system:
+  - text: " The grading system for undergraduate courses at AUM follows a scale where grades are given out of 100, with corresponding letter grades and grade points. The grading table includes ranges for each letter grade along with their respective grade points. Additionally, certain notations such as AF,W, Incomplete (I),Pass (P),and No Pass (NP) are included in the system, with the Grade/100 not reflected in the transcript."
+
+  utter_grade_points:
+  - text: "In the AUM grading system for undergraduate courses, the corresponding grade points for letter grades range from 4 for an A to 0 for an F. The grading table provides specific grade point values for each letter grade within defined grade ranges."
+  
+  utter_trasnscript_grade:
+  - text: "No, the Grade/100 is not reflected in the AUM transcript. Instead, the transcript reflects the letter grade and the corresponding grade points only."
+  
+  utter_minimum_required_grade:
+  - text: "The minimum required passing grade varies depending on the course and program, but generally, a grade of D is the minimum passing grade for most courses. However, some specialization, concentration, or other courses may require a higher passing grade of C- or C. Students should refer to the degree requirements of each program/concentration for specific passing grade criteria."
+  
+  utter_minimum_passing_grade:
+  - text: "The minimum passing grade for most courses is a D."
+  
+  utter_minimum_grade_exceptions:
+  - text: "Yes, some specialization, concentration, or other courses may require a higher grade of C- or C. Students should refer to the degree requirements of each program/concentration for clarification."
+  
+  utter_grading_affect_CGPA:
+  - text: "Certain courses are subject to Pass grade (P) or No Pass grade (NP), and neither P nor NP grades are counted in the calculation of CGPA."
+
+  utter_incomplete_grade:
+  - text: "An Incomplete grade indicates that the student has completed the majority of the course requirements but has failed to complete the final assessment due to serious and compelling reasons. In such cases, the Incomplete Policy is applied."
+
+  utter_withdrawal_grade:
+  - text:  "Withdrawa grade indicates that the student has withdrawn from a course after the Add/Drop period until the specified week of the semester. The W grade is recorded on the student's record but is not included in the calculation of GPA."
+
+  utter_EPP_passing_grade:
+  - text: "The passing grade for each level of the EPP is 70%, and students will be granted a Pass grade (P) or No Pass grade (NP)."
+  
+  utter_Math_prep_passing_grade:
+  - text: "The passing grade for each level of the Mathematics Preparatory Program is a (C)."
+
+  utter_undergraduate_class_standings:
+  - text: "The class standings are Freshman, Sophomore, Junior, and Senior."
+
+  utter_academic_class_standing:
+  - text: "Freshman corresponds to Year 1, Sophomore corresponds to Year 2, Junior corresponds to Year 3, and Senior corresponds to Year 4."
+
+  utter_total_credits_class_standing:
+  - text: "Total credits earned determine a student's class standing. For example, Freshmen have earned 0-30 credits, Sophomores have earned 31-60 credits, Juniors have earned 61-90 credits, and Seniors have earned 91 or above credits."
+  
+  utter_CGPA_good_standing:
+  - text: "The minimum required CGPA for Freshman is 1.6, for Sophomore is 1.8, for Junior is 2, and for Senior is also 2."
+
+  utter_calculate_CGPA_GPA:
+  - text: "GPA (Grade Point Average) is the average of a student's grades achieved in one single semester, while CGPA (Cumulative Grade Point Average) is the average of all final grades achieved by a student during all completed semesters at AUM. GPA and CGPA include all final grades obtained by a student, and in the case of repeating a course, the higher result is considered. Courses that were not transferred to a new major are not included in GPA and CGPA calculations."
+
+  utter_EPP_purpose:
+  - text: "The AUM English Preparatory Program is designed for students who do not meet the English language requirements for admission at AUM, providing intensive academic English instruction to improve overall proficiency in English."
+
+  utter_college_eng_tech_require_math_placement_test:
+  - text: "If a student does not satisfy the threshold needed for the Math Placement Test, they need to register for one or more remedial math courses."
+  
+  utter_academic_max_duration:
+  - text: "Students must meet all academic program requirements within a maximum of eight academic years from the date of enrollment as a registered AUM student."
+
+  utter_academic_probation_dismissal:
+  - text: "Academic probation is determined in the Fall and Spring semesters of each academic year and does not apply to the Summer semester. A student must maintain a good academic standing and minimum required CGPA as per the Class Standing table. If a student fails to achieve the minimum cumulative GPA required, they are placed under Academic Probation for the next semester. A student cannot continue under Academic Probation for more than two consecutive semesters. Exceeding this results in permanent dismissal from AUM. Summer semester is not included in the academic probation semesters. Dismissed students have the right to appeal for another chance before the beginning of the next semester. Dismissed students may or may not be granted a chance to improve their CGPA in the next semester. Students granted a chance to raise their CGPA must sign an acknowledgement and are not permitted to freeze the semester. AUM reserves the right to grant or not grant a chance for dismissed students. Permanently dismissed students are not allowed to reapply to the university."
+
+  utter_honors_graduation_criteria:
+  - text: "All graduation requirements must be completed. A CGPA of 3.5 or more must be achieved upon graduation. The student must not have any grades less than 'C' during their entire studies at AUM. The student must not have committed any significant academic or non-academic conduct violations during their time at AUM."
+
+  utter_expecting_graduate_steps:
+  - text: "Students expecting to graduate must fill out a Graduation request form during their last semester."
+  
+  utter_graduation_clearance_requirements:
+  - text: "Students must provide official identification documents as requested by the General Secretariat of Private Universities Council and the Ministry of Higher Education. Students must complete any outstanding payments to the university. Students must return all books borrowed from the Library. Students must return the AUM Student ID Card and car sticker upon receiving graduation documents."
+
+  utter_CGPA_max_credit_fall_spring:
+  - text: "Below 2.0 Cumulative GPA: Maximum allowed credit load is 12. With Dean's approval, students repeating courses can register up to 15 credits. 2.0 – 2.669 Cumulative GPA: Maximum allowed credit load is 16. For students expected to graduate in the current semester, a maximum of 21 credits can be registered with Dean's approval. 2.670 or above Cumulative GPA: Maximum allowed credit load is 18. For students expected to graduate in the current semester, a maximum of 21 credits can be registered with Dean's approval."
+
+  utter_CGPA_max_credit_summer:
+  - text: "Below 2.0 Cumulative GPA: Maximum allowed credit load is 6. 2.0 or above Cumulative GPA: Maximum allowed credit load is 7. For students expected to graduate in the Summer semester or Fall semester, a maximum of 10 credits can be registered with Dean's approval."
+  
+  utter_more_max_credit_allowed:
+  - text: "Students must fill in a request, and their requests are handled on a case-by-case basis."
+
+  utter_appeal_grade_change:
+  - text: "Students can submit their appeal for grade change within three working days from the date the grade was issued. They should fill in the relevant form and submit it to the Student Affairs Department. A meeting with the faculty member will be scheduled for the student. If the university finds a difference or mistakes between the actual grade and the published grade, the university has the right to amend the grade to the actual one, and the student cannot reject or claim it."
+
+  utter_course_repetition_policy:
+  - text: "A student may repeat a course if they earned a C grade or below, or if they wish to improve their CGPA."
+  
+  utter_repeat_course_CGPA_improve:
+  - text: "-	Students repeating specific courses to improve their CGPA can repeat up to four courses, with each individual course only repeatable once."
+
+  utter_CGPA_GPA_transcript:
+  - text: "-	GPA and CGPA displayed on the AUM transcript include 3 decimal digits, truncated without any rounding."
+
+ #newnewnewnew
+  utter_repeat_specific_courses:
+  - text: "Students can repeat specific courses as many times as needed to pass and graduate within eight academic years from their enrollment in the University, excluding the duration of the English and Mathematics Preparatory Program."
+
+  utter_fail_pre_english_math:
+  - text: "Students in the English and Mathematics Preparatory Program are dismissed if they fail to fulfill the required success grade after repeating a course."
+
+  utter_sponsorship_ccourse_repetition_fees:
+  - text: "Students subject to sponsorship agreements are responsible for meeting regulations set by AUM and their sponsor concerning course repetition fees."
+
+  utter_approvals_repeat_improve_CGPA:
+  - text: "Academic Advancement Center (AAC) and Dean's approval are required to ensure the conditions of repetition are met and to determine the academic impact of the course repetition."
+
+  utter_steps_retake_subject_need:
+  - text: "They should comply with University regulations and register for a maximum of four courses for one semester only, in the subsequent semester from which they have completed the necessary academic requirement for graduation."
+
+  utter_repeat_course_prerequisite_another_course:
+  - text: "If the grade of a course to be repeated is F/AF and is a requirement or prerequisite for another course(s), the student should repeat it before registering for the subsequent related courses."
+
+  utter_failed_course_replaced:
+  - text: "If an F/AF grade is obtained in a course, the same course should be repeated and cannot be replaced or substituted with another course."
+
+
+  utter_change_major_eng_bus_requirements:
+  - text: "The student should have completed between 24 and 75 credits in their current major, maintain a cumulative GPA of not less than 2.33, obtain approval from the concerned committee, and not have committed any major academic or non-academic conduct violations."
+
+  utter_bus_change_major_condition:
+  - text: "The student should have completed between 24 and 75 credits in their current major, maintain a cumulative GPA of not less than 2.67 for changing to Accounting major, obtain approval from the concerned committee, and not have committed any major academic or non-academic conduct violations."
+
+  utter_eng_change_major_eng:
+  - text: "The student should have completed between 24 and 75 credits in their current major, maintain a cumulative GPA of not less than 2.67, obtain approval from the concerned committee, and not have committed any major academic or non-academic conduct violations."
+
+  utter_attendance_importance:
+  - text: "AUM considers attendance a key element in achieving its mission and educational philosophy. Students must attend classes, are responsible for all material presented, and are required to catch up on missed coursework. Attendance policies, including makeup policies, are available on the MyAUM Portal."
+
+  utter_honors_list_criteria:
+  - text: "Students must have a semester GPA of 3.5 or above, not receive a grade less than Cin any course during the semester, register for a semester course load of a minimum of 12 credits, not have committed any major academic or non-academic conduct violations, and not receive an AF grade in any course during the semester."
+
+  # utter_grading_table:
+  # - text: "Please check the image provided for the grading table."
+  # image: "https://ibb.co/h7N4ycq"
+
+  # utter_park_car:
+  # - text: "Students can park Multi Storey Parking Buildings, and Parking gate E1 & E2 as provided in the image"
+  # image: "https://ibb.co/M5bK0gd"
+
+  utter_join_art_club:
+  - text: "Taida Hefford - B2-S, Liberal Arts Department, office #23, Art.Club@aum.edu.kw"
+
+  utter_join_book_club:
+  - text: "Tamara Oshchepkova - B2-S, Liberal Arts Department, office #36, Book.Club@aum.edu.kw"
+
+
+  utter_join_drama_club:
+  - text: "Petar Kaukov - B2-S, Liberal Arts Department, office #50, Drama.Club@aum.edu.kw"
+
+
+  utter_join_music_club:
+  - text: "Bogdan Scurtu - B2-S, Liberal Arts Department, office #4, Music.Club@aum.edu.kw"
+
+
+  utter_join_photography_club:
+  - text: "Taida Hefford - B2-S, Liberal Arts Department, office #23, Photo.Club@aum.edu.kw"
+
+
+  utter_join_speech_communication_club:
+  - text: "Berke Andic – Writing Lab, Speech.Club@aum.edu.kw"
+  
+
+  utter_art_club_location:
+  - text: "Art Studio, Cultural Center 1st Floor"
+
+  utter_book_club_location:
+  - text: "AUM Writing Lab, Business Building Ground Floor"
+  
+
+  utter_drama_club_location:
+  - text: "AUM Cultural Center"
+
+  utter_music_club_location:
+  - text: "Cultural Center 1st Floor"
+
+  utter_photo_club_location:
+  - text: "Cultural Center 1st Floor"
+
+  utter_speech_communication_club_location:
+  - text: "Business Building Ground Floor"
+
+  utter_art_club_info:
+  - text: "Art Club is designed to serve as a gathering point for students interested in all disciplines of Art and Design with the aim of promoting and supporting an enthusiasm for visual arts. Club members: 50 Students. Requirements and membership criteria: 80% attendance; portfolio submission."
+
+  utter_book_club_info:
+  - text: "Book Club is established to promote reading and communication skills. It gives wings to our students’ imagination and creative thinking as it will be the platform to meet likeminded literature lovers to exchange ideas and reviews on some published books. It will also provide a stage to share and seek ideas. Book Club is established for the students who have a good taste of literature and need a place to formalize this talent and a podium to share it with the rest of the world. The Club is the podium. Club members: 20 Students. Requirements and membership criteria: 80% attendance."
+ 
+  utter_drama_club_info:
+  - text: "The Drama Club is intended for students who are interested in the art of Theatre, as well as in different aspects of theatrical structure and organization. The club will develop and promote the talent and dedication of its members by organizing workshops and performances. Club members: 20 Students. Requirements and membership criteria: 80% attendance; audition."
+
+  utter_music_club_info:
+  - text: "Music Club is designed to serve to promote musical taste and talent amongst AUM students by organizing concerts, workshops and performances. Club members: 50 Students. Requirements and membership criteria: 80% attendance; auditions."
+
+  utter_photo_club_info:
+  - text: "Photography Club is created for students who are interested in exploring the art of photography and the creative possibilities offered by photo cameras. Club members: 20 Students. Requirements and membership criteria: 80% attendance; portfolio submission."
+
+  utter_speech_communication_club_info:
+  - text: "The aim of the Speech and Communication Club is to provide a non-competitive platform for students to improve their interpersonal verbal and nonverbal communication skills and learn to express themselves in a constructive manner. Club members: 20 Students. Requirements and membership criteria: 80% attendance; public speaking."
+
+
+  # utter_EPP_2023_2024_calendar:
+  # - text: "Please login to view the calendar"
+  # image: "https://myportal.aum.edu.kw/pluginfile.php/210/block_html/content/Academic%20Calendar%202023-2024%20-%20EPP.pdf?time=1695545348462"
+
+  # utter_attendance_policy:
+  # - text: "Please login to view the attendance policy at AUM"
+  # image: "https://myportal.aum.edu.kw/pluginfile.php/210/block_html/content/AUM%20attendance%20policy.pdf"
+
+  # utter_examination_guidelines:
+  # - text: "Please login to view the examination guidelines"
+  # image: "https://myportal.aum.edu.kw/pluginfile.php/210/block_html/content/Students%20Examination%20Guidlines%20%281%29.pdf"
+
+  # utter_med_examination_form:
+  # - text: "Please login to view the examination form"
+  # image: "https://myportal.aum.edu.kw/pluginfile.php/210/block_html/content/Student%20Affairs%20Departmentc%203333%20%28002%29.pdf"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

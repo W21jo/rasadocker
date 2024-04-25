@@ -1,0 +1,1382 @@
+version: "3.1"
+
+rules:
+
+
+
+
+- rule: Greet user at the start of the conversation
+  steps:
+  - action: utter_greet
+  - intent: greet
+
+- rule: student ID
+  steps:
+  - intent: AUM_student_ID
+  - action: utter_AUM_student_ID
+
+- rule: ask about clinic
+  steps:
+  - intent: AUM_clinic
+  - action: utter_AUM_clinic
+
+- rule: ask about AUM email for the university student
+  steps:
+  - intent: AUM_email_for_the_university_student
+  - action: utter_AUM_email_for_the_university_student
+
+- rule: ask about AUM change email password
+  steps:
+  - intent: AUM_change_email_password
+  - action: utter_AUM_change_email_password
+
+- rule: ask about class standing freshman
+  steps:
+  - intent: class_standing_freshman
+  - action: utter_class_standing_freshman
+
+- rule: ask about class standing sophomore
+  steps:
+  - intent: class_standing_sophomore
+  - action: utter_class_standing_sophomore
+
+- rule: ask about class standing junior
+  steps:
+  - intent: class_standing_junior
+  - action: utter_class_standing_junior
+
+- rule: ask about class standing senior
+  steps:
+  - intent: class_standing_senior
+  - action: utter_class_standing_senior
+
+
+
+- rule: ask about graduation with honors
+  steps:
+  - intent: graduation_with_honors
+  - action: utter_graduation_with_honors
+
+- rule: ask about AUM 
+  steps:
+  - intent: about_AUM
+  - action: utter_about_AUM
+
+- rule: ask about changing major from business to engineering
+  steps:
+  - intent: changing_major_from_business_to_engineering
+  - action: utter_changing_major_from_business_to_engineering
+
+- rule: ask about writing lab
+  steps:
+  - intent: writing_lab
+  - action: utter_writing_lab
+
+- rule: :ask about registration way 
+  steps:
+  - intent: AUM_registration_way
+  - action: utter_AUM_registration_way 
+
+
+
+- rule: :ask about registration min
+  steps:
+  - intent: AUM_registration_min
+  - action: utter_AUM_registration_min
+
+- rule: :ask about registration max
+  steps:
+  - intent: AUM_registration_max
+  - action: utter_AUM_registration_max
+
+
+- rule: :ask about AUM add drop
+  steps:
+  - intent: AUM_add_drop
+  - action: utter_AUM_add_drop
+
+- rule: final exam schedule
+  steps:
+  - intent: final_exam_schedule
+  - action: utter_final_exam_schedule
+
+  
+- rule: final exam missed
+  steps:
+  - intent: final_exam_missed
+  - action: utter_final_exam_missed
+
+- rule: final exam paperwork
+  steps:
+  - intent: final_exam_paperwork
+  - action: utter_final_exam_paperwork
+
+- rule: final exam late
+  steps:
+  - intent: final_exam_late
+  - action: utter_final_exam_late
+
+
+# - rule: :ask about registration #
+#   steps:
+#   - intent: AUM_registration
+#   - action: utter_AUM_registration
+
+# - rule: final exam #
+#   steps:
+#   - intent: final_exam
+#   - action: utter_final_exam
+
+# - rule: AUM library
+#   steps:
+#   - intent: AUM_library
+#   - action: utter_AUM_library
+
+- rule: AUM restaurant
+  steps:
+  - intent: AUM_restaurant 
+  - action: utter_AUM_restaurant
+
+- rule: ATM service
+  steps:
+  - intent: ATM_service
+  - action: utter_ATM_service
+
+- rule: tawteen career center
+  steps:
+  - intent: tawteen_career_center
+  - action: utter_tawteen_career_center
+
+# - rule: emergency cases
+#   steps:
+#   - intent: emergency_cases
+#   - action: utter_emergency_cases
+
+- rule: AUM major
+  steps:
+  - intent: AUM_major
+  - action: utter_AUM_major
+
+  
+- rule: electrical engineering
+  steps:
+  - intent: electrical_engineering
+  - action: utter_electrical_engineering
+
+- rule: ask about clinic services 
+  steps:
+  - intent: clinic_services 
+  - action: utter_clinic_services 
+
+- rule: ask about clinic location
+  steps:
+  - intent: clinic_location
+  - action: utter_clinic_location
+
+- rule: ask about sports center
+  steps:  
+  - intent: sports_center
+  - action: utter_sports_center
+
+- rule: ask about it services
+  steps:
+  - intent: it_services
+  - action: utter_it_services
+
+
+- rule: ask about aum aum website
+  steps:
+  - intent: aum_website
+  - action: utter_aum_website
+
+- rule : ask about portal purpose
+  steps:  
+  - intent : portal_purpose
+  - action : utter_portal_purpose
+
+- rule: ask about aum moodle
+  steps:
+  - intent: aum_Moodle
+  - action: utter_aum_Moodle
+
+- rule: ask about aum banner
+  steps:
+  - intent: aum_banner
+  - action: utter_aum_banner
+
+
+- rule: ask about aum communicate
+  steps:
+  - intent: aum_communicate
+  - action: utter_aum_communicate
+
+
+- rule: ask about parking services
+  steps:
+  - intent: parking_services
+  - action: utter_parking_services
+
+- rule: ask about students identified
+  steps:
+  - intent: students_identified
+  - action: utter_students_identified
+
+- rule: ask about tutoring center
+  steps:
+  - intent: tutoring_center
+  - action: utter_tutoring_center
+
+- rule: ask about innovation center
+  steps:
+  - intent: innovation_center
+  - action: utter_innovation_center
+
+- rule: ask about AUM calendar
+  steps: 
+  - intent: AUM_calendar
+  - action: utter_AUM_calendar
+
+
+- rule: ask about AUM subject
+  steps:
+  - intent: AUM_subject
+  - action: utter_AUM_subject
+
+
+- rule: ask about grading system
+  steps:
+  - intent: ask_grading_system
+  - action: utter_grading_system
+
+
+
+
+
+
+- rule: ask about business major
+  steps:
+  - intent: Ask_about_business_major
+  - action: utter_business_major
+
+- rule: ask about attendance dismissal request
+  steps:
+  - intent: Ask_about_attendance_dismissal_request
+  - action: utter_attendance_dismissal_request
+
+
+- rule: ask about medical examination submission
+  steps:
+  - intent: Ask_about_medical_examination_submission
+  - action: utter_medical_examination_submission
+
+- rule: ask about lost item on campus 
+  steps:
+  - intent: Ask_about_lost_item_on_campus
+  - action: utter_lost_item_on_campus
+
+- rule: ask about advising services 
+  steps:
+  - intent: advising_services
+  - action: utter_advising_services
+
+- rule: Schedule advising appointment
+  steps:
+  - intent: schedule_advising_appointment
+  - action: utter_schedule_advising_appointment
+
+- rule: ask about advising hours
+  steps:
+  - intent: advising_hours
+  - action: utter_advising_hours
+
+- rule: ask about reset password
+  steps:
+  - intent: reset_password
+  - action: utter_reset_password
+
+- rule: ask about library code f conduct
+  steps:
+  - intent: library_code_of_conduct
+  - action: utter_library_code_of_conduct
+
+- rule: Provide student affairs office hours information
+  steps:
+  - intent: student_affairs_office_hours_info
+  - action: utter_student_affairs_office_hours_info
+- rule: Provide student affairs contact information
+  steps:
+  - intent: student_affairs_contact_info
+  - action: utter_student_affairs_contact_info
+- rule: Provide student affairs service
+  steps:
+  - intent: student_affairs_services_info
+  - action: utter_student_affairs_services_info
+
+- rule: Provide student affairs location information
+  steps:
+  - intent: student_affairs_location_info
+  - action: utter_student_affairs_location_info
+
+- rule: Provide mobile app class schedule feature
+  steps:
+  - intent: mobile_app_class_schedule
+  - action: utter_mobile_app_class_schedule
+
+- rule: Provide mobile app campus map feature
+  steps:
+  - intent: mobile_app_campus_map
+  - action: utter_mobile_app_campus_map
+
+- rule: Provide mobile app notifications feature
+  steps:
+  - intent: mobile_app_notifications
+  - action: utter_mobile_app_notifications
+
+- rule: Provide mobile app library resources feature
+  steps:
+  - intent: mobile_app_library_resources
+  - action: utter_mobile_app_library_resources
+
+- rule: Provide civil engineering credits required information
+  steps:
+  - intent: civil_engineering_credits_required
+  - action: utter_civil_engineering_credits_required
+
+- rule: Provide civil engineering core courses information
+  steps:
+  - intent: civil_engineering_core_courses
+  - action: utter_civil_engineering_core_courses
+
+- rule: Provide civil engineering student clubs information
+  steps:
+  - intent: civil_engineering_student_clubs
+  - action: utter_civil_engineering_student_clubs
+
+- rule: Provide civil engineering website information
+  steps:
+  - intent: civil_engineering_website
+  - action: utter_civil_engineering_website
+
+
+- rule: ask about midterm and final exams guidelines
+  steps:
+  - intent: midterm_and_final_exams_guidelines
+  - action: utter_midterm_and_final_exams_guidelines
+
+
+
+
+- rule: ask about Parking Rules and Regulations
+  steps: 
+  - intent: Parking_Rules_and_Regulations
+  - action: utter_Parking_Rules_and_Regulations
+
+- rule: ask about complaints
+  steps: 
+  - intent: complaints
+  - action: utter_complaints
+
+- rule: ask about registration guide
+  steps: 
+  - intent: registration_guide
+  - action: utter_registration_guide
+
+- rule: ask about clinic services 
+  steps:
+  - intent: clinic_services 
+  - action: utter_clinic_services 
+
+- rule: ask about clinic location
+  steps:
+  - intent: clinic_location
+  - action: utter_clinic_location
+
+
+- rule: ask about sports center
+  steps:  
+  - intent: sports_center
+  - action: utter_sports_center
+
+
+- rule: ask about IT services
+  steps:
+  - intent: it_services
+  - action: utter_it_services
+
+
+- rule: ask about aum website information
+  steps:
+  - intent: aum_website_info
+  - action: utter_aum_website_info
+
+
+- rule : ask about portal purpose
+  steps:  
+  - intent : portal_purpose
+  - action : utter_portal_purpose
+
+- rule: ask about aum moodle
+  steps:
+  - intent: aum_Moodle
+  - action: utter_aum_Moodle
+
+
+- rule: ask about aum banner
+  steps:
+  - intent: aum_banner
+  - action: utter_aum_banner
+
+
+- rule: ask about aum communicate
+  steps:
+  - intent: aum_communicate
+  - action: utter_aum_communicate
+
+
+- rule: ask about parking services
+  steps:
+  - intent: parking_services
+  - action: utter_parking_services
+
+
+- rule: ask about students identified
+  steps:
+  - intent: students_identified
+  - action: utter_students_identified
+
+- rule: ask about aum library
+  steps:
+  - intent: aum_library
+  - action: utter_aum_library
+
+- rule: ask about writing club
+  steps:
+  - intent: writing_club
+  - action: utter_writing_club
+
+- rule: ask about tutoring center
+  steps:
+  - intent: tutoring_center
+  - action: utter_tutoring_center
+
+- rule: ask about innovation center
+  steps:
+  - intent: innovation_center
+  - action: utter_innovation_center
+  
+  #newNEWnewNEWnew
+- rule: ask about medical emergency
+  steps:
+  - intent: medical_emergency
+  - action: utter_medical_emergency
+
+  
+- rule: ask about car accidents
+  steps:
+  - intent: car_accidents
+  - action: utter_car_accidents
+
+  
+- rule: ask about lost & found
+  steps:
+  - intent: lost_found
+  - action: utter_lost_found
+
+  
+- rule: ask about scientific laboratories
+  steps:
+  - intent: scientific_laboratories
+  - action: utter_scientific_laboratories
+
+  
+- rule: ask about tawteen center
+  steps:
+  - intent: tawteen_center
+  - action: utter_tawteen_center
+
+  
+- rule: ask about grading system
+  steps:
+  - intent: grading_system
+  - action: utter_grading_system
+
+  
+- rule: ask about grade points
+  steps:
+  - intent: grade_points
+  - action: utter_grade_points
+
+
+  
+- rule: ask about trasnscript grade
+  steps:
+  - intent: trasnscript_grade
+  - action: utter_trasnscript_grade
+
+  
+- rule: ask about minimum required grade
+  steps:
+  - intent: minimum_required_grade
+  - action: utter_minimum_required_grade
+
+  
+- rule: ask about minimum passing grade
+  steps:
+  - intent: minimum_passing_grade
+  - action: utter_minimum_passing_grade
+
+  
+- rule: ask about minimum grade exceptions
+  steps:
+  - intent: minimum_grade_exceptions
+  - action: utter_minimum_grade_exceptions
+
+  
+- rule: ask about grading affect CGPA
+  steps:
+  - intent: grading_affect_CGPA
+  - action: utter_grading_affect_CGPA
+
+
+- rule: ask about incomplete grade
+  steps:
+  - intent: incomplete_grade
+  - action: utter_incomplete_grade
+
+- rule: ask about withdrawal grade
+  steps:
+  - intent: withdrawal_grade
+  - action: utter_withdrawal_grade
+
+- rule: ask about EPP passing grade
+  steps:
+  - intent: EPP_passing_grade
+  - action: utter_EPP_passing_grade
+
+- rule: ask about Math prep passing grade
+  steps:
+  - intent: Math_prep_passing_grade
+  - action: utter_Math_prep_passing_grade
+
+- rule: ask about undergraduate class standings
+  steps:
+  - intent: undergraduate_class_standings
+  - action: utter_undergraduate_class_standings
+
+- rule: ask about academic class standing
+  steps:
+  - intent: academic_class_standing
+  - action: utter_academic_class_standing
+
+- rule: ask about total credits class standing
+  steps:
+  - intent: total_credits_class_standing
+  - action: utter_total_credits_class_standing
+
+- rule: ask about CGPA good standing
+  steps:
+  - intent: CGPA_good_standing
+  - action: utter_CGPA_good_standing
+
+# - rule: ask about calculate CGPA and GPA
+#   steps:
+#   - intent: calculate_CGPA_GPA
+#   - action: utter_calculate_CGPA_GPA
+
+- rule: ask about CGPA and GPA transcript
+  steps:
+  - intent: CGPA_GPA_transcript
+  - action: utter_CGPA_GPA_transcript
+
+- rule: ask about EPP purpose
+  steps:
+  - intent: EPP_purpose
+  - action: utter_EPP_purpose
+
+
+- rule: ask about college of engineering and technolgy require math placement test
+  steps:
+  - intent: college_eng_tech_require_math_placement_test 
+  - action: utter_college_eng_tech_require_math_placement_test
+
+- rule: ask about academic max duration
+  steps:
+  - intent: academic_max_duration
+  - action: utter_academic_max_duration
+
+- rule: ask about academic probation dismissal
+  steps:
+  - intent: academic_probation_dismissal
+  - action: utter_academic_probation_dismissal
+
+- rule: ask about honors graduation criteria
+  steps:
+  - intent: honors_graduation_criteria
+  - action: utter_honors_graduation_criteria
+
+- rule: ask about expecting graduate steps
+  steps:
+  - intent: expecting_graduate_steps
+  - action: utter_expecting_graduate_steps
+
+- rule: ask about graduation clearance requirements
+  steps:
+  - intent: graduation_clearance_requirements
+  - action: utter_graduation_clearance_requirements
+
+- rule: ask about CGPA max credit fall spring
+  steps:
+  - intent: CGPA_max_credit_fall_spring
+  - action: utter_CGPA_max_credit_fall_spring
+
+- rule: ask about CGPA max credi summer
+  steps:
+  - intent: CGPA_max_credit_summer
+  - action: utter_CGPA_max_credit_summer
+
+- rule: ask about more max credit allowed
+  steps:
+  - intent: more_max_credit_allowed
+  - action: utter_more_max_credit_allowed
+
+- rule: ask about appeal grade change 
+  steps:
+  - intent: appeal_grade_change 
+  - action: utter_appeal_grade_change 
+
+- rule: ask about course repetition policy 
+  steps:
+  - intent: course_repetition_policy 
+  - action: utter_course_repetition_policy 
+
+- rule: ask about repeat course CGPA improve
+  steps:
+  - intent: repeat_course_CGPA_improve
+  - action: utter_repeat_course_CGPA_improve
+
+#newnewnew
+- rule: ask about repeat specific courses
+  steps:
+  - intent: repeat_specific_courses
+  - action: utter_repeat_specific_courses
+
+- rule: ask about fail pre english math
+  steps:
+  - intent: fail_pre_english_math
+  - action: utter_fail_pre_english_math
+
+- rule: ask about sponsorship course repetition fees
+  steps:
+  - intent: sponsorship_ccourse_repetition_fees
+  - action: utter_sponsorship_ccourse_repetition_fees
+
+- rule: ask about approvals repeat improve CGPA
+  steps:
+  - intent: approvals_repeat_improve_CGPA
+  - action: utter_approvals_repeat_improve_CGPA
+
+- rule: ask about steps retake subject need
+  steps:
+  - intent: steps_retake_subject_need
+  - action: utter_steps_retake_subject_need
+
+- rule: ask about repeat course prerequisite another course
+  steps:
+  - intent: repeat_course_prerequisite_another_course
+  - action: utter_repeat_course_prerequisite_another_course
+
+- rule: ask about failed course replaced
+  steps:
+  - intent: failed_course_replaced
+  - action: utter_failed_course_replaced
+
+
+- rule: ask about change major eng bus requirements
+  steps:
+  - intent: change_major_eng_bus_requirements
+  - action: utter_change_major_eng_bus_requirements
+
+- rule: ask about bus change major condition
+  steps:
+  - intent: bus_change_major_condition
+  - action: utter_bus_change_major_condition
+
+- rule: ask about eng change major eng
+  steps:
+  - intent: eng_change_major_eng
+  - action: utter_eng_change_major_eng
+
+- rule: ask about attendance importance
+  steps:
+  - intent: attendance_importance
+  - action: utter_attendance_importance
+
+- rule: ask about honors list criteria
+  steps:
+  - intent: honors_list_criteria
+  - action: utter_honors_list_criteria
+
+# - rule: ask about grading table
+#   steps:
+#   - intent: grading_table
+#   - action: utter_grading_table
+
+# - rule: ask about park car
+#   steps:
+#   - intent: park_car
+#   - action: utter_park_car
+
+- rule: ask about join art club
+  steps:
+  - intent: join_art_club
+  - action: utter_join_art_club
+
+- rule: ask about join drama club
+  steps:
+  - intent: join_drama_club
+  - action: utter_join_drama_club
+
+- rule: ask about join book club
+  steps:
+  - intent: join_book_club
+  - action: utter_join_book_club
+
+- rule: ask about join music club
+  steps:
+  - intent: join_music_club
+  - action: utter_join_music_club
+
+- rule: ask about join photography club
+  steps:
+  - intent: join_photography_club
+  - action: utter_join_photography_club
+
+- rule: ask about join speech communication club
+  steps:
+  - intent: join_speech_communication_club
+  - action: utter_join_speech_communication_club
+
+- rule: ask about art club location
+  steps:
+  - intent: art_club_location
+  - action: utter_art_club_location
+
+- rule: ask about book club location
+  steps:
+  - intent: book_club_location
+  - action: utter_book_club_location
+
+- rule: ask about drama club location
+  steps:
+  - intent: drama_club_location
+  - action: utter_drama_club_location
+
+- rule: ask about music club location
+  steps:
+  - intent: music_club_location
+  - action: utter_music_club_location
+
+- rule: ask about photography club location
+  steps:
+  - intent: photo_club_location
+  - action: utter_photo_club_location
+
+- rule: ask about speech communication club location
+  steps:
+  - intent: speech_communication_club_location
+  - action: utter_speech_communication_club_location
+
+- rule: ask about art club info
+  steps:
+  - intent: art_club_info
+  - action: utter_art_club_info
+
+- rule: ask about book club info
+  steps:
+  - intent: book_club_info
+  - action: utter_book_club_info
+
+- rule: ask about drama club info
+  steps:
+  - intent: drama_club_info
+  - action: utter_drama_club_info
+
+- rule: ask about music club info
+  steps:
+  - intent: music_club_info
+  - action: utter_music_club_info
+
+- rule: ask about photo club info
+  steps:
+  - intent: photo_club_info
+  - action: utter_photo_club_info
+
+- rule: ask about speech communication club info
+  steps:
+  - intent: speech_communication_club_info
+  - action: utter_speech_communication_club_info
+
+- rule: ask about library location
+  steps:
+  - intent: provide_library_location
+  - action: utter_library_building
+
+
+
+- rule: ask about library location
+  steps:
+  - intent: cafe_locations
+  - action: utter_cafe_locations
+
+- rule: ask about library location
+  steps:
+  - intent: restaurant_locations
+  - action: utter_restaurant_locations
+
+
+- rule: ask about library location
+  steps:
+  - intent: food_locations
+  - action: utter_food_locations
+
+
+- rule: ask about library location
+  steps:
+  - intent: industrial_engineering_credits_required
+  - action: utter_industrial_engineering_credits_required
+
+- rule: ask about library location
+  steps:
+  - intent: industrial_engineering_website
+  - action: utter_industrial_engineering_website
+
+- rule: ask about library location
+  steps:
+  - intent: industrial_engineering_core_courses
+  - action: utter_industrial_engineering_core_courses
+
+- rule: Provide chemical engineering credits required information
+  steps:
+  - intent: chemical_engineering_credits_required
+  - action: utter_chemical_engineering_credits_required
+
+- rule: Provide chemical engineering website information
+  steps:
+  - intent: chemical_engineering_website
+  - action: utter_chemical_engineering_website
+
+- rule: Provide chemical engineering core courses information
+  steps:
+  - intent: chemical_engineering_core_courses
+  - action: utter_chemical_engineering_core_courses
+
+- rule: Provide mechanical engineering credits required information
+  steps:
+  - intent: mechanical_engineering_credits_required
+  - action: utter_mechanical_engineering_credits_required
+
+- rule: Provide mechanical engineering website information
+  steps:
+  - intent: mechanical_engineering_website
+  - action: utter_mechanical_engineering_website
+
+- rule: Provide mechanical engineering core courses information
+  steps:
+  - intent: mechanical_engineering_core_courses
+  - action: utter_mechanical_engineering_core_courses
+
+
+
+
+- rule: Provide information about the parking decal process
+  steps:
+  - intent: Car_Decal_Process
+  - action: utter_Car_Decal_Process
+
+- rule: Provide information about documentation for a parking decal
+  steps:
+  - intent: Car_Decal_Documentation
+  - action: utter_Car_Decal_Documentation
+
+- rule: Provide information about parking locations with a parking decal
+  steps:
+  - intent: Car_Decal_Parking_Location
+  - action: utter_Car_Decal_Parking_Location
+
+- rule: Provide information about the consequences of not having a parking decal
+  steps:
+  - intent: Car_Decal_Lack_of_Sticker
+  - action: utter_Car_Decal_Lack_of_Sticker
+
+- rule: Provide information about sharing and violation of parking decals
+  steps:
+  - intent: Car_Decal_Sharing_Violation
+  - action: utter_Car_Decal_Sharing_Violation
+
+- rule: Provide information about parking accommodations for students with disabilities
+  steps:
+  - intent: Car_Decal_Disabilities_Parking
+  - action: utter_Car_Decal_Disabilities_Parking
+
+- rule: Provide information about communication of parking rules updates
+  steps:
+  - intent: Car_Decal_Rules_Communication
+  - action: utter_Car_Decal_Rules_Communication
+
+
+
+- rule: Provide description of computer engineering
+  steps:
+  - intent: computer_engineering_description
+  - action: utter_computer_engineering_description
+
+- rule: Provide credit requirement for computer engineering
+  steps:
+  - intent: computer_engineering_credit_requirement
+  - action: utter_computer_engineering_credit_requirement
+
+- rule: Provide core courses for computer engineering
+  steps:
+  - intent: computer_engineering_courses
+  - action: utter_computer_engineering_courses
+
+- rule: Provide information about student organizations in computer engineering
+  steps:
+  - intent: computer_engineering_student_organizations
+  - action: utter_computer_engineering_student_organizations
+
+- rule: Provide information about credits in computer engineering
+  steps:
+  - intent: computer_engineering_credits
+  - action: utter_computer_engineering_credits
+
+
+
+
+
+
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+
+
+
+- rule: ask about makeup 
+  steps:
+  - intent: apply_makeup 
+  - action: utter_apply_makeup 
+
+
+- rule: GPA credit
+  steps:
+  - intent: GPA_credit
+  - action: utter_GPA_credit
+
+
+
+
+
+# - rule: AUM Tutoring Center 
+#   steps:
+#   - intent: AUM_Tutoring_Center
+#   - action: utter_AUM_Tutoring_Center
+
+
+
+- rule: ask about final 1 
+  steps:
+  - intent: check_schedule 
+  - action: utter_check_schedule
+
+
+
+- rule: ask about final 2
+  steps:
+  - intent: miss_final
+  - action: utter_miss_final
+
+
+- rule: ask about final 3
+  steps:
+  - intent: paper_work_makeup
+  - action: utter_paper_work_makeup
+
+- rule: ask about final 4
+  steps:
+  - intent: bring_final
+  - action: utter_bring_final
+
+
+
+- rule: ask about final 5
+  steps:
+  - intent: late_final 
+  - action: utter_late_final 
+
+- rule: ask about final 7
+  steps:
+  - intent: satisfied_final
+  - action: utter_satisfied_final 
+
+- rule: ask about final 6
+  steps:
+  - intent: submit_appeal
+  - action: utter_submit_appeal
+
+# # - rule: computer eng 
+#   steps:
+#   - intent: computer_engineering_credits 
+#   - action: utter_computer_engineering_credits 
+
+
+
+# - rule: medical excuses 
+#   steps:
+#   - intent: medical_excuses
+#   - action: utter_medical_excuses
+
+- rule: aum portal
+  steps:
+  - intent: aum_portal
+  - action: utter_aum_portal
+
+
+
+- rule: dismisse grade
+  steps:
+  - intent: dismisse_grade
+  - action: utter_dismisse_grade
+
+- rule: Absence percentage
+  steps:
+  - intent: Absence_percentage
+  - action: utter_Absence_percentage
+
+
+
+- rule: before_dismissal
+  steps:
+  - intent: before_dismissal
+  - action: utter_before_dismissal
+
+
+
+- rule: AUM restaurant
+  steps:
+  - intent: AUM_restaurant 
+  - action: utter_AUM_restaurant
+
+- rule: ATM service
+  steps:
+  - intent: ATM_service
+  - action: utter_ATM_service
+
+# - rule: tawteen career center
+#   steps:
+#   - intent: tawteen_career_center
+#   - action: utter_tawteen_career_center
+
+# - rule: emergency_cases
+#   steps:
+#   - intent: emergency_cases
+#   - action: utter_emergency_cases
+
+- rule: AUM major
+  steps:
+  - intent: AUM_major
+  - action: utter_AUM_major
+
+# - rule: accident campus
+#   steps:
+#   - intent: accident_campus
+#   - action: utter_accident_campus
+
+- rule: program degree
+  steps:
+  - intent: program_degree
+  - action: utter_program_degree
+
+- rule: arrive within
+  steps:
+  - intent: arrive_within
+  - action: utter_arrive_within
+
+
+- rule: after start
+  steps:
+  - intent: after_start
+  - action: utter_after_start
+
+- rule: leave classroom
+  steps:
+  - intent: leave_classroom
+  - action: utter_leave_classroom
+
+- rule: makeups Saturday
+  steps:
+  - intent: makeups_Saturday
+  - action: utter_makeups_Saturday
+
+- rule: more fifteen
+  steps:
+  - intent: more_fifteen
+  - action: utter_more_fifteen
+
+# - rule: privatepublic_institution
+#   steps:
+#   - intent: privatepublic_institution
+#   - action: utter_privatepublic_institution
+
+- rule: three late
+  steps:
+  - intent: three_late
+  - action: utter_three_late
+
+- rule: missed midterm
+  steps:
+  - intent: missed_midterm
+  - action: utter_missed_midterm
+
+
+- rule: within five
+  steps:
+  - intent: within_five
+  - action: utter_within_five
+
+- rule: allowed number
+  steps:
+  - intent: allowed_number
+  - action: utter_allowed_number
+
+- rule: submit petition
+  steps:
+  - intent: submit_petition
+  - action: utter_submit_petition
+
+- rule: flexibility request
+  steps:
+  - intent: flexibility_request
+  - action: utter_flexibility_request
+
+- rule: final location
+  steps:
+  - intent: final_location
+  - action: utter_final_location
+
+- rule: max EPP
+  steps:
+  - intent: max_EPP
+  - action: utter_max_EPP
+
+- rule: reach excuses
+  steps:
+  - intent: reach_excuses
+  - action: utter_reach_excuses  
+
+- rule: prayer room
+  steps:
+  - intent: prayer_room
+  - action: utter_prayer_room  
+
+- rule: about prayer Engineering female
+  steps:
+  - intent: about_prayer_Engineeringfemale
+  - action: utter_about_prayer_Engineeringfemale
+
+
+- rule: about prayer Engineering male
+  steps:
+  - intent: about_prayer_Engineeringmale
+  - action: utter_about_prayer_Engineeringmale
+
+- rule: about prayer businessmale
+  steps:
+  - intent: about_about_prayer_businessmale
+  - action: utter_about_prayer_businessmale
+
+- rule: about prayer businessfemale
+  steps:
+  - intent: about_about_prayer_businessfemale
+  - action: utter_about_prayer_businessfemale
+
+
+- rule: about prayer Librarymale
+  steps:
+  - intent: about_prayer_Librarymale
+  - action: utter_about_prayer_Librarymale
+
+
+- rule: about prayer Researchmale
+  steps:
+  - intent: about_prayer_Researchmale
+  - action: utter_about_prayer_Researchmale
+
+- rule: about prayer Researchfemale
+  steps:
+  - intent: about_prayer_Researchfemale
+  - action: utter_about_prayer_Researchfemale
+
+
+- rule: about prayer Culturalmale
+  steps:
+  - intent: about_prayer_Culturalmale
+  - action: utter_about_prayer_Culturalmale
+
+
+- rule: about prayer Culturalfemale
+  steps:
+  - intent: about_prayer_Culturalfemale
+  - action: utter_about_prayer_Culturalfemale
+
+
+- rule: Respond to fall spring attendance policy1
+  steps:
+  - intent: clarify_one_session
+  - action: utter_clarify_one_session
+
+- rule: Respond to fall spring attendance policy2
+  steps:
+  - intent: clarify_two_sessions
+  - action: utter_clarify_two_sessions
+
+- rule: Respond to fall spring attendance policy3
+  steps:
+  - intent: clarify_three_sessions
+  - action: utter_clarify_three_sessions
+
+- rule: Respond to fall spring attendance policy4
+  steps:
+  - intent: clarify_four_sessions
+  - action: utter_clarify_four_sessions
+
+- rule: clarify summer two sessions
+  steps:
+  - intent: clarify_summer_two_sessions
+  - action: utter_clarify_summer_two_sessions
+
+- rule: clarify summer three sessions
+  steps:
+  - intent: clarify_summer_three_sessions
+  - action: utter_clarify_summer_three_sessions
+
+- rule: clarify summer five sessions
+  steps:
+  - intent: clarify_summer_five_sessions
+  - action: utter_clarify_summer_five_sessions
+  
+- rule: clarify summer seven sessions
+  steps:
+  - intent: clarify_summer_seven_sessions
+  - action: utter_clarify_summer_seven_sessions
+
+- rule: clarify summer ten sessions
+  steps:
+  - intent: clarify_summer_ten_sessions
+  - action: utter_clarify_summer_ten_sessions  
+
+
+
+########## Story ##############
+
+
+- rule: ask about your
+  steps:
+  - intent: what_is_your
+  - action: utter_what_is_your
+
+- rule: from eng to eng
+  steps:
+  - intent: from_eng_to_eng
+  - action: utter_from_eng_to_eng
+
+- rule: from bus to bus
+  steps:
+  - intent: from_bus_to_bus
+  - action: utter_from_bus_to_bus
+
+
+- rule: from eng to teq
+  steps:
+  - intent: from_eng_to_teq
+  - action: utter_from_eng_to_teq
+
+- rule: about convert
+  steps:
+  - intent: convert
+  - action: utter_convert
+
+
+- rule: about transfer teq
+  steps:
+  - intent: transfer_teq
+  - action: utter_transfer_teq
+ 
+
+- rule: from teq to eng
+  steps:
+  - intent: from_teq_to_eng
+  - action: utter_from_teq_to_eng
+   
+
+
+
+
+############## YAQEEN ##############
+
+
+- rule: Respond to inquiries about academic calendar inclusion
+  steps:
+  - intent: ask_academic_calendar_include
+  - action: utter_AUM_calendar_include
+
+- rule: Respond to inquiries about semester start date
+  steps:
+  - intent: ask_semester_start_date
+  - action: utter_semester_start_date
+
+- rule: Respond to inquiries about semester end date
+  steps:
+  - intent: ask_semester_end_date
+  - action: utter_semester_end_date
+
+- rule: Respond to inquiries about holiday dates
+  steps:
+  - intent: ask_holiday_dates
+  - action: utter_holiday_dates
+
+- rule: Respond to inquiries about finding the academic calendar
+  steps:
+  - intent: ask_find_academic_calendar
+  - action: utter_find_academic_calendar
+
+- rule: Respond to inquiries about checking holiday dates
+  steps:
+  - intent: ask_check_holiday_dates
+  - action: utter_check_holiday_dates
+
+- rule: Respond to inquiries about updating the academic calendar
+  steps:
+  - intent: ask_update_academic_calendar
+  - action: utter_update_academic_calendar
+
+- rule: Respond to inquiries about exam periods
+  steps:
+  - intent: ask_exam_periods
+  - action: utter_exam_periods
+
+- rule: Respond to inquiries about key dates
+  steps:
+  - intent: ask_key_dates
+  - action: utter_key_dates
+
+
+
